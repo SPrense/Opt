@@ -1,0 +1,1001 @@
+2025-05-29 16:55:58,887 INFO    StreamThr :20592 [internal.py:wandb_internal():86] W&B internal server running at pid: 20592, started at: 2025-05-29 16:55:58.887103
+2025-05-29 16:55:58,888 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: status
+2025-05-29 16:55:58,890 INFO    WriterThread:20592 [datastore.py:open_for_write():85] open: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\run-c6pfml7t.wandb
+2025-05-29 16:55:58,890 DEBUG   SenderThread:20592 [sender.py:send():379] send: header
+2025-05-29 16:55:58,891 DEBUG   SenderThread:20592 [sender.py:send():379] send: run
+2025-05-29 16:56:00,352 INFO    SenderThread:20592 [dir_watcher.py:__init__():211] watching files in: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files
+2025-05-29 16:56:00,352 INFO    SenderThread:20592 [sender.py:_start_run_threads():1121] run started: c6pfml7t with start time 1748508958.887103
+2025-05-29 16:56:00,356 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: check_version
+2025-05-29 16:56:00,356 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: check_version
+2025-05-29 16:56:01,161 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: run_start
+2025-05-29 16:56:01,181 DEBUG   HandlerThread:20592 [system_info.py:__init__():32] System info init
+2025-05-29 16:56:01,181 DEBUG   HandlerThread:20592 [system_info.py:__init__():47] System info init done
+2025-05-29 16:56:01,181 INFO    HandlerThread:20592 [system_monitor.py:start():181] Starting system monitor
+2025-05-29 16:56:01,183 INFO    SystemMonitor:20592 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2025-05-29 16:56:01,183 INFO    HandlerThread:20592 [system_monitor.py:probe():201] Collecting system info
+2025-05-29 16:56:01,186 INFO    SystemMonitor:20592 [interfaces.py:start():190] Started cpu monitoring
+2025-05-29 16:56:01,186 INFO    SystemMonitor:20592 [interfaces.py:start():190] Started disk monitoring
+2025-05-29 16:56:01,189 INFO    SystemMonitor:20592 [interfaces.py:start():190] Started gpu monitoring
+2025-05-29 16:56:01,189 INFO    SystemMonitor:20592 [interfaces.py:start():190] Started memory monitoring
+2025-05-29 16:56:01,194 INFO    SystemMonitor:20592 [interfaces.py:start():190] Started network monitoring
+2025-05-29 16:56:01,198 DEBUG   HandlerThread:20592 [system_info.py:probe():196] Probing system
+2025-05-29 16:56:01,199 DEBUG   HandlerThread:20592 [gitlib.py:_init_repo():53] git repository is invalid
+2025-05-29 16:56:01,199 DEBUG   HandlerThread:20592 [system_info.py:probe():244] Probing system done
+2025-05-29 16:56:01,199 DEBUG   HandlerThread:20592 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.22631-SP0', 'python': '3.9.19', 'heartbeatAt': '2025-05-29T08:56:01.198164', 'startedAt': '2025-05-29T08:55:58.877789', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'D:\\github\\Opt\\main\\main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'host': 'DESKTOP-RVG428G', 'username': 'HanlinWang', 'executable': 'D:\\anaconda\\envs\\agent3\\python.exe', 'cpu_count': 24, 'cpu_count_logical': 32, 'cpu_freq': {'current': 2200.0, 'min': 0.0, 'max': 2200.0}, 'cpu_freq_per_core': [{'current': 2200.0, 'min': 0.0, 'max': 2200.0}], 'disk': {'/': {'total': 620.9248008728027, 'used': 527.6237297058105}}, 'gpu': 'NVIDIA GeForce RTX 4070 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4070 Laptop GPU', 'memory_total': 8585740288}], 'memory': {'total': 31.74596405029297}}
+2025-05-29 16:56:01,199 INFO    HandlerThread:20592 [system_monitor.py:probe():211] Finished collecting system info
+2025-05-29 16:56:01,199 INFO    HandlerThread:20592 [system_monitor.py:probe():214] Publishing system info
+2025-05-29 16:56:01,199 DEBUG   HandlerThread:20592 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2025-05-29 16:56:01,199 DEBUG   HandlerThread:20592 [system_info.py:_save_pip():68] Saving pip packages done
+2025-05-29 16:56:01,199 DEBUG   HandlerThread:20592 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2025-05-29 16:56:01,365 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\requirements.txt
+2025-05-29 16:56:01,365 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\conda-environment.yaml
+2025-05-29 16:56:06,188 DEBUG   HandlerThread:20592 [system_info.py:_save_conda():87] Saving conda packages done
+2025-05-29 16:56:06,188 INFO    HandlerThread:20592 [system_monitor.py:probe():216] Finished publishing system info
+2025-05-29 16:56:06,192 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:56:06,192 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:56:06,192 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2025-05-29 16:56:06,196 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: stop_status
+2025-05-29 16:56:06,196 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: stop_status
+2025-05-29 16:56:06,196 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: internal_messages
+2025-05-29 16:56:06,405 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\conda-environment.yaml
+2025-05-29 16:56:06,405 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\wandb-metadata.json
+2025-05-29 16:56:06,548 DEBUG   SenderThread:20592 [sender.py:send():379] send: telemetry
+2025-05-29 16:56:07,407 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\output.log
+2025-05-29 16:56:08,402 INFO    wandb-upload_0:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\g6vx8ldr-wandb-metadata.json
+2025-05-29 16:56:09,252 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:56:09,323 WARNING FileStreamThread:20592 [file_stream.py:request_with_retry():667] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/939531372-south-china-university-of-technology/tracin_active_learning_v5/c6pfml7t/file_stream (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)'))). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x00000274CF7F0FD0>>, timeout=180), args: ('https://api.wandb.ai/files/939531372-south-china-university-of-technology/tracin_active_learning_v5/c6pfml7t/file_stream',), kwargs: {'json': {'files': {'output.log': {'offset': 0, 'content': ['2025-05-29T08:56:08.558253 Weights & Biases 初始化成功。\n', '2025-05-29T08:56:08.558253 --- 0. 加载原始完整数据从: sub_ratings.csv ---\n', '2025-05-29T08:56:08.558253 完整原始数据集加载: 50 用户 (max_id+1), 50 物品 (max_id+1)。\n', "2025-05-29T08:56:08.558253 从 'test_row.csv' 提取测试数据并更新训练集...\n", '2025-05-29T08:56:08.558253   测试集针对用户 ID: 49 (来自 test_row.csv)\n', "2025-05-29T08:56:08.558253   从 'test_row.csv' 提取了 10 个测试样本。\n", '2025-05-29T08:56:08.558253   更新后的 original_train_df 用于生成稀疏训练数据。\n', '2025-05-29T08:56:08.558253 模型将基于原始数据维度初始化: 用户数=50, 物品数=50\n', '2025-05-29T08:56:08.558253 测试数据集初始化: 10 个有效评分。\n', '2025-05-29T08:56:08.558253 测试集创建成功，包含 10 个样本。\n', '2025-05-29T08:56:08.558253 ======= 主动学习迭代轮次: 1/8 (策略: TracInCP) =======\n', '2025-05-29T08:56:08.558253 --- Iter 1: 准备数据 ---\n', '2025-05-29T08:56:08.558253   生成初始稀疏训练数据...\n', '2025-05-29T08:56:08.558253 初始稀疏训练数据已生成: 328 个评分。\n', '2025-05-29T08:56:08.558253   当前训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50\n', '2025-05-29T08:56:08.558253 --- Iter 1: 初始化/重置模型 ---\n', '2025-05-29T08:56:08.558253 --- Iter 1: 训练模型 ---\n', '2025-05-29T08:56:08.558253 --- 开始训练迭代轮次 1 (共 15 epochs) ---\n', '2025-05-29T08:56:08.558253   Iter 1 Epoch [1/15], Avg Train Loss: 18.342793\n', '2025-05-29T08:56:08.558253   Iter 1 Epoch [2/15], Avg Train Loss: 18.281179\n', '2025-05-29T08:56:08.558253   Iter 1 Epoch [3/15], Avg Train Loss: 18.185698\n', '2025-05-29T08:56:08.558253   Iter 1 Epoch [4/15], Avg Train Loss: 17.997802\n', '2025-05-29T08:56:08.558253   Iter 1 Epoch [5/15], Avg Train Loss: 17.671058\n', '2025-05-29T08:56:08.558253   Iter 1 Epoch [5/15], Test Loss: 20.259453\n']}}, 'dropped': 0}}
+2025-05-29 16:56:09,425 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\output.log
+2025-05-29 16:56:09,992 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:56:09,992 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:56:10,439 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_1\Epoch_5_TestPredictions_0_2b0d573c8087f6bc3290.table.json
+2025-05-29 16:56:10,439 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_1
+2025-05-29 16:56:10,439 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table
+2025-05-29 16:56:10,439 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media
+2025-05-29 16:56:11,153 INFO    wandb-upload_0:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\00i6ygju-media/table/Iter_1/Epoch_5_TestPredictions_0_2b0d573c8087f6bc3290.table.json
+2025-05-29 16:56:12,145 WARNING FileStreamThread:20592 [file_stream.py:request_with_retry():667] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/939531372-south-china-university-of-technology/tracin_active_learning_v5/c6pfml7t/file_stream (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)'))). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x00000274CF7F0FD0>>, timeout=180), args: ('https://api.wandb.ai/files/939531372-south-china-university-of-technology/tracin_active_learning_v5/c6pfml7t/file_stream',), kwargs: {'json': {'files': {'output.log': {'offset': 0, 'content': ['2025-05-29T08:56:08.558253 Weights & Biases 初始化成功。\n', '2025-05-29T08:56:08.558253 --- 0. 加载原始完整数据从: sub_ratings.csv ---\n', '2025-05-29T08:56:08.558253 完整原始数据集加载: 50 用户 (max_id+1), 50 物品 (max_id+1)。\n', "2025-05-29T08:56:08.558253 从 'test_row.csv' 提取测试数据并更新训练集...\n", '2025-05-29T08:56:08.558253   测试集针对用户 ID: 49 (来自 test_row.csv)\n', "2025-05-29T08:56:08.558253   从 'test_row.csv' 提取了 10 个测试样本。\n", '2025-05-29T08:56:08.558253   更新后的 original_train_df 用于生成稀疏训练数据。\n', '2025-05-29T08:56:08.558253 模型将基于原始数据维度初始化: 用户数=50, 物品数=50\n', '2025-05-29T08:56:08.558253 测试数据集初始化: 10 个有效评分。\n', '2025-05-29T08:56:08.558253 测试集创建成功，包含 10 个样本。\n', '2025-05-29T08:56:08.558253 ======= 主动学习迭代轮次: 1/8 (策略: TracInCP) =======\n', '2025-05-29T08:56:08.558253 --- Iter 1: 准备数据 ---\n', '2025-05-29T08:56:08.558253   生成初始稀疏训练数据...\n', '2025-05-29T08:56:08.558253 初始稀疏训练数据已生成: 328 个评分。\n', '2025-05-29T08:56:08.558253   当前训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50\n', '2025-05-29T08:56:08.558253 --- Iter 1: 初始化/重置模型 ---\n', '2025-05-29T08:56:08.558253 --- Iter 1: 训练模型 ---\n', '2025-05-29T08:56:08.558253 --- 开始训练迭代轮次 1 (共 15 epochs) ---\n', '2025-05-29T08:56:08.558253   Iter 1 Epoch [1/15], Avg Train Loss: 18.342793\n', '2025-05-29T08:56:08.558253   Iter 1 Epoch [2/15], Avg Train Loss: 18.281179\n', '2025-05-29T08:56:08.558253   Iter 1 Epoch [3/15], Avg Train Loss: 18.185698\n', '2025-05-29T08:56:08.558253   Iter 1 Epoch [4/15], Avg Train Loss: 17.997802\n', '2025-05-29T08:56:08.558253   Iter 1 Epoch [5/15], Avg Train Loss: 17.671058\n', '2025-05-29T08:56:08.558253   Iter 1 Epoch [5/15], Test Loss: 20.259453\n']}}, 'dropped': 0}}
+2025-05-29 16:56:12,623 ERROR   wandb-upload_0:20592 [internal_api.py:upload_file():2548] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/645685626/1771222851/bb3a8bc94fce18f5bb2eaf4970ef6457?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250529%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250529T085611Z&X-Goog-Expires=86399&X-Goog-Signature=3911f9e5d3cc83e1bae47bd865c3c1a7262e5e779b3545c9db0d6354094819ca8afa153a86da3212e1cf70dcefa1361e4b7e41bdc967a4959986269d4d6da9ec4e621e74718ef600b2b5829a5f93953d9847006cfd1e6374ab70a69a0284d4fee9d3265e3c0bd5d7d19755d39e3880cb31fe2c93847129e85f38489a8b3758878bfd79ff1e3a35e4127e91321e30b9f9c48a2e8e1a0f0fd06bd2ed46b6b56fc0f68d943c84ea07ef3451233b22b57a34b1202abcfe3c37d2c5974d85ff97f39cf63914494a888f77feeff9025e42a8f66fb78afcf73a82187b696f5a384473efc6e527968b8a04f10d7e70575ad7ce30133a4713bc18e7decdc81f2efee80727&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/645685626/1771222851/bb3a8bc94fce18f5bb2eaf4970ef6457?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250529%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250529T085611Z&X-Goog-Expires=86399&X-Goog-Signature=3911f9e5d3cc83e1bae47bd865c3c1a7262e5e779b3545c9db0d6354094819ca8afa153a86da3212e1cf70dcefa1361e4b7e41bdc967a4959986269d4d6da9ec4e621e74718ef600b2b5829a5f93953d9847006cfd1e6374ab70a69a0284d4fee9d3265e3c0bd5d7d19755d39e3880cb31fe2c93847129e85f38489a8b3758878bfd79ff1e3a35e4127e91321e30b9f9c48a2e8e1a0f0fd06bd2ed46b6b56fc0f68d943c84ea07ef3451233b22b57a34b1202abcfe3c37d2c5974d85ff97f39cf63914494a888f77feeff9025e42a8f66fb78afcf73a82187b696f5a384473efc6e527968b8a04f10d7e70575ad7ce30133a4713bc18e7decdc81f2efee80727&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+2025-05-29 16:56:12,623 ERROR   wandb-upload_0:20592 [internal_api.py:upload_file():2550] upload_file request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'uzqLyU/OGPW7Lq9JcO9kVw==', 'Content-Type': 'application/json', 'Content-Length': '969'}
+2025-05-29 16:56:12,623 ERROR   wandb-upload_0:20592 [internal_api.py:upload_file():2552] upload_file response body: 
+2025-05-29 16:56:13,231 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:56:14,614 ERROR   wandb-upload_0:20592 [internal_api.py:upload_file():2548] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/645685626/1771222851/bb3a8bc94fce18f5bb2eaf4970ef6457?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250529%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250529T085611Z&X-Goog-Expires=86399&X-Goog-Signature=3911f9e5d3cc83e1bae47bd865c3c1a7262e5e779b3545c9db0d6354094819ca8afa153a86da3212e1cf70dcefa1361e4b7e41bdc967a4959986269d4d6da9ec4e621e74718ef600b2b5829a5f93953d9847006cfd1e6374ab70a69a0284d4fee9d3265e3c0bd5d7d19755d39e3880cb31fe2c93847129e85f38489a8b3758878bfd79ff1e3a35e4127e91321e30b9f9c48a2e8e1a0f0fd06bd2ed46b6b56fc0f68d943c84ea07ef3451233b22b57a34b1202abcfe3c37d2c5974d85ff97f39cf63914494a888f77feeff9025e42a8f66fb78afcf73a82187b696f5a384473efc6e527968b8a04f10d7e70575ad7ce30133a4713bc18e7decdc81f2efee80727&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/645685626/1771222851/bb3a8bc94fce18f5bb2eaf4970ef6457?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250529%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250529T085611Z&X-Goog-Expires=86399&X-Goog-Signature=3911f9e5d3cc83e1bae47bd865c3c1a7262e5e779b3545c9db0d6354094819ca8afa153a86da3212e1cf70dcefa1361e4b7e41bdc967a4959986269d4d6da9ec4e621e74718ef600b2b5829a5f93953d9847006cfd1e6374ab70a69a0284d4fee9d3265e3c0bd5d7d19755d39e3880cb31fe2c93847129e85f38489a8b3758878bfd79ff1e3a35e4127e91321e30b9f9c48a2e8e1a0f0fd06bd2ed46b6b56fc0f68d943c84ea07ef3451233b22b57a34b1202abcfe3c37d2c5974d85ff97f39cf63914494a888f77feeff9025e42a8f66fb78afcf73a82187b696f5a384473efc6e527968b8a04f10d7e70575ad7ce30133a4713bc18e7decdc81f2efee80727&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+2025-05-29 16:56:14,615 ERROR   wandb-upload_0:20592 [internal_api.py:upload_file():2550] upload_file request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'uzqLyU/OGPW7Lq9JcO9kVw==', 'Content-Type': 'application/json', 'Content-Length': '969'}
+2025-05-29 16:56:14,615 ERROR   wandb-upload_0:20592 [internal_api.py:upload_file():2552] upload_file response body: 
+2025-05-29 16:56:17,518 WARNING FileStreamThread:20592 [file_stream.py:request_with_retry():667] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/939531372-south-china-university-of-technology/tracin_active_learning_v5/c6pfml7t/file_stream (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)'))). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x00000274CF7F0FD0>>, timeout=180), args: ('https://api.wandb.ai/files/939531372-south-china-university-of-technology/tracin_active_learning_v5/c6pfml7t/file_stream',), kwargs: {'json': {'files': {'output.log': {'offset': 0, 'content': ['2025-05-29T08:56:08.558253 Weights & Biases 初始化成功。\n', '2025-05-29T08:56:08.558253 --- 0. 加载原始完整数据从: sub_ratings.csv ---\n', '2025-05-29T08:56:08.558253 完整原始数据集加载: 50 用户 (max_id+1), 50 物品 (max_id+1)。\n', "2025-05-29T08:56:08.558253 从 'test_row.csv' 提取测试数据并更新训练集...\n", '2025-05-29T08:56:08.558253   测试集针对用户 ID: 49 (来自 test_row.csv)\n', "2025-05-29T08:56:08.558253   从 'test_row.csv' 提取了 10 个测试样本。\n", '2025-05-29T08:56:08.558253   更新后的 original_train_df 用于生成稀疏训练数据。\n', '2025-05-29T08:56:08.558253 模型将基于原始数据维度初始化: 用户数=50, 物品数=50\n', '2025-05-29T08:56:08.558253 测试数据集初始化: 10 个有效评分。\n', '2025-05-29T08:56:08.558253 测试集创建成功，包含 10 个样本。\n', '2025-05-29T08:56:08.558253 ======= 主动学习迭代轮次: 1/8 (策略: TracInCP) =======\n', '2025-05-29T08:56:08.558253 --- Iter 1: 准备数据 ---\n', '2025-05-29T08:56:08.558253   生成初始稀疏训练数据...\n', '2025-05-29T08:56:08.558253 初始稀疏训练数据已生成: 328 个评分。\n', '2025-05-29T08:56:08.558253   当前训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50\n', '2025-05-29T08:56:08.558253 --- Iter 1: 初始化/重置模型 ---\n', '2025-05-29T08:56:08.558253 --- Iter 1: 训练模型 ---\n', '2025-05-29T08:56:08.558253 --- 开始训练迭代轮次 1 (共 15 epochs) ---\n', '2025-05-29T08:56:08.558253   Iter 1 Epoch [1/15], Avg Train Loss: 18.342793\n', '2025-05-29T08:56:08.558253   Iter 1 Epoch [2/15], Avg Train Loss: 18.281179\n', '2025-05-29T08:56:08.558253   Iter 1 Epoch [3/15], Avg Train Loss: 18.185698\n', '2025-05-29T08:56:08.558253   Iter 1 Epoch [4/15], Avg Train Loss: 17.997802\n', '2025-05-29T08:56:08.558253   Iter 1 Epoch [5/15], Avg Train Loss: 17.671058\n', '2025-05-29T08:56:08.558253   Iter 1 Epoch [5/15], Test Loss: 20.259453\n']}}, 'dropped': 0}}
+2025-05-29 16:56:17,636 ERROR   wandb-upload_0:20592 [internal_api.py:upload_file():2548] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/645685626/1771222851/bb3a8bc94fce18f5bb2eaf4970ef6457?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250529%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250529T085611Z&X-Goog-Expires=86399&X-Goog-Signature=3911f9e5d3cc83e1bae47bd865c3c1a7262e5e779b3545c9db0d6354094819ca8afa153a86da3212e1cf70dcefa1361e4b7e41bdc967a4959986269d4d6da9ec4e621e74718ef600b2b5829a5f93953d9847006cfd1e6374ab70a69a0284d4fee9d3265e3c0bd5d7d19755d39e3880cb31fe2c93847129e85f38489a8b3758878bfd79ff1e3a35e4127e91321e30b9f9c48a2e8e1a0f0fd06bd2ed46b6b56fc0f68d943c84ea07ef3451233b22b57a34b1202abcfe3c37d2c5974d85ff97f39cf63914494a888f77feeff9025e42a8f66fb78afcf73a82187b696f5a384473efc6e527968b8a04f10d7e70575ad7ce30133a4713bc18e7decdc81f2efee80727&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/645685626/1771222851/bb3a8bc94fce18f5bb2eaf4970ef6457?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250529%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250529T085611Z&X-Goog-Expires=86399&X-Goog-Signature=3911f9e5d3cc83e1bae47bd865c3c1a7262e5e779b3545c9db0d6354094819ca8afa153a86da3212e1cf70dcefa1361e4b7e41bdc967a4959986269d4d6da9ec4e621e74718ef600b2b5829a5f93953d9847006cfd1e6374ab70a69a0284d4fee9d3265e3c0bd5d7d19755d39e3880cb31fe2c93847129e85f38489a8b3758878bfd79ff1e3a35e4127e91321e30b9f9c48a2e8e1a0f0fd06bd2ed46b6b56fc0f68d943c84ea07ef3451233b22b57a34b1202abcfe3c37d2c5974d85ff97f39cf63914494a888f77feeff9025e42a8f66fb78afcf73a82187b696f5a384473efc6e527968b8a04f10d7e70575ad7ce30133a4713bc18e7decdc81f2efee80727&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+2025-05-29 16:56:17,636 ERROR   wandb-upload_0:20592 [internal_api.py:upload_file():2550] upload_file request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'uzqLyU/OGPW7Lq9JcO9kVw==', 'Content-Type': 'application/json', 'Content-Length': '969'}
+2025-05-29 16:56:17,638 ERROR   wandb-upload_0:20592 [internal_api.py:upload_file():2552] upload_file response body: 
+2025-05-29 16:56:17,638 INFO    wandb-upload_0:20592 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\connectionpool.py", line 711, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\connectionpool.py", line 1007, in _prepare_proxy
+    conn.connect()
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\connection.py", line 419, in connect
+    self.sock = ssl_wrap_socket(
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "D:\anaconda\envs\agent3\lib\ssl.py", line 501, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\anaconda\envs\agent3\lib\ssl.py", line 1074, in _create
+    self.do_handshake()
+  File "D:\anaconda\envs\agent3\lib\ssl.py", line 1343, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLZeroReturnError: TLS/SSL connection has been closed (EOF) (_ssl.c:1133)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\connectionpool.py", line 798, in urlopen
+    retries = retries.increment(
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/645685626/1771222851/bb3a8bc94fce18f5bb2eaf4970ef6457?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250529%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250529T085611Z&X-Goog-Expires=86399&X-Goog-Signature=3911f9e5d3cc83e1bae47bd865c3c1a7262e5e779b3545c9db0d6354094819ca8afa153a86da3212e1cf70dcefa1361e4b7e41bdc967a4959986269d4d6da9ec4e621e74718ef600b2b5829a5f93953d9847006cfd1e6374ab70a69a0284d4fee9d3265e3c0bd5d7d19755d39e3880cb31fe2c93847129e85f38489a8b3758878bfd79ff1e3a35e4127e91321e30b9f9c48a2e8e1a0f0fd06bd2ed46b6b56fc0f68d943c84ea07ef3451233b22b57a34b1202abcfe3c37d2c5974d85ff97f39cf63914494a888f77feeff9025e42a8f66fb78afcf73a82187b696f5a384473efc6e527968b8a04f10d7e70575ad7ce30133a4713bc18e7decdc81f2efee80727&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2541, in upload_file
+    response = self._upload_file_session.put(
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 649, in put
+    return self.request("PUT", url, data=data, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/645685626/1771222851/bb3a8bc94fce18f5bb2eaf4970ef6457?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250529%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250529T085611Z&X-Goog-Expires=86399&X-Goog-Signature=3911f9e5d3cc83e1bae47bd865c3c1a7262e5e779b3545c9db0d6354094819ca8afa153a86da3212e1cf70dcefa1361e4b7e41bdc967a4959986269d4d6da9ec4e621e74718ef600b2b5829a5f93953d9847006cfd1e6374ab70a69a0284d4fee9d3265e3c0bd5d7d19755d39e3880cb31fe2c93847129e85f38489a8b3758878bfd79ff1e3a35e4127e91321e30b9f9c48a2e8e1a0f0fd06bd2ed46b6b56fc0f68d943c84ea07ef3451233b22b57a34b1202abcfe3c37d2c5974d85ff97f39cf63914494a888f77feeff9025e42a8f66fb78afcf73a82187b696f5a384473efc6e527968b8a04f10d7e70575ad7ce30133a4713bc18e7decdc81f2efee80727&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2572, in upload_file
+    raise _e.with_traceback(sys.exc_info()[2])
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2541, in upload_file
+    response = self._upload_file_session.put(
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 649, in put
+    return self.request("PUT", url, data=data, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+wandb.sdk.lib.retry.TransientError: None
+2025-05-29 16:56:21,210 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: stop_status
+2025-05-29 16:56:21,210 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: internal_messages
+2025-05-29 16:56:22,651 ERROR   wandb-upload_0:20592 [internal_api.py:upload_file():2548] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/645685626/1771222851/bb3a8bc94fce18f5bb2eaf4970ef6457?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250529%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250529T085611Z&X-Goog-Expires=86399&X-Goog-Signature=3911f9e5d3cc83e1bae47bd865c3c1a7262e5e779b3545c9db0d6354094819ca8afa153a86da3212e1cf70dcefa1361e4b7e41bdc967a4959986269d4d6da9ec4e621e74718ef600b2b5829a5f93953d9847006cfd1e6374ab70a69a0284d4fee9d3265e3c0bd5d7d19755d39e3880cb31fe2c93847129e85f38489a8b3758878bfd79ff1e3a35e4127e91321e30b9f9c48a2e8e1a0f0fd06bd2ed46b6b56fc0f68d943c84ea07ef3451233b22b57a34b1202abcfe3c37d2c5974d85ff97f39cf63914494a888f77feeff9025e42a8f66fb78afcf73a82187b696f5a384473efc6e527968b8a04f10d7e70575ad7ce30133a4713bc18e7decdc81f2efee80727&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/645685626/1771222851/bb3a8bc94fce18f5bb2eaf4970ef6457?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250529%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250529T085611Z&X-Goog-Expires=86399&X-Goog-Signature=3911f9e5d3cc83e1bae47bd865c3c1a7262e5e779b3545c9db0d6354094819ca8afa153a86da3212e1cf70dcefa1361e4b7e41bdc967a4959986269d4d6da9ec4e621e74718ef600b2b5829a5f93953d9847006cfd1e6374ab70a69a0284d4fee9d3265e3c0bd5d7d19755d39e3880cb31fe2c93847129e85f38489a8b3758878bfd79ff1e3a35e4127e91321e30b9f9c48a2e8e1a0f0fd06bd2ed46b6b56fc0f68d943c84ea07ef3451233b22b57a34b1202abcfe3c37d2c5974d85ff97f39cf63914494a888f77feeff9025e42a8f66fb78afcf73a82187b696f5a384473efc6e527968b8a04f10d7e70575ad7ce30133a4713bc18e7decdc81f2efee80727&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+2025-05-29 16:56:22,651 ERROR   wandb-upload_0:20592 [internal_api.py:upload_file():2550] upload_file request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'uzqLyU/OGPW7Lq9JcO9kVw==', 'Content-Type': 'application/json', 'Content-Length': '969'}
+2025-05-29 16:56:22,651 ERROR   wandb-upload_0:20592 [internal_api.py:upload_file():2552] upload_file response body: 
+2025-05-29 16:56:26,240 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:56:31,283 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:56:33,194 ERROR   wandb-upload_0:20592 [internal_api.py:upload_file():2548] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/645685626/1771222851/bb3a8bc94fce18f5bb2eaf4970ef6457?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250529%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250529T085611Z&X-Goog-Expires=86399&X-Goog-Signature=3911f9e5d3cc83e1bae47bd865c3c1a7262e5e779b3545c9db0d6354094819ca8afa153a86da3212e1cf70dcefa1361e4b7e41bdc967a4959986269d4d6da9ec4e621e74718ef600b2b5829a5f93953d9847006cfd1e6374ab70a69a0284d4fee9d3265e3c0bd5d7d19755d39e3880cb31fe2c93847129e85f38489a8b3758878bfd79ff1e3a35e4127e91321e30b9f9c48a2e8e1a0f0fd06bd2ed46b6b56fc0f68d943c84ea07ef3451233b22b57a34b1202abcfe3c37d2c5974d85ff97f39cf63914494a888f77feeff9025e42a8f66fb78afcf73a82187b696f5a384473efc6e527968b8a04f10d7e70575ad7ce30133a4713bc18e7decdc81f2efee80727&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/645685626/1771222851/bb3a8bc94fce18f5bb2eaf4970ef6457?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250529%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250529T085611Z&X-Goog-Expires=86399&X-Goog-Signature=3911f9e5d3cc83e1bae47bd865c3c1a7262e5e779b3545c9db0d6354094819ca8afa153a86da3212e1cf70dcefa1361e4b7e41bdc967a4959986269d4d6da9ec4e621e74718ef600b2b5829a5f93953d9847006cfd1e6374ab70a69a0284d4fee9d3265e3c0bd5d7d19755d39e3880cb31fe2c93847129e85f38489a8b3758878bfd79ff1e3a35e4127e91321e30b9f9c48a2e8e1a0f0fd06bd2ed46b6b56fc0f68d943c84ea07ef3451233b22b57a34b1202abcfe3c37d2c5974d85ff97f39cf63914494a888f77feeff9025e42a8f66fb78afcf73a82187b696f5a384473efc6e527968b8a04f10d7e70575ad7ce30133a4713bc18e7decdc81f2efee80727&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+2025-05-29 16:56:33,194 ERROR   wandb-upload_0:20592 [internal_api.py:upload_file():2550] upload_file request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'uzqLyU/OGPW7Lq9JcO9kVw==', 'Content-Type': 'application/json', 'Content-Length': '969'}
+2025-05-29 16:56:33,194 ERROR   wandb-upload_0:20592 [internal_api.py:upload_file():2552] upload_file response body: 
+2025-05-29 16:56:35,249 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:56:35,257 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:56:35,631 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_1\Epoch_10_TestPredictions_4_8317691264cba2c68989.table.json
+2025-05-29 16:56:35,631 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_1
+2025-05-29 16:56:36,224 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: internal_messages
+2025-05-29 16:56:36,352 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\ja38i5av-media/table/Iter_1/Epoch_10_TestPredictions_4_8317691264cba2c68989.table.json
+2025-05-29 16:56:41,366 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:56:41,810 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:56:41,819 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:56:42,005 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:56:42,691 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_1\Epoch_15_TestPredictions_9_fe67c18582307aab9b84.table.json
+2025-05-29 16:56:42,691 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_1
+2025-05-29 16:56:43,461 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\b1jwrikn-media/table/Iter_1/Epoch_15_TestPredictions_9_fe67c18582307aab9b84.table.json
+2025-05-29 16:56:46,385 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:56:48,981 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:56:48,997 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:56:49,721 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_2\Epoch_5_TestPredictions_15_e612d59bb178113bfa6c.table.json
+2025-05-29 16:56:49,721 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table
+2025-05-29 16:56:49,725 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_2
+2025-05-29 16:56:50,489 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\8tmxe4r7-media/table/Iter_2/Epoch_5_TestPredictions_15_e612d59bb178113bfa6c.table.json
+2025-05-29 16:56:51,227 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: internal_messages
+2025-05-29 16:56:51,331 ERROR   wandb-upload_0:20592 [internal_api.py:upload_file():2548] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/645685626/1771222851/bb3a8bc94fce18f5bb2eaf4970ef6457?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250529%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250529T085611Z&X-Goog-Expires=86399&X-Goog-Signature=3911f9e5d3cc83e1bae47bd865c3c1a7262e5e779b3545c9db0d6354094819ca8afa153a86da3212e1cf70dcefa1361e4b7e41bdc967a4959986269d4d6da9ec4e621e74718ef600b2b5829a5f93953d9847006cfd1e6374ab70a69a0284d4fee9d3265e3c0bd5d7d19755d39e3880cb31fe2c93847129e85f38489a8b3758878bfd79ff1e3a35e4127e91321e30b9f9c48a2e8e1a0f0fd06bd2ed46b6b56fc0f68d943c84ea07ef3451233b22b57a34b1202abcfe3c37d2c5974d85ff97f39cf63914494a888f77feeff9025e42a8f66fb78afcf73a82187b696f5a384473efc6e527968b8a04f10d7e70575ad7ce30133a4713bc18e7decdc81f2efee80727&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/645685626/1771222851/bb3a8bc94fce18f5bb2eaf4970ef6457?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250529%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250529T085611Z&X-Goog-Expires=86399&X-Goog-Signature=3911f9e5d3cc83e1bae47bd865c3c1a7262e5e779b3545c9db0d6354094819ca8afa153a86da3212e1cf70dcefa1361e4b7e41bdc967a4959986269d4d6da9ec4e621e74718ef600b2b5829a5f93953d9847006cfd1e6374ab70a69a0284d4fee9d3265e3c0bd5d7d19755d39e3880cb31fe2c93847129e85f38489a8b3758878bfd79ff1e3a35e4127e91321e30b9f9c48a2e8e1a0f0fd06bd2ed46b6b56fc0f68d943c84ea07ef3451233b22b57a34b1202abcfe3c37d2c5974d85ff97f39cf63914494a888f77feeff9025e42a8f66fb78afcf73a82187b696f5a384473efc6e527968b8a04f10d7e70575ad7ce30133a4713bc18e7decdc81f2efee80727&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+2025-05-29 16:56:51,331 ERROR   wandb-upload_0:20592 [internal_api.py:upload_file():2550] upload_file request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'uzqLyU/OGPW7Lq9JcO9kVw==', 'Content-Type': 'application/json', 'Content-Length': '969'}
+2025-05-29 16:56:51,331 ERROR   wandb-upload_0:20592 [internal_api.py:upload_file():2552] upload_file response body: 
+2025-05-29 16:56:56,456 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:57:01,201 DEBUG   SystemMonitor:20592 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2025-05-29 16:57:01,490 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:57:06,237 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: internal_messages
+2025-05-29 16:57:10,856 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:57:10,873 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_2\Epoch_10_TestPredictions_19_790fd1f79db040a013c7.table.json
+2025-05-29 16:57:10,873 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_2
+2025-05-29 16:57:10,876 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:57:11,570 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:57:11,615 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\wiu7by1l-media/table/Iter_2/Epoch_10_TestPredictions_19_790fd1f79db040a013c7.table.json
+2025-05-29 16:57:16,627 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:57:21,227 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: internal_messages
+2025-05-29 16:57:26,711 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:57:27,057 ERROR   wandb-upload_0:20592 [internal_api.py:upload_file():2548] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/645685626/1771222851/bb3a8bc94fce18f5bb2eaf4970ef6457?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250529%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250529T085611Z&X-Goog-Expires=86399&X-Goog-Signature=3911f9e5d3cc83e1bae47bd865c3c1a7262e5e779b3545c9db0d6354094819ca8afa153a86da3212e1cf70dcefa1361e4b7e41bdc967a4959986269d4d6da9ec4e621e74718ef600b2b5829a5f93953d9847006cfd1e6374ab70a69a0284d4fee9d3265e3c0bd5d7d19755d39e3880cb31fe2c93847129e85f38489a8b3758878bfd79ff1e3a35e4127e91321e30b9f9c48a2e8e1a0f0fd06bd2ed46b6b56fc0f68d943c84ea07ef3451233b22b57a34b1202abcfe3c37d2c5974d85ff97f39cf63914494a888f77feeff9025e42a8f66fb78afcf73a82187b696f5a384473efc6e527968b8a04f10d7e70575ad7ce30133a4713bc18e7decdc81f2efee80727&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/645685626/1771222851/bb3a8bc94fce18f5bb2eaf4970ef6457?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250529%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250529T085611Z&X-Goog-Expires=86399&X-Goog-Signature=3911f9e5d3cc83e1bae47bd865c3c1a7262e5e779b3545c9db0d6354094819ca8afa153a86da3212e1cf70dcefa1361e4b7e41bdc967a4959986269d4d6da9ec4e621e74718ef600b2b5829a5f93953d9847006cfd1e6374ab70a69a0284d4fee9d3265e3c0bd5d7d19755d39e3880cb31fe2c93847129e85f38489a8b3758878bfd79ff1e3a35e4127e91321e30b9f9c48a2e8e1a0f0fd06bd2ed46b6b56fc0f68d943c84ea07ef3451233b22b57a34b1202abcfe3c37d2c5974d85ff97f39cf63914494a888f77feeff9025e42a8f66fb78afcf73a82187b696f5a384473efc6e527968b8a04f10d7e70575ad7ce30133a4713bc18e7decdc81f2efee80727&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+2025-05-29 16:57:27,057 ERROR   wandb-upload_0:20592 [internal_api.py:upload_file():2550] upload_file request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'uzqLyU/OGPW7Lq9JcO9kVw==', 'Content-Type': 'application/json', 'Content-Length': '969'}
+2025-05-29 16:57:27,057 ERROR   wandb-upload_0:20592 [internal_api.py:upload_file():2552] upload_file response body: 
+2025-05-29 16:57:31,731 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:57:31,866 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:57:31,877 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:57:32,086 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_2\Epoch_15_TestPredictions_24_b9a882202ed4b187c279.table.json
+2025-05-29 16:57:32,086 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_2
+2025-05-29 16:57:32,099 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:57:32,791 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\k59n4k83-media/table/Iter_2/Epoch_15_TestPredictions_24_b9a882202ed4b187c279.table.json
+2025-05-29 16:57:36,247 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: internal_messages
+2025-05-29 16:57:38,705 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:57:38,721 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:57:39,169 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_3\Epoch_5_TestPredictions_30_060b9560be5b192708df.table.json
+2025-05-29 16:57:39,169 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table
+2025-05-29 16:57:39,169 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_3
+2025-05-29 16:57:39,885 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\pnf8rfj8-media/table/Iter_3/Epoch_5_TestPredictions_30_060b9560be5b192708df.table.json
+2025-05-29 16:57:40,042 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:57:40,052 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:57:40,178 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_3\Epoch_10_TestPredictions_34_0b7184cd5a1f3afef4d9.table.json
+2025-05-29 16:57:40,179 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_3
+2025-05-29 16:57:40,875 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:57:40,884 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:57:40,915 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\5mj13xaa-media/table/Iter_3/Epoch_10_TestPredictions_34_0b7184cd5a1f3afef4d9.table.json
+2025-05-29 16:57:41,127 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:57:41,186 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_3\Epoch_15_TestPredictions_39_70e2f23f189f42ecbd7d.table.json
+2025-05-29 16:57:41,186 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_3
+2025-05-29 16:57:41,828 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:57:41,885 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\f4c7hb4a-media/table/Iter_3/Epoch_15_TestPredictions_39_70e2f23f189f42ecbd7d.table.json
+2025-05-29 16:57:42,599 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:57:42,614 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:57:43,203 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_4\Epoch_5_TestPredictions_45_e56302a6c657f01a1a77.table.json
+2025-05-29 16:57:43,203 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table
+2025-05-29 16:57:43,203 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_4
+2025-05-29 16:57:43,594 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:57:43,607 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:57:43,954 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\x6xio6ws-media/table/Iter_4/Epoch_5_TestPredictions_45_e56302a6c657f01a1a77.table.json
+2025-05-29 16:57:44,211 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_4\Epoch_10_TestPredictions_49_ba0c3fbc6303f160e057.table.json
+2025-05-29 16:57:44,211 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_4
+2025-05-29 16:57:44,865 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:57:44,878 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:57:44,922 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\1a3brlmj-media/table/Iter_4/Epoch_10_TestPredictions_49_ba0c3fbc6303f160e057.table.json
+2025-05-29 16:57:45,186 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:57:45,225 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_4\Epoch_15_TestPredictions_54_36e547240b9267e1d660.table.json
+2025-05-29 16:57:45,225 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_4
+2025-05-29 16:57:45,926 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\3esz4e7g-media/table/Iter_4/Epoch_15_TestPredictions_54_36e547240b9267e1d660.table.json
+2025-05-29 16:57:46,807 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:57:46,821 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:57:46,860 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:57:47,236 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_5\Epoch_5_TestPredictions_60_a15bba96a6393b4018b8.table.json
+2025-05-29 16:57:47,236 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table
+2025-05-29 16:57:47,236 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_5
+2025-05-29 16:57:47,942 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\4jorn7c4-media/table/Iter_5/Epoch_5_TestPredictions_60_a15bba96a6393b4018b8.table.json
+2025-05-29 16:57:51,248 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: internal_messages
+2025-05-29 16:57:53,421 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:57:53,434 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:57:54,282 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_5\Epoch_10_TestPredictions_64_4e38c0c5c9f7b9c79a97.table.json
+2025-05-29 16:57:54,282 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_5
+2025-05-29 16:57:54,704 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:57:54,715 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:57:54,948 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:57:54,987 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\5lkt1z1r-media/table/Iter_5/Epoch_10_TestPredictions_64_4e38c0c5c9f7b9c79a97.table.json
+2025-05-29 16:57:55,297 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_5\Epoch_15_TestPredictions_69_ef9a2d2d2b927580b4c0.table.json
+2025-05-29 16:57:55,297 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_5
+2025-05-29 16:57:56,069 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\rnf5gwod-media/table/Iter_5/Epoch_15_TestPredictions_69_ef9a2d2d2b927580b4c0.table.json
+2025-05-29 16:57:56,831 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:57:56,844 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:57:56,950 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:57:57,315 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_6\Epoch_5_TestPredictions_75_884706d65bc57025ade6.table.json
+2025-05-29 16:57:57,315 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table
+2025-05-29 16:57:57,316 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_6
+2025-05-29 16:57:57,881 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:57:57,895 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:57:58,014 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\wtu6i4ou-media/table/Iter_6/Epoch_5_TestPredictions_75_884706d65bc57025ade6.table.json
+2025-05-29 16:57:58,328 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_6\Epoch_10_TestPredictions_79_85a98b7737dbd74f510a.table.json
+2025-05-29 16:57:58,329 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_6
+2025-05-29 16:57:59,053 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:57:59,063 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:57:59,255 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\s67i747u-media/table/Iter_6/Epoch_10_TestPredictions_79_85a98b7737dbd74f510a.table.json
+2025-05-29 16:57:59,336 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_6\Epoch_15_TestPredictions_84_11420383efcb490002b0.table.json
+2025-05-29 16:57:59,336 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_6
+2025-05-29 16:57:59,380 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:58:00,051 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\unhql7bk-media/table/Iter_6/Epoch_15_TestPredictions_84_11420383efcb490002b0.table.json
+2025-05-29 16:58:01,990 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:58:03,518 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:58:03,534 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:58:04,374 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_7\Epoch_5_TestPredictions_90_8d407fc9528b281191b8.table.json
+2025-05-29 16:58:04,374 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table
+2025-05-29 16:58:04,374 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_7
+2025-05-29 16:58:04,891 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:58:04,904 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:58:05,082 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\x8i825y6-media/table/Iter_7/Epoch_5_TestPredictions_90_8d407fc9528b281191b8.table.json
+2025-05-29 16:58:05,388 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_7\Epoch_10_TestPredictions_94_2a7ef96874a2e1bbb3d0.table.json
+2025-05-29 16:58:05,388 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_7
+2025-05-29 16:58:05,689 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:58:05,700 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:58:06,049 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:58:06,133 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\i72ekee9-media/table/Iter_7/Epoch_10_TestPredictions_94_2a7ef96874a2e1bbb3d0.table.json
+2025-05-29 16:58:06,262 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: internal_messages
+2025-05-29 16:58:06,391 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_7\Epoch_15_TestPredictions_99_1f4e9d9d5826b3164bfe.table.json
+2025-05-29 16:58:06,391 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_7
+2025-05-29 16:58:07,354 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\lcvtp9zs-media/table/Iter_7/Epoch_15_TestPredictions_99_1f4e9d9d5826b3164bfe.table.json
+2025-05-29 16:58:07,615 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:58:07,628 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:58:08,411 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_8\Epoch_5_TestPredictions_105_a609e6481bbff7ea98ed.table.json
+2025-05-29 16:58:08,411 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table
+2025-05-29 16:58:08,411 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_8
+2025-05-29 16:58:09,126 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\r3c49g9t-media/table/Iter_8/Epoch_5_TestPredictions_105_a609e6481bbff7ea98ed.table.json
+2025-05-29 16:58:09,369 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:58:09,381 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:58:09,424 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_8\Epoch_10_TestPredictions_109_45f11fd1094bf95141ee.table.json
+2025-05-29 16:58:09,424 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_8
+2025-05-29 16:58:10,182 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\8qiohqpj-media/table/Iter_8/Epoch_10_TestPredictions_109_45f11fd1094bf95141ee.table.json
+2025-05-29 16:58:10,795 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:58:10,810 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:58:11,100 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:58:11,439 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_8\Epoch_15_TestPredictions_114_481b1d8df6907da58469.table.json
+2025-05-29 16:58:11,439 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\media\table\Iter_8
+2025-05-29 16:58:12,160 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\gvrbi2l2-media/table/Iter_8/Epoch_15_TestPredictions_114_481b1d8df6907da58469.table.json
+2025-05-29 16:58:12,416 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: poll_exit
+2025-05-29 16:58:17,468 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:58:22,500 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:58:27,548 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:58:32,592 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:58:37,629 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:58:42,663 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:58:43,357 INFO    wandb-upload_0:20592 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpsxeazo40
+2025-05-29 16:58:44,669 INFO    SenderThread:20592 [sender.py:send_request_log_artifact():1441] logged artifact run-c6pfml7t-Iter_1Epoch_5_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTIyMjg1MQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY4NTYyNg==', 'latestArtifact': None}}
+2025-05-29 16:58:44,672 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:58:45,003 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:58:45,003 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file media\table\Iter_1/Epoch_5_TestPredictions_0_2b0d573c8087f6bc3290.table.json with policy now
+2025-05-29 16:58:45,003 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: stop_status
+2025-05-29 16:58:45,311 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:58:45,785 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\output.log
+2025-05-29 16:58:45,785 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\config.yaml
+2025-05-29 16:58:47,725 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:58:47,804 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\output.log
+2025-05-29 16:58:51,262 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\vs6g9m36-media/table/Iter_1/Epoch_5_TestPredictions_0_2b0d573c8087f6bc3290.table.json
+2025-05-29 16:58:52,770 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:58:53,172 INFO    wandb-upload_0:20592 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmppo2ozbji
+2025-05-29 16:58:54,340 INFO    SenderThread:20592 [sender.py:send_request_log_artifact():1441] logged artifact run-c6pfml7t-Iter_1Epoch_10_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTIyNjc3MA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY4NjE5MQ==', 'latestArtifact': None}}
+2025-05-29 16:58:54,340 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:58:54,340 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file media\table\Iter_1/Epoch_10_TestPredictions_4_8317691264cba2c68989.table.json with policy now
+2025-05-29 16:58:54,340 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:58:54,341 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:58:54,342 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:58:54,342 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:58:54,343 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:58:54,864 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\wandb-summary.json
+2025-05-29 16:58:55,329 INFO    wandb-upload_1:20592 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\k3h9oq0h-media/table/Iter_1/Epoch_10_TestPredictions_4_8317691264cba2c68989.table.json
+2025-05-29 16:58:55,876 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\output.log
+2025-05-29 16:58:57,357 INFO    wandb-upload_0:20592 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmph9f5kcdr
+2025-05-29 16:58:57,642 ERROR   Thread-15 :20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:58:57,642 ERROR   Thread-15 :20592 [internal_api.py:execute():362] {"errors":[{"message":"failed to find run tracin_active_learning_v5/c6pfml7t","path":["createArtifactManifest"]}],"data":{"createArtifactManifest":null}}
+2025-05-29 16:58:57,645 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:58:57,645 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file media\table\Iter_1/Epoch_15_TestPredictions_9_fe67c18582307aab9b84.table.json with policy now
+2025-05-29 16:58:57,645 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:58:57,645 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:58:57,645 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:58:57,645 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:58:57,645 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:58:57,645 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:58:57,645 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:58:57,897 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\wandb-summary.json
+2025-05-29 16:58:57,939 ERROR   wandb-upload_1:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:58:57,939 ERROR   wandb-upload_1:20592 [internal_api.py:execute():362] {"errors":[{"message":"run tracin_active_learning_v5/c6pfml7t not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2025-05-29 16:58:57,940 ERROR   Thread-15 :20592 [step_upload.py:_handle_event():200] Failed to upload file: C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\d1h0vg82-media/table/Iter_1/Epoch_15_TestPredictions_9_fe67c18582307aab9b84.table.json
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 358, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\gql_request.py", line 56, in execute
+    request.raise_for_status()
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 73, in wrapper
+    raise err
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2167, in upload_urls
+    query_result = self.gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 330, in gql
+    ret = self._retry_gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\util.py", line 906, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2025-05-29 16:58:57,942 ERROR   SenderThread:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:58:58,066 ERROR   SenderThread:20592 [internal_api.py:execute():362] {"errors":[{"message":"failed to find run tracin_active_learning_v5/c6pfml7t","path":["createArtifact"]}],"data":{"createArtifact":null}}
+2025-05-29 16:58:58,067 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:58:58,067 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file media\table\Iter_2/Epoch_5_TestPredictions_15_e612d59bb178113bfa6c.table.json with policy now
+2025-05-29 16:58:58,067 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:58:58,068 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:58:58,068 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:58:58,068 DEBUG   SenderThread:20592 [sender.py:send():379] send: stats
+2025-05-29 16:58:58,068 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:58:58,332 INFO    cpu       :20592 [interfaces.py:monitor():140] Process cpu has exited.
+2025-05-29 16:58:58,332 DEBUG   SystemMonitor:20592 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2025-05-29 16:58:58,332 DEBUG   SystemMonitor:20592 [system_monitor.py:_start():170] Publishing last batch of metrics
+2025-05-29 16:58:58,336 ERROR   SenderThread:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:58:58,336 ERROR   SenderThread:20592 [internal_api.py:execute():362] {"errors":[{"message":"failed to find run tracin_active_learning_v5/c6pfml7t","path":["createArtifact"]}],"data":{"createArtifact":null}}
+2025-05-29 16:58:58,336 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:58:58,336 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file media\table\Iter_2/Epoch_10_TestPredictions_19_790fd1f79db040a013c7.table.json with policy now
+2025-05-29 16:58:58,336 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:58:58,336 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:58:58,336 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:58:58,336 DEBUG   SenderThread:20592 [sender.py:send():379] send: stats
+2025-05-29 16:58:58,336 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:58:58,349 ERROR   wandb-upload_0:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:58:58,349 ERROR   wandb-upload_0:20592 [internal_api.py:execute():362] {"errors":[{"message":"run tracin_active_learning_v5/c6pfml7t not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2025-05-29 16:58:58,349 ERROR   Thread-15 :20592 [step_upload.py:_handle_event():200] Failed to upload file: C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\nwo6dm25-media/table/Iter_2/Epoch_5_TestPredictions_15_e612d59bb178113bfa6c.table.json
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 358, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\gql_request.py", line 56, in execute
+    request.raise_for_status()
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 73, in wrapper
+    raise err
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2167, in upload_urls
+    query_result = self.gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 330, in gql
+    ret = self._retry_gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\util.py", line 906, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2025-05-29 16:58:58,606 ERROR   SenderThread:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:58:58,606 ERROR   SenderThread:20592 [internal_api.py:execute():362] {"errors":[{"message":"failed to find run tracin_active_learning_v5/c6pfml7t","path":["createArtifact"]}],"data":{"createArtifact":null}}
+2025-05-29 16:58:58,606 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:58:58,606 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file media\table\Iter_2/Epoch_15_TestPredictions_24_b9a882202ed4b187c279.table.json with policy now
+2025-05-29 16:58:58,606 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:58:58,606 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:58:58,606 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:58:58,606 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:58:58,606 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:58:58,606 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:58:58,606 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:58:58,866 ERROR   SenderThread:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:58:58,866 ERROR   SenderThread:20592 [internal_api.py:execute():362] {"errors":[{"message":"failed to find run tracin_active_learning_v5/c6pfml7t","path":["createArtifact"]}],"data":{"createArtifact":null}}
+2025-05-29 16:58:58,870 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:58:58,870 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file media\table\Iter_3/Epoch_5_TestPredictions_30_060b9560be5b192708df.table.json with policy now
+2025-05-29 16:58:58,870 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:58:58,870 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:58:58,870 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:58:58,870 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:58:58,888 ERROR   wandb-upload_0:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:58:58,888 ERROR   wandb-upload_0:20592 [internal_api.py:execute():362] {"errors":[{"message":"run tracin_active_learning_v5/c6pfml7t not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2025-05-29 16:58:58,889 ERROR   Thread-15 :20592 [step_upload.py:_handle_event():200] Failed to upload file: C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\wumlpg1j-media/table/Iter_2/Epoch_15_TestPredictions_24_b9a882202ed4b187c279.table.json
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 358, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\gql_request.py", line 56, in execute
+    request.raise_for_status()
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 73, in wrapper
+    raise err
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2167, in upload_urls
+    query_result = self.gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 330, in gql
+    ret = self._retry_gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\util.py", line 906, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2025-05-29 16:58:58,920 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\wandb-summary.json
+2025-05-29 16:58:59,071 ERROR   wandb-upload_1:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:58:59,071 ERROR   wandb-upload_1:20592 [internal_api.py:execute():362] {"errors":[{"message":"run tracin_active_learning_v5/c6pfml7t not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2025-05-29 16:58:59,071 ERROR   Thread-15 :20592 [step_upload.py:_handle_event():200] Failed to upload file: C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\vpg1angu-media/table/Iter_2/Epoch_10_TestPredictions_19_790fd1f79db040a013c7.table.json
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 358, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\gql_request.py", line 56, in execute
+    request.raise_for_status()
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 73, in wrapper
+    raise err
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2167, in upload_urls
+    query_result = self.gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 330, in gql
+    ret = self._retry_gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\util.py", line 906, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2025-05-29 16:58:59,132 ERROR   SenderThread:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:58:59,132 ERROR   SenderThread:20592 [internal_api.py:execute():362] {"errors":[{"message":"failed to find run tracin_active_learning_v5/c6pfml7t","path":["createArtifact"]}],"data":{"createArtifact":null}}
+2025-05-29 16:58:59,132 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:58:59,132 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file media\table\Iter_3/Epoch_10_TestPredictions_34_0b7184cd5a1f3afef4d9.table.json with policy now
+2025-05-29 16:58:59,136 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:58:59,136 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:58:59,137 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:58:59,137 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:58:59,400 ERROR   wandb-upload_0:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:58:59,400 ERROR   wandb-upload_0:20592 [internal_api.py:execute():362] {"errors":[{"message":"run tracin_active_learning_v5/c6pfml7t not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2025-05-29 16:58:59,400 ERROR   Thread-15 :20592 [step_upload.py:_handle_event():200] Failed to upload file: C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\1jowosm6-media/table/Iter_3/Epoch_10_TestPredictions_34_0b7184cd5a1f3afef4d9.table.json
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 358, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\gql_request.py", line 56, in execute
+    request.raise_for_status()
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 73, in wrapper
+    raise err
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2167, in upload_urls
+    query_result = self.gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 330, in gql
+    ret = self._retry_gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\util.py", line 906, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2025-05-29 16:58:59,412 ERROR   SenderThread:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:58:59,412 ERROR   SenderThread:20592 [internal_api.py:execute():362] {"errors":[{"message":"failed to find run tracin_active_learning_v5/c6pfml7t","path":["createArtifact"]}],"data":{"createArtifact":null}}
+2025-05-29 16:58:59,413 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:58:59,413 DEBUG   HandlerThread:20592 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:58:59,413 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file media\table\Iter_3/Epoch_15_TestPredictions_39_70e2f23f189f42ecbd7d.table.json with policy now
+2025-05-29 16:58:59,413 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:58:59,413 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:58:59,414 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:58:59,414 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:58:59,414 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:58:59,414 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:58:59,415 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:58:59,565 ERROR   wandb-upload_2:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:58:59,565 ERROR   wandb-upload_2:20592 [internal_api.py:execute():362] {"errors":[{"message":"run tracin_active_learning_v5/c6pfml7t not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2025-05-29 16:58:59,565 ERROR   Thread-15 :20592 [step_upload.py:_handle_event():200] Failed to upload file: C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\1z0ocxnf-media/table/Iter_3/Epoch_5_TestPredictions_30_060b9560be5b192708df.table.json
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 358, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\gql_request.py", line 56, in execute
+    request.raise_for_status()
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 73, in wrapper
+    raise err
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2167, in upload_urls
+    query_result = self.gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 330, in gql
+    ret = self._retry_gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\util.py", line 906, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2025-05-29 16:58:59,669 ERROR   SenderThread:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:58:59,669 ERROR   SenderThread:20592 [internal_api.py:execute():362] {"errors":[{"message":"failed to find run tracin_active_learning_v5/c6pfml7t","path":["createArtifact"]}],"data":{"createArtifact":null}}
+2025-05-29 16:58:59,669 ERROR   wandb-upload_1:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:58:59,669 ERROR   wandb-upload_1:20592 [internal_api.py:execute():362] {"errors":[{"message":"run tracin_active_learning_v5/c6pfml7t not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2025-05-29 16:58:59,673 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:58:59,673 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file media\table\Iter_4/Epoch_5_TestPredictions_45_e56302a6c657f01a1a77.table.json with policy now
+2025-05-29 16:58:59,673 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:58:59,673 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:58:59,674 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:58:59,674 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:58:59,676 ERROR   Thread-15 :20592 [step_upload.py:_handle_event():200] Failed to upload file: C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\a14g5noj-media/table/Iter_3/Epoch_15_TestPredictions_39_70e2f23f189f42ecbd7d.table.json
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 358, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\gql_request.py", line 56, in execute
+    request.raise_for_status()
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 73, in wrapper
+    raise err
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2167, in upload_urls
+    query_result = self.gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 330, in gql
+    ret = self._retry_gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\util.py", line 906, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2025-05-29 16:58:59,932 ERROR   SenderThread:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:58:59,932 ERROR   SenderThread:20592 [internal_api.py:execute():362] {"errors":[{"message":"failed to find run tracin_active_learning_v5/c6pfml7t","path":["createArtifact"]}],"data":{"createArtifact":null}}
+2025-05-29 16:58:59,933 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:58:59,933 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file media\table\Iter_4/Epoch_10_TestPredictions_49_ba0c3fbc6303f160e057.table.json with policy now
+2025-05-29 16:58:59,933 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:58:59,934 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:58:59,934 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:58:59,934 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:58:59,938 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\output.log
+2025-05-29 16:58:59,938 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\wandb-summary.json
+2025-05-29 16:58:59,981 ERROR   wandb-upload_0:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:58:59,981 ERROR   wandb-upload_0:20592 [internal_api.py:execute():362] {"errors":[{"message":"run tracin_active_learning_v5/c6pfml7t not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2025-05-29 16:58:59,981 ERROR   Thread-15 :20592 [step_upload.py:_handle_event():200] Failed to upload file: C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\d8dzhpvt-media/table/Iter_4/Epoch_5_TestPredictions_45_e56302a6c657f01a1a77.table.json
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 358, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\gql_request.py", line 56, in execute
+    request.raise_for_status()
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 73, in wrapper
+    raise err
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2167, in upload_urls
+    query_result = self.gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 330, in gql
+    ret = self._retry_gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\util.py", line 906, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2025-05-29 16:59:00,215 ERROR   SenderThread:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:59:00,215 ERROR   SenderThread:20592 [internal_api.py:execute():362] {"errors":[{"message":"failed to find run tracin_active_learning_v5/c6pfml7t","path":["createArtifact"]}],"data":{"createArtifact":null}}
+2025-05-29 16:59:00,215 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:59:00,215 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file media\table\Iter_4/Epoch_15_TestPredictions_54_36e547240b9267e1d660.table.json with policy now
+2025-05-29 16:59:00,215 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:59:00,215 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:59:00,219 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:59:00,219 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:59:00,219 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:59:00,219 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:59:00,219 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:59:00,228 ERROR   wandb-upload_1:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:59:00,228 ERROR   wandb-upload_1:20592 [internal_api.py:execute():362] {"errors":[{"message":"run tracin_active_learning_v5/c6pfml7t not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2025-05-29 16:59:00,228 ERROR   Thread-15 :20592 [step_upload.py:_handle_event():200] Failed to upload file: C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\6qf2vxq3-media/table/Iter_4/Epoch_10_TestPredictions_49_ba0c3fbc6303f160e057.table.json
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 358, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\gql_request.py", line 56, in execute
+    request.raise_for_status()
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 73, in wrapper
+    raise err
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2167, in upload_urls
+    query_result = self.gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 330, in gql
+    ret = self._retry_gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\util.py", line 906, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2025-05-29 16:59:00,474 ERROR   SenderThread:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:59:00,474 ERROR   SenderThread:20592 [internal_api.py:execute():362] {"errors":[{"message":"failed to find run tracin_active_learning_v5/c6pfml7t","path":["createArtifact"]}],"data":{"createArtifact":null}}
+2025-05-29 16:59:00,478 ERROR   wandb-upload_2:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:59:00,478 ERROR   wandb-upload_2:20592 [internal_api.py:execute():362] {"errors":[{"message":"run tracin_active_learning_v5/c6pfml7t not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2025-05-29 16:59:00,478 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:59:00,478 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file media\table\Iter_5/Epoch_5_TestPredictions_60_a15bba96a6393b4018b8.table.json with policy now
+2025-05-29 16:59:00,478 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:59:00,479 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:59:00,479 ERROR   Thread-15 :20592 [step_upload.py:_handle_event():200] Failed to upload file: C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\yvnkigx5-media/table/Iter_4/Epoch_15_TestPredictions_54_36e547240b9267e1d660.table.json
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 358, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\gql_request.py", line 56, in execute
+    request.raise_for_status()
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 73, in wrapper
+    raise err
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2167, in upload_urls
+    query_result = self.gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 330, in gql
+    ret = self._retry_gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\util.py", line 906, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2025-05-29 16:59:00,480 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:59:00,480 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:59:00,731 ERROR   wandb-upload_0:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:59:00,731 ERROR   wandb-upload_0:20592 [internal_api.py:execute():362] {"errors":[{"message":"run tracin_active_learning_v5/c6pfml7t not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2025-05-29 16:59:00,731 INFO    MainThread:20592 [internal.py:handle_exit():76] Internal process exited
+2025-05-29 16:59:00,731 ERROR   Thread-15 :20592 [step_upload.py:_handle_event():200] Failed to upload file: C:\Users\HANLIN~1\AppData\Local\Temp\tmp9h0699e4wandb\jvb31gee-media/table/Iter_5/Epoch_5_TestPredictions_60_a15bba96a6393b4018b8.table.json
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 358, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\gql_request.py", line 56, in execute
+    request.raise_for_status()
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\filesync\upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 73, in wrapper
+    raise err
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2167, in upload_urls
+    query_result = self.gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 330, in gql
+    ret = self._retry_gql(
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\util.py", line 906, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2025-05-29 16:59:00,750 ERROR   SenderThread:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:59:00,750 ERROR   SenderThread:20592 [internal_api.py:execute():362] {"errors":[{"message":"failed to find run tracin_active_learning_v5/c6pfml7t","path":["createArtifact"]}],"data":{"createArtifact":null}}
+2025-05-29 16:59:00,751 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:59:00,751 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file media\table\Iter_5/Epoch_10_TestPredictions_64_4e38c0c5c9f7b9c79a97.table.json with policy now
+2025-05-29 16:59:00,752 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:59:00,753 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:59:00,753 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:59:00,753 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:59:00,945 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\wandb-summary.json
+2025-05-29 16:59:01,020 ERROR   SenderThread:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:59:01,020 ERROR   SenderThread:20592 [internal_api.py:execute():362] {"errors":[{"message":"failed to find run tracin_active_learning_v5/c6pfml7t","path":["createArtifact"]}],"data":{"createArtifact":null}}
+2025-05-29 16:59:01,022 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:59:01,022 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file media\table\Iter_5/Epoch_15_TestPredictions_69_ef9a2d2d2b927580b4c0.table.json with policy now
+2025-05-29 16:59:01,022 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:59:01,022 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:59:01,023 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:59:01,023 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:59:01,023 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:59:01,024 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:59:01,024 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:59:01,277 ERROR   SenderThread:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:59:01,277 ERROR   SenderThread:20592 [internal_api.py:execute():362] {"errors":[{"message":"failed to find run tracin_active_learning_v5/c6pfml7t","path":["createArtifact"]}],"data":{"createArtifact":null}}
+2025-05-29 16:59:01,277 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:59:01,277 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file media\table\Iter_6/Epoch_5_TestPredictions_75_884706d65bc57025ade6.table.json with policy now
+2025-05-29 16:59:01,277 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:59:01,277 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:59:01,282 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:59:01,282 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:59:01,558 ERROR   SenderThread:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:59:01,558 ERROR   SenderThread:20592 [internal_api.py:execute():362] {"errors":[{"message":"failed to find run tracin_active_learning_v5/c6pfml7t","path":["createArtifact"]}],"data":{"createArtifact":null}}
+2025-05-29 16:59:01,558 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:59:01,558 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file media\table\Iter_6/Epoch_10_TestPredictions_79_85a98b7737dbd74f510a.table.json with policy now
+2025-05-29 16:59:01,559 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:59:01,559 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:59:01,559 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:59:01,559 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:59:01,836 ERROR   SenderThread:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:59:01,836 ERROR   SenderThread:20592 [internal_api.py:execute():362] {"errors":[{"message":"failed to find run tracin_active_learning_v5/c6pfml7t","path":["createArtifact"]}],"data":{"createArtifact":null}}
+2025-05-29 16:59:01,836 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:59:01,836 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file media\table\Iter_6/Epoch_15_TestPredictions_84_11420383efcb490002b0.table.json with policy now
+2025-05-29 16:59:01,836 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:59:01,838 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:59:01,838 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:59:01,839 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:59:01,839 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:59:01,839 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:59:01,840 DEBUG   SenderThread:20592 [sender.py:send():379] send: stats
+2025-05-29 16:59:01,840 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:59:01,953 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\output.log
+2025-05-29 16:59:01,953 INFO    Thread-16 :20592 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_165558-c6pfml7t\files\wandb-summary.json
+2025-05-29 16:59:02,097 ERROR   SenderThread:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:59:02,097 ERROR   SenderThread:20592 [internal_api.py:execute():362] {"errors":[{"message":"failed to find run tracin_active_learning_v5/c6pfml7t","path":["createArtifact"]}],"data":{"createArtifact":null}}
+2025-05-29 16:59:02,098 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:59:02,098 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file media\table\Iter_7/Epoch_5_TestPredictions_90_8d407fc9528b281191b8.table.json with policy now
+2025-05-29 16:59:02,098 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:59:02,098 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:59:02,099 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:59:02,099 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:59:02,371 ERROR   SenderThread:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:59:02,371 ERROR   SenderThread:20592 [internal_api.py:execute():362] {"errors":[{"message":"failed to find run tracin_active_learning_v5/c6pfml7t","path":["createArtifact"]}],"data":{"createArtifact":null}}
+2025-05-29 16:59:02,373 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:59:02,373 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file media\table\Iter_7/Epoch_10_TestPredictions_94_2a7ef96874a2e1bbb3d0.table.json with policy now
+2025-05-29 16:59:02,374 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:59:02,374 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:59:02,375 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:59:02,375 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:59:02,657 ERROR   SenderThread:20592 [internal_api.py:execute():361] 404 response executing GraphQL.
+2025-05-29 16:59:02,657 ERROR   SenderThread:20592 [internal_api.py:execute():362] {"errors":[{"message":"failed to find run tracin_active_learning_v5/c6pfml7t","path":["createArtifact"]}],"data":{"createArtifact":null}}
+2025-05-29 16:59:02,657 DEBUG   SenderThread:20592 [sender.py:send():379] send: files
+2025-05-29 16:59:02,657 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file media\table\Iter_7/Epoch_15_TestPredictions_99_1f4e9d9d5826b3164bfe.table.json with policy now
+2025-05-29 16:59:02,657 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:59:02,657 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:59:02,657 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:59:02,657 DEBUG   SenderThread:20592 [sender.py:send():379] send: history
+2025-05-29 16:59:02,657 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:59:02,660 INFO    SenderThread:20592 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:59:02,660 DEBUG   SenderThread:20592 [sender.py:send_request():406] send_request: log_artifact

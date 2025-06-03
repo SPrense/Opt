@@ -1,0 +1,361 @@
+2025-05-23 23:17:13,140 INFO    StreamThr :4084 [internal.py:wandb_internal():86] W&B internal server running at pid: 4084, started at: 2025-05-23 23:17:13.104097
+2025-05-23 23:17:13,141 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: status
+2025-05-23 23:17:13,141 INFO    WriterThread:4084 [datastore.py:open_for_write():85] open: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\run-ugvb2zxo.wandb
+2025-05-23 23:17:13,143 DEBUG   SenderThread:4084 [sender.py:send():379] send: header
+2025-05-23 23:17:13,143 DEBUG   SenderThread:4084 [sender.py:send():379] send: run
+2025-05-23 23:17:15,148 INFO    SenderThread:4084 [dir_watcher.py:__init__():211] watching files in: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files
+2025-05-23 23:17:15,151 INFO    SenderThread:4084 [sender.py:_start_run_threads():1121] run started: ugvb2zxo with start time 1748013433.108101
+2025-05-23 23:17:15,154 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: check_version
+2025-05-23 23:17:15,154 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: check_version
+2025-05-23 23:17:16,131 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: run_start
+2025-05-23 23:17:16,154 DEBUG   HandlerThread:4084 [system_info.py:__init__():32] System info init
+2025-05-23 23:17:16,154 DEBUG   HandlerThread:4084 [system_info.py:__init__():47] System info init done
+2025-05-23 23:17:16,154 INFO    HandlerThread:4084 [system_monitor.py:start():181] Starting system monitor
+2025-05-23 23:17:16,154 INFO    SystemMonitor:4084 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2025-05-23 23:17:16,154 INFO    HandlerThread:4084 [system_monitor.py:probe():201] Collecting system info
+2025-05-23 23:17:16,158 INFO    SystemMonitor:4084 [interfaces.py:start():190] Started cpu monitoring
+2025-05-23 23:17:16,159 INFO    SystemMonitor:4084 [interfaces.py:start():190] Started disk monitoring
+2025-05-23 23:17:16,159 INFO    SystemMonitor:4084 [interfaces.py:start():190] Started gpu monitoring
+2025-05-23 23:17:16,159 INFO    SystemMonitor:4084 [interfaces.py:start():190] Started memory monitoring
+2025-05-23 23:17:16,165 INFO    SystemMonitor:4084 [interfaces.py:start():190] Started network monitoring
+2025-05-23 23:17:16,170 DEBUG   HandlerThread:4084 [system_info.py:probe():196] Probing system
+2025-05-23 23:17:16,170 DEBUG   HandlerThread:4084 [gitlib.py:_init_repo():53] git repository is invalid
+2025-05-23 23:17:16,170 DEBUG   HandlerThread:4084 [system_info.py:probe():244] Probing system done
+2025-05-23 23:17:16,170 DEBUG   HandlerThread:4084 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.22631-SP0', 'python': '3.9.19', 'heartbeatAt': '2025-05-23T15:17:16.170083', 'startedAt': '2025-05-23T15:17:13.101089', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'D:\\github\\Opt\\main\\main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'host': 'DESKTOP-RVG428G', 'username': 'HanlinWang', 'executable': 'D:\\anaconda\\envs\\agent3\\python.exe', 'cpu_count': 24, 'cpu_count_logical': 32, 'cpu_freq': {'current': 1466.0, 'min': 0.0, 'max': 2200.0}, 'cpu_freq_per_core': [{'current': 1466.0, 'min': 0.0, 'max': 2200.0}], 'disk': {'/': {'total': 620.9248008728027, 'used': 527.4738845825195}}, 'gpu': 'NVIDIA GeForce RTX 4070 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4070 Laptop GPU', 'memory_total': 8585740288}], 'memory': {'total': 31.74596405029297}}
+2025-05-23 23:17:16,170 INFO    HandlerThread:4084 [system_monitor.py:probe():211] Finished collecting system info
+2025-05-23 23:17:16,170 INFO    HandlerThread:4084 [system_monitor.py:probe():214] Publishing system info
+2025-05-23 23:17:16,170 DEBUG   HandlerThread:4084 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2025-05-23 23:17:16,170 DEBUG   HandlerThread:4084 [system_info.py:_save_pip():68] Saving pip packages done
+2025-05-23 23:17:16,170 DEBUG   HandlerThread:4084 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2025-05-23 23:17:17,158 INFO    Thread-16 :4084 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\requirements.txt
+2025-05-23 23:17:17,158 INFO    Thread-16 :4084 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\conda-environment.yaml
+2025-05-23 23:17:28,775 DEBUG   HandlerThread:4084 [system_info.py:_save_conda():87] Saving conda packages done
+2025-05-23 23:17:28,776 INFO    HandlerThread:4084 [system_monitor.py:probe():216] Finished publishing system info
+2025-05-23 23:17:28,778 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: status_report
+2025-05-23 23:17:28,778 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-23 23:17:28,778 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: status_report
+2025-05-23 23:17:28,778 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-23 23:17:28,778 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: status_report
+2025-05-23 23:17:28,778 DEBUG   SenderThread:4084 [sender.py:send():379] send: files
+2025-05-23 23:17:28,778 INFO    SenderThread:4084 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2025-05-23 23:17:28,782 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: stop_status
+2025-05-23 23:17:28,782 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: stop_status
+2025-05-23 23:17:28,783 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: internal_messages
+2025-05-23 23:17:29,208 DEBUG   SenderThread:4084 [sender.py:send():379] send: telemetry
+2025-05-23 23:17:29,263 INFO    Thread-16 :4084 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\conda-environment.yaml
+2025-05-23 23:17:29,263 INFO    Thread-16 :4084 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\wandb-metadata.json
+2025-05-23 23:17:29,263 INFO    Thread-16 :4084 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\output.log
+2025-05-23 23:17:30,205 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-23 23:17:30,415 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-23 23:17:30,415 DEBUG   SenderThread:4084 [sender.py:send():379] send: history
+2025-05-23 23:17:30,416 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: summary_record
+2025-05-23 23:17:30,417 INFO    SenderThread:4084 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-23 23:17:30,536 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-23 23:17:30,536 DEBUG   SenderThread:4084 [sender.py:send():379] send: history
+2025-05-23 23:17:30,536 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: summary_record
+2025-05-23 23:17:30,536 INFO    SenderThread:4084 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-23 23:17:31,147 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-23 23:17:31,148 DEBUG   SenderThread:4084 [sender.py:send():379] send: history
+2025-05-23 23:17:31,148 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: summary_record
+2025-05-23 23:17:31,148 INFO    SenderThread:4084 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-23 23:17:31,275 INFO    Thread-16 :4084 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\output.log
+2025-05-23 23:17:31,275 INFO    Thread-16 :4084 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\wandb-summary.json
+2025-05-23 23:17:31,355 WARNING FileStreamThread:4084 [file_stream.py:request_with_retry():667] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/939531372-south-china-university-of-technology/tracin_active_learning_v2/ugvb2zxo/file_stream (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)'))). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x00000187D9E1AC10>>, timeout=180), args: ('https://api.wandb.ai/files/939531372-south-china-university-of-technology/tracin_active_learning_v2/ugvb2zxo/file_stream',), kwargs: {'json': {'files': {'wandb-history.jsonl': {'offset': 0, 'content': ['{"Iter_1/AvgTrainLoss_epoch": 17.811438064807092, "Iter_1/TestLoss_epoch": 0.0, "global_epoch": 4, "iteration": 1, "epoch_in_iteration": 5, "_timestamp": 1748013450.204182, "_runtime": 17.096081018447876, "_step": 4}']}}, 'dropped': 0}}
+2025-05-23 23:17:31,366 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-23 23:17:31,366 DEBUG   SenderThread:4084 [sender.py:send():379] send: history
+2025-05-23 23:17:31,366 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: summary_record
+2025-05-23 23:17:31,366 INFO    SenderThread:4084 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-23 23:17:31,489 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-23 23:17:31,489 DEBUG   SenderThread:4084 [sender.py:send():379] send: history
+2025-05-23 23:17:31,489 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: summary_record
+2025-05-23 23:17:31,489 INFO    SenderThread:4084 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-23 23:17:32,073 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-23 23:17:32,074 DEBUG   SenderThread:4084 [sender.py:send():379] send: history
+2025-05-23 23:17:32,074 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: summary_record
+2025-05-23 23:17:32,074 INFO    SenderThread:4084 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-23 23:17:32,279 INFO    Thread-16 :4084 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\wandb-summary.json
+2025-05-23 23:17:32,326 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-23 23:17:32,326 DEBUG   SenderThread:4084 [sender.py:send():379] send: history
+2025-05-23 23:17:32,326 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: summary_record
+2025-05-23 23:17:32,327 INFO    SenderThread:4084 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-23 23:17:32,452 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-23 23:17:32,453 DEBUG   SenderThread:4084 [sender.py:send():379] send: history
+2025-05-23 23:17:32,453 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: summary_record
+2025-05-23 23:17:32,453 INFO    SenderThread:4084 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-23 23:17:32,756 DEBUG   SenderThread:4084 [sender.py:send():379] send: telemetry
+2025-05-23 23:17:32,757 DEBUG   SenderThread:4084 [sender.py:send():379] send: exit
+2025-05-23 23:17:32,757 INFO    SenderThread:4084 [sender.py:send_exit():584] handling exit code: 0
+2025-05-23 23:17:32,757 INFO    SenderThread:4084 [sender.py:send_exit():586] handling runtime: 16
+2025-05-23 23:17:32,758 INFO    SenderThread:4084 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-23 23:17:32,758 INFO    SenderThread:4084 [sender.py:send_exit():592] send defer
+2025-05-23 23:17:32,758 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: defer
+2025-05-23 23:17:32,758 INFO    HandlerThread:4084 [handler.py:handle_request_defer():170] handle defer: 0
+2025-05-23 23:17:32,759 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: defer
+2025-05-23 23:17:32,759 INFO    SenderThread:4084 [sender.py:send_request_defer():608] handle sender defer: 0
+2025-05-23 23:17:32,759 INFO    SenderThread:4084 [sender.py:transition_state():612] send defer: 1
+2025-05-23 23:17:32,759 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: defer
+2025-05-23 23:17:32,759 INFO    HandlerThread:4084 [handler.py:handle_request_defer():170] handle defer: 1
+2025-05-23 23:17:32,759 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: defer
+2025-05-23 23:17:32,759 INFO    SenderThread:4084 [sender.py:send_request_defer():608] handle sender defer: 1
+2025-05-23 23:17:32,759 INFO    SenderThread:4084 [sender.py:transition_state():612] send defer: 2
+2025-05-23 23:17:32,759 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: defer
+2025-05-23 23:17:32,759 INFO    HandlerThread:4084 [handler.py:handle_request_defer():170] handle defer: 2
+2025-05-23 23:17:32,759 INFO    HandlerThread:4084 [system_monitor.py:finish():190] Stopping system monitor
+2025-05-23 23:17:32,765 INFO    HandlerThread:4084 [interfaces.py:finish():202] Joined cpu monitor
+2025-05-23 23:17:32,765 INFO    HandlerThread:4084 [interfaces.py:finish():202] Joined disk monitor
+2025-05-23 23:17:32,765 DEBUG   SystemMonitor:4084 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2025-05-23 23:17:32,765 DEBUG   SystemMonitor:4084 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2025-05-23 23:17:32,765 DEBUG   SystemMonitor:4084 [system_monitor.py:_start():170] Publishing last batch of metrics
+2025-05-23 23:17:32,814 INFO    HandlerThread:4084 [interfaces.py:finish():202] Joined gpu monitor
+2025-05-23 23:17:32,814 INFO    HandlerThread:4084 [interfaces.py:finish():202] Joined memory monitor
+2025-05-23 23:17:32,814 INFO    HandlerThread:4084 [interfaces.py:finish():202] Joined network monitor
+2025-05-23 23:17:32,815 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: defer
+2025-05-23 23:17:32,815 INFO    SenderThread:4084 [sender.py:send_request_defer():608] handle sender defer: 2
+2025-05-23 23:17:32,815 INFO    SenderThread:4084 [sender.py:transition_state():612] send defer: 3
+2025-05-23 23:17:32,815 DEBUG   SenderThread:4084 [sender.py:send():379] send: stats
+2025-05-23 23:17:32,815 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: defer
+2025-05-23 23:17:32,815 INFO    HandlerThread:4084 [handler.py:handle_request_defer():170] handle defer: 3
+2025-05-23 23:17:32,816 DEBUG   SenderThread:4084 [sender.py:send():379] send: history
+2025-05-23 23:17:32,816 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: summary_record
+2025-05-23 23:17:32,816 INFO    SenderThread:4084 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-23 23:17:32,816 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: defer
+2025-05-23 23:17:32,816 INFO    SenderThread:4084 [sender.py:send_request_defer():608] handle sender defer: 3
+2025-05-23 23:17:32,816 INFO    SenderThread:4084 [sender.py:transition_state():612] send defer: 4
+2025-05-23 23:17:32,816 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: defer
+2025-05-23 23:17:32,816 INFO    HandlerThread:4084 [handler.py:handle_request_defer():170] handle defer: 4
+2025-05-23 23:17:32,816 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: defer
+2025-05-23 23:17:32,817 INFO    SenderThread:4084 [sender.py:send_request_defer():608] handle sender defer: 4
+2025-05-23 23:17:32,817 INFO    SenderThread:4084 [sender.py:transition_state():612] send defer: 5
+2025-05-23 23:17:32,817 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: defer
+2025-05-23 23:17:32,817 INFO    HandlerThread:4084 [handler.py:handle_request_defer():170] handle defer: 5
+2025-05-23 23:17:32,817 DEBUG   SenderThread:4084 [sender.py:send():379] send: summary
+2025-05-23 23:17:32,817 INFO    SenderThread:4084 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-23 23:17:32,817 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: defer
+2025-05-23 23:17:32,817 INFO    SenderThread:4084 [sender.py:send_request_defer():608] handle sender defer: 5
+2025-05-23 23:17:32,817 INFO    SenderThread:4084 [sender.py:transition_state():612] send defer: 6
+2025-05-23 23:17:32,817 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: defer
+2025-05-23 23:17:32,817 INFO    HandlerThread:4084 [handler.py:handle_request_defer():170] handle defer: 6
+2025-05-23 23:17:32,817 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: defer
+2025-05-23 23:17:32,817 INFO    SenderThread:4084 [sender.py:send_request_defer():608] handle sender defer: 6
+2025-05-23 23:17:32,819 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: status_report
+2025-05-23 23:17:33,295 INFO    Thread-16 :4084 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\wandb-summary.json
+2025-05-23 23:17:33,295 INFO    Thread-16 :4084 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\output.log
+2025-05-23 23:17:33,766 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: poll_exit
+2025-05-23 23:17:34,653 WARNING FileStreamThread:4084 [file_stream.py:request_with_retry():667] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/939531372-south-china-university-of-technology/tracin_active_learning_v2/ugvb2zxo/file_stream (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)'))). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x00000187D9E1AC10>>, timeout=180), args: ('https://api.wandb.ai/files/939531372-south-china-university-of-technology/tracin_active_learning_v2/ugvb2zxo/file_stream',), kwargs: {'json': {'files': {'wandb-history.jsonl': {'offset': 0, 'content': ['{"Iter_1/AvgTrainLoss_epoch": 17.811438064807092, "Iter_1/TestLoss_epoch": 0.0, "global_epoch": 4, "iteration": 1, "epoch_in_iteration": 5, "_timestamp": 1748013450.204182, "_runtime": 17.096081018447876, "_step": 4}']}}, 'dropped': 0}}
+2025-05-23 23:17:35,317 INFO    SenderThread:4084 [sender.py:transition_state():612] send defer: 7
+2025-05-23 23:17:35,317 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: poll_exit
+2025-05-23 23:17:35,318 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: defer
+2025-05-23 23:17:35,318 INFO    HandlerThread:4084 [handler.py:handle_request_defer():170] handle defer: 7
+2025-05-23 23:17:35,318 INFO    Thread-16 :4084 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\config.yaml
+2025-05-23 23:17:35,318 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: defer
+2025-05-23 23:17:35,318 INFO    Thread-16 :4084 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\output.log
+2025-05-23 23:17:35,318 INFO    SenderThread:4084 [sender.py:send_request_defer():608] handle sender defer: 7
+2025-05-23 23:17:35,561 INFO    wandb-upload_0:4084 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\connectionpool.py", line 711, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\connectionpool.py", line 1007, in _prepare_proxy
+    conn.connect()
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\connection.py", line 419, in connect
+    self.sock = ssl_wrap_socket(
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "D:\anaconda\envs\agent3\lib\ssl.py", line 501, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\anaconda\envs\agent3\lib\ssl.py", line 1074, in _create
+    self.do_handshake()
+  File "D:\anaconda\envs\agent3\lib\ssl.py", line 1343, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLZeroReturnError: TLS/SSL connection has been closed (EOF) (_ssl.c:1133)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\connectionpool.py", line 798, in urlopen
+    retries = retries.increment(
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 358, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\gql_request.py", line 55, in execute
+    request = self.session.post(self.url, **post_args)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+2025-05-23 23:17:38,494 INFO    SenderThread:4084 [sender.py:transition_state():612] send defer: 8
+2025-05-23 23:17:38,494 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: defer
+2025-05-23 23:17:38,494 INFO    HandlerThread:4084 [handler.py:handle_request_defer():170] handle defer: 8
+2025-05-23 23:17:38,494 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: defer
+2025-05-23 23:17:38,494 INFO    SenderThread:4084 [sender.py:send_request_defer():608] handle sender defer: 8
+2025-05-23 23:17:38,494 INFO    SenderThread:4084 [job_builder.py:build():281] Attempting to build job artifact
+2025-05-23 23:17:38,494 INFO    SenderThread:4084 [job_builder.py:_get_source_type():404] no source found
+2025-05-23 23:17:38,494 INFO    SenderThread:4084 [sender.py:transition_state():612] send defer: 9
+2025-05-23 23:17:38,495 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: defer
+2025-05-23 23:17:38,495 INFO    HandlerThread:4084 [handler.py:handle_request_defer():170] handle defer: 9
+2025-05-23 23:17:38,495 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: defer
+2025-05-23 23:17:38,495 INFO    SenderThread:4084 [sender.py:send_request_defer():608] handle sender defer: 9
+2025-05-23 23:17:38,495 INFO    SenderThread:4084 [dir_watcher.py:finish():358] shutting down directory watcher
+2025-05-23 23:17:38,789 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-23 23:17:39,344 INFO    SenderThread:4084 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\output.log
+2025-05-23 23:17:39,344 INFO    SenderThread:4084 [dir_watcher.py:finish():388] scan: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files
+2025-05-23 23:17:39,345 INFO    SenderThread:4084 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\conda-environment.yaml conda-environment.yaml
+2025-05-23 23:17:39,345 INFO    SenderThread:4084 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\config.yaml config.yaml
+2025-05-23 23:17:39,345 INFO    SenderThread:4084 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\output.log output.log
+2025-05-23 23:17:39,347 INFO    SenderThread:4084 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\requirements.txt requirements.txt
+2025-05-23 23:17:39,348 INFO    SenderThread:4084 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\wandb-metadata.json wandb-metadata.json
+2025-05-23 23:17:39,348 INFO    SenderThread:4084 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\wandb-summary.json wandb-summary.json
+2025-05-23 23:17:39,348 INFO    SenderThread:4084 [sender.py:transition_state():612] send defer: 10
+2025-05-23 23:17:39,349 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: defer
+2025-05-23 23:17:39,349 INFO    HandlerThread:4084 [handler.py:handle_request_defer():170] handle defer: 10
+2025-05-23 23:17:39,351 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: defer
+2025-05-23 23:17:39,351 INFO    SenderThread:4084 [sender.py:send_request_defer():608] handle sender defer: 10
+2025-05-23 23:17:39,351 INFO    SenderThread:4084 [file_pusher.py:finish():175] shutting down file pusher
+2025-05-23 23:17:39,976 WARNING FileStreamThread:4084 [file_stream.py:request_with_retry():667] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/939531372-south-china-university-of-technology/tracin_active_learning_v2/ugvb2zxo/file_stream (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)'))). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x00000187D9E1AC10>>, timeout=180), args: ('https://api.wandb.ai/files/939531372-south-china-university-of-technology/tracin_active_learning_v2/ugvb2zxo/file_stream',), kwargs: {'json': {'files': {'wandb-history.jsonl': {'offset': 0, 'content': ['{"Iter_1/AvgTrainLoss_epoch": 17.811438064807092, "Iter_1/TestLoss_epoch": 0.0, "global_epoch": 4, "iteration": 1, "epoch_in_iteration": 5, "_timestamp": 1748013450.204182, "_runtime": 17.096081018447876, "_step": 4}']}}, 'dropped': 0}}
+2025-05-23 23:17:40,364 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: status_report
+2025-05-23 23:17:40,949 ERROR   wandb-upload_1:4084 [internal_api.py:upload_file():2548] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/939531372-south-china-university-of-technology/tracin_active_learning_v2/ugvb2zxo/conda-environment.yaml?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250523%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250523T151740Z&X-Goog-Expires=86399&X-Goog-Signature=3696ea18e50015b09ea13527bfaef8c028d2a1a926544a9625e07004cd8f32e6758359e226f5c9982c0a54fc1e1b9dcb7cd7bb53204988b8661c5b5d8203d83f3966f33ecb367c15ce996a93aaff30fa64ea7a53ae20693a26dbd5e7907fd47d2aad8c86491850c6eee6c672c74e506aae196b1cb673bca516ae40ee7ebb75deecd0a8e3966f8cf9f1935c5d339d0d3657c6ed386ca3a06fef7bfbd176d64bbc286abd08f0c8e8481da4f60409c5396317aaba7e1367102b5c2664be2a33225e0c48d1a48fdb6adcd12fb84752b108ce23d56daa04544c599644b97abf93e0a5dc7f906bc8c176d6e8eda9dfa1a378ece94ff89ff9d60cf8165c3187546726b4&X-Goog-SignedHeaders=host&X-User=939531372: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-production.appspot.com/939531372-south-china-university-of-technology/tracin_active_learning_v2/ugvb2zxo/conda-environment.yaml?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250523%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250523T151740Z&X-Goog-Expires=86399&X-Goog-Signature=3696ea18e50015b09ea13527bfaef8c028d2a1a926544a9625e07004cd8f32e6758359e226f5c9982c0a54fc1e1b9dcb7cd7bb53204988b8661c5b5d8203d83f3966f33ecb367c15ce996a93aaff30fa64ea7a53ae20693a26dbd5e7907fd47d2aad8c86491850c6eee6c672c74e506aae196b1cb673bca516ae40ee7ebb75deecd0a8e3966f8cf9f1935c5d339d0d3657c6ed386ca3a06fef7bfbd176d64bbc286abd08f0c8e8481da4f60409c5396317aaba7e1367102b5c2664be2a33225e0c48d1a48fdb6adcd12fb84752b108ce23d56daa04544c599644b97abf93e0a5dc7f906bc8c176d6e8eda9dfa1a378ece94ff89ff9d60cf8165c3187546726b4&X-Goog-SignedHeaders=host&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+2025-05-23 23:17:40,949 ERROR   wandb-upload_1:4084 [internal_api.py:upload_file():2550] upload_file request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '9629'}
+2025-05-23 23:17:40,950 ERROR   wandb-upload_1:4084 [internal_api.py:upload_file():2552] upload_file response body: 
+2025-05-23 23:17:41,778 ERROR   wandb-upload_0:4084 [internal_api.py:upload_file():2548] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/939531372-south-china-university-of-technology/tracin_active_learning_v2/ugvb2zxo/wandb-metadata.json?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250523%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250523T151741Z&X-Goog-Expires=86399&X-Goog-Signature=aabadba2f8a7b7d18c164fa19231b7621537c751a718b93afb33533b6c27ede8828adbb8c9d9f74f0eb75ac27402137b548b4f80b676db4fdfdb3011afc6731009ce9b0e0254f43d7cb9280dd532595c6da325a71f3f533e3974fd250a7dd7d5d207edbd74a17b884850486395c3c987520d5a5392e1f860fd1134aa5f5446c5e5b7928cd968297f377ae165bdd7a183bc33dd8f42b50f31a5eb21133923208a0c75f8145660e261552ea4dff6bf812102e4fddbe11f8d8b776321aa504c8fb5ad7e9da561d4b7a60ba1a2a55fa0f5cd0c8e1f645f7f600dbf19884734c737bcb091e695b8096dfca5aa8fc340f2a160ef0d6043aa0cadb6ca9747ced5afe6ca&X-Goog-SignedHeaders=host&X-User=939531372: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-production.appspot.com/939531372-south-china-university-of-technology/tracin_active_learning_v2/ugvb2zxo/wandb-metadata.json?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250523%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250523T151741Z&X-Goog-Expires=86399&X-Goog-Signature=aabadba2f8a7b7d18c164fa19231b7621537c751a718b93afb33533b6c27ede8828adbb8c9d9f74f0eb75ac27402137b548b4f80b676db4fdfdb3011afc6731009ce9b0e0254f43d7cb9280dd532595c6da325a71f3f533e3974fd250a7dd7d5d207edbd74a17b884850486395c3c987520d5a5392e1f860fd1134aa5f5446c5e5b7928cd968297f377ae165bdd7a183bc33dd8f42b50f31a5eb21133923208a0c75f8145660e261552ea4dff6bf812102e4fddbe11f8d8b776321aa504c8fb5ad7e9da561d4b7a60ba1a2a55fa0f5cd0c8e1f645f7f600dbf19884734c737bcb091e695b8096dfca5aa8fc340f2a160ef0d6043aa0cadb6ca9747ced5afe6ca&X-Goog-SignedHeaders=host&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+2025-05-23 23:17:41,778 ERROR   wandb-upload_0:4084 [internal_api.py:upload_file():2550] upload_file request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1191'}
+2025-05-23 23:17:41,778 ERROR   wandb-upload_0:4084 [internal_api.py:upload_file():2552] upload_file response body: 
+2025-05-23 23:17:42,206 ERROR   wandb-upload_4:4084 [internal_api.py:upload_file():2548] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/939531372-south-china-university-of-technology/tracin_active_learning_v2/ugvb2zxo/requirements.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250523%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250523T151741Z&X-Goog-Expires=86399&X-Goog-Signature=99be7d685e313de3c3d912cd74c07495e65d03414a933c13f4aa85a06d43913820ef93495163646903cdafb811b83a4e452fedc0604bfe948f5a7e3d6f5fef44ed2cc619c09581a04de061fbadcf299e152dbbb8f665f5380bc3be5ba4199293ef6394f7fbc32ebe8353b5a4b7c7f3b77f2ccb1283c46f84a2040b1082bbdea1cc8e47fb5a7030ece2e27d3ab5afe159ec05222fe7ae6158e5a4d41e11a1d1c751fd201f6db60106f8906153bd8881744543e10c5078d2cd2fb1c2125e12e0a35aefa025e11c295d21d2a666e70b5c00e8503ea7daaae708d19ffc33cec2e6310882287d2d43b97c39e8b007d0cf0fbcc8478db4cb6e03cf5de39546d36c88c0&X-Goog-SignedHeaders=host&X-User=939531372: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-production.appspot.com/939531372-south-china-university-of-technology/tracin_active_learning_v2/ugvb2zxo/requirements.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250523%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250523T151741Z&X-Goog-Expires=86399&X-Goog-Signature=99be7d685e313de3c3d912cd74c07495e65d03414a933c13f4aa85a06d43913820ef93495163646903cdafb811b83a4e452fedc0604bfe948f5a7e3d6f5fef44ed2cc619c09581a04de061fbadcf299e152dbbb8f665f5380bc3be5ba4199293ef6394f7fbc32ebe8353b5a4b7c7f3b77f2ccb1283c46f84a2040b1082bbdea1cc8e47fb5a7030ece2e27d3ab5afe159ec05222fe7ae6158e5a4d41e11a1d1c751fd201f6db60106f8906153bd8881744543e10c5078d2cd2fb1c2125e12e0a35aefa025e11c295d21d2a666e70b5c00e8503ea7daaae708d19ffc33cec2e6310882287d2d43b97c39e8b007d0cf0fbcc8478db4cb6e03cf5de39546d36c88c0&X-Goog-SignedHeaders=host&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+2025-05-23 23:17:42,207 ERROR   wandb-upload_4:4084 [internal_api.py:upload_file():2550] upload_file request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '4874'}
+2025-05-23 23:17:42,207 ERROR   wandb-upload_4:4084 [internal_api.py:upload_file():2552] upload_file response body: 
+2025-05-23 23:17:43,441 INFO    wandb-upload_5:4084 [upload_job.py:push():131] Uploaded file D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\wandb-summary.json
+2025-05-23 23:17:43,485 INFO    wandb-upload_3:4084 [upload_job.py:push():131] Uploaded file D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\output.log
+2025-05-23 23:17:43,806 ERROR   wandb-upload_0:4084 [internal_api.py:upload_file():2548] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/939531372-south-china-university-of-technology/tracin_active_learning_v2/ugvb2zxo/wandb-metadata.json?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250523%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250523T151741Z&X-Goog-Expires=86399&X-Goog-Signature=aabadba2f8a7b7d18c164fa19231b7621537c751a718b93afb33533b6c27ede8828adbb8c9d9f74f0eb75ac27402137b548b4f80b676db4fdfdb3011afc6731009ce9b0e0254f43d7cb9280dd532595c6da325a71f3f533e3974fd250a7dd7d5d207edbd74a17b884850486395c3c987520d5a5392e1f860fd1134aa5f5446c5e5b7928cd968297f377ae165bdd7a183bc33dd8f42b50f31a5eb21133923208a0c75f8145660e261552ea4dff6bf812102e4fddbe11f8d8b776321aa504c8fb5ad7e9da561d4b7a60ba1a2a55fa0f5cd0c8e1f645f7f600dbf19884734c737bcb091e695b8096dfca5aa8fc340f2a160ef0d6043aa0cadb6ca9747ced5afe6ca&X-Goog-SignedHeaders=host&X-User=939531372: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-production.appspot.com/939531372-south-china-university-of-technology/tracin_active_learning_v2/ugvb2zxo/wandb-metadata.json?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250523%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250523T151741Z&X-Goog-Expires=86399&X-Goog-Signature=aabadba2f8a7b7d18c164fa19231b7621537c751a718b93afb33533b6c27ede8828adbb8c9d9f74f0eb75ac27402137b548b4f80b676db4fdfdb3011afc6731009ce9b0e0254f43d7cb9280dd532595c6da325a71f3f533e3974fd250a7dd7d5d207edbd74a17b884850486395c3c987520d5a5392e1f860fd1134aa5f5446c5e5b7928cd968297f377ae165bdd7a183bc33dd8f42b50f31a5eb21133923208a0c75f8145660e261552ea4dff6bf812102e4fddbe11f8d8b776321aa504c8fb5ad7e9da561d4b7a60ba1a2a55fa0f5cd0c8e1f645f7f600dbf19884734c737bcb091e695b8096dfca5aa8fc340f2a160ef0d6043aa0cadb6ca9747ced5afe6ca&X-Goog-SignedHeaders=host&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+2025-05-23 23:17:43,806 ERROR   wandb-upload_0:4084 [internal_api.py:upload_file():2550] upload_file request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1191'}
+2025-05-23 23:17:43,806 ERROR   wandb-upload_0:4084 [internal_api.py:upload_file():2552] upload_file response body: 
+2025-05-23 23:17:43,806 INFO    wandb-upload_0:4084 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\connectionpool.py", line 711, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\connectionpool.py", line 1007, in _prepare_proxy
+    conn.connect()
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\connection.py", line 419, in connect
+    self.sock = ssl_wrap_socket(
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "D:\anaconda\envs\agent3\lib\ssl.py", line 501, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\anaconda\envs\agent3\lib\ssl.py", line 1074, in _create
+    self.do_handshake()
+  File "D:\anaconda\envs\agent3\lib\ssl.py", line 1343, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLZeroReturnError: TLS/SSL connection has been closed (EOF) (_ssl.c:1133)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\connectionpool.py", line 798, in urlopen
+    retries = retries.increment(
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-production.appspot.com/939531372-south-china-university-of-technology/tracin_active_learning_v2/ugvb2zxo/wandb-metadata.json?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250523%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250523T151741Z&X-Goog-Expires=86399&X-Goog-Signature=aabadba2f8a7b7d18c164fa19231b7621537c751a718b93afb33533b6c27ede8828adbb8c9d9f74f0eb75ac27402137b548b4f80b676db4fdfdb3011afc6731009ce9b0e0254f43d7cb9280dd532595c6da325a71f3f533e3974fd250a7dd7d5d207edbd74a17b884850486395c3c987520d5a5392e1f860fd1134aa5f5446c5e5b7928cd968297f377ae165bdd7a183bc33dd8f42b50f31a5eb21133923208a0c75f8145660e261552ea4dff6bf812102e4fddbe11f8d8b776321aa504c8fb5ad7e9da561d4b7a60ba1a2a55fa0f5cd0c8e1f645f7f600dbf19884734c737bcb091e695b8096dfca5aa8fc340f2a160ef0d6043aa0cadb6ca9747ced5afe6ca&X-Goog-SignedHeaders=host&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2541, in upload_file
+    response = self._upload_file_session.put(
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 649, in put
+    return self.request("PUT", url, data=data, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-production.appspot.com/939531372-south-china-university-of-technology/tracin_active_learning_v2/ugvb2zxo/wandb-metadata.json?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250523%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250523T151741Z&X-Goog-Expires=86399&X-Goog-Signature=aabadba2f8a7b7d18c164fa19231b7621537c751a718b93afb33533b6c27ede8828adbb8c9d9f74f0eb75ac27402137b548b4f80b676db4fdfdb3011afc6731009ce9b0e0254f43d7cb9280dd532595c6da325a71f3f533e3974fd250a7dd7d5d207edbd74a17b884850486395c3c987520d5a5392e1f860fd1134aa5f5446c5e5b7928cd968297f377ae165bdd7a183bc33dd8f42b50f31a5eb21133923208a0c75f8145660e261552ea4dff6bf812102e4fddbe11f8d8b776321aa504c8fb5ad7e9da561d4b7a60ba1a2a55fa0f5cd0c8e1f645f7f600dbf19884734c737bcb091e695b8096dfca5aa8fc340f2a160ef0d6043aa0cadb6ca9747ced5afe6ca&X-Goog-SignedHeaders=host&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2572, in upload_file
+    raise _e.with_traceback(sys.exc_info()[2])
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2541, in upload_file
+    response = self._upload_file_session.put(
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 649, in put
+    return self.request("PUT", url, data=data, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+wandb.sdk.lib.retry.TransientError: None
+2025-05-23 23:17:43,822 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-23 23:17:43,889 INFO    wandb-upload_1:4084 [upload_job.py:push():131] Uploaded file D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\conda-environment.yaml
+2025-05-23 23:17:44,432 INFO    wandb-upload_4:4084 [upload_job.py:push():131] Uploaded file D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\requirements.txt
+2025-05-23 23:17:45,389 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: status_report
+2025-05-23 23:17:46,663 INFO    wandb-upload_0:4084 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmptf7s469mwandb\6h8ceyhq-wandb-metadata.json
+2025-05-23 23:17:47,238 INFO    wandb-upload_2:4084 [upload_job.py:push():131] Uploaded file D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\files\config.yaml
+2025-05-23 23:17:47,443 INFO    Thread-15 :4084 [sender.py:transition_state():612] send defer: 11
+2025-05-23 23:17:47,443 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: defer
+2025-05-23 23:17:47,443 INFO    HandlerThread:4084 [handler.py:handle_request_defer():170] handle defer: 11
+2025-05-23 23:17:47,444 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: defer
+2025-05-23 23:17:47,444 INFO    SenderThread:4084 [sender.py:send_request_defer():608] handle sender defer: 11
+2025-05-23 23:17:47,444 INFO    SenderThread:4084 [file_pusher.py:join():181] waiting for file pusher
+2025-05-23 23:17:47,444 INFO    SenderThread:4084 [sender.py:transition_state():612] send defer: 12
+2025-05-23 23:17:47,444 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: defer
+2025-05-23 23:17:47,444 INFO    HandlerThread:4084 [handler.py:handle_request_defer():170] handle defer: 12
+2025-05-23 23:17:47,444 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: defer
+2025-05-23 23:17:47,444 INFO    SenderThread:4084 [sender.py:send_request_defer():608] handle sender defer: 12
+2025-05-23 23:17:47,444 INFO    SenderThread:4084 [file_stream.py:finish():594] file stream finish called
+2025-05-23 23:17:48,871 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-23 23:17:51,589 INFO    SenderThread:4084 [file_stream.py:finish():598] file stream finish is done
+2025-05-23 23:17:51,589 INFO    SenderThread:4084 [sender.py:transition_state():612] send defer: 13
+2025-05-23 23:17:51,590 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: defer
+2025-05-23 23:17:51,590 INFO    HandlerThread:4084 [handler.py:handle_request_defer():170] handle defer: 13
+2025-05-23 23:17:51,590 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: status_report
+2025-05-23 23:17:51,590 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: defer
+2025-05-23 23:17:51,590 INFO    SenderThread:4084 [sender.py:send_request_defer():608] handle sender defer: 13
+2025-05-23 23:17:51,590 INFO    SenderThread:4084 [sender.py:transition_state():612] send defer: 14
+2025-05-23 23:17:51,590 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: defer
+2025-05-23 23:17:51,591 INFO    HandlerThread:4084 [handler.py:handle_request_defer():170] handle defer: 14
+2025-05-23 23:17:51,591 DEBUG   SenderThread:4084 [sender.py:send():379] send: final
+2025-05-23 23:17:51,591 DEBUG   SenderThread:4084 [sender.py:send():379] send: footer
+2025-05-23 23:17:51,591 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: defer
+2025-05-23 23:17:51,591 INFO    SenderThread:4084 [sender.py:send_request_defer():608] handle sender defer: 14
+2025-05-23 23:17:51,592 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: internal_messages
+2025-05-23 23:17:51,592 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: poll_exit
+2025-05-23 23:17:51,592 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: server_info
+2025-05-23 23:17:51,592 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: get_summary
+2025-05-23 23:17:51,592 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: sampled_history
+2025-05-23 23:17:51,592 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: job_info
+2025-05-23 23:17:51,592 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: poll_exit
+2025-05-23 23:17:51,592 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: server_info
+2025-05-23 23:17:51,882 DEBUG   SenderThread:4084 [sender.py:send_request():406] send_request: job_info
+2025-05-23 23:17:51,882 DEBUG   HandlerThread:4084 [handler.py:handle_request():144] handle_request: shutdown
+2025-05-23 23:17:51,882 INFO    HandlerThread:4084 [handler.py:finish():840] shutting down handler
+2025-05-23 23:17:52,598 INFO    WriterThread:4084 [datastore.py:close():294] close: D:\github\Opt\main\wandb\run-20250523_231713-ugvb2zxo\run-ugvb2zxo.wandb
+2025-05-23 23:17:52,895 INFO    SenderThread:4084 [sender.py:finish():1531] shutting down sender
+2025-05-23 23:17:52,895 INFO    SenderThread:4084 [file_pusher.py:finish():175] shutting down file pusher
+2025-05-23 23:17:52,895 INFO    SenderThread:4084 [file_pusher.py:join():181] waiting for file pusher

@@ -1,0 +1,113 @@
+wandb_version: 1
+
+original_data_path:
+  desc: null
+  value: sub_ratings.csv
+test_data_path:
+  desc: null
+  value: null
+num_users:
+  desc: null
+  value: -1
+num_items:
+  desc: null
+  value: -1
+user_retention_config:
+  desc: null
+  value:
+  - 0.05
+  - 0.4
+  - 1.0
+  - 0.15
+  - 0.2
+  - 0.4
+  - 0.3
+  - 0.1
+  - 0.1
+  - 0.5
+  - 0.0
+  - 0.09
+model_name:
+  desc: null
+  value: MF
+embedding_dim:
+  desc: null
+  value: 20
+epochs_per_iteration:
+  desc: null
+  value: 10
+batch_size:
+  desc: null
+  value: 25
+test_batch_size:
+  desc: null
+  value: 25
+learning_rate:
+  desc: null
+  value: 0.005
+checkpoint_interval:
+  desc: null
+  value: 5
+checkpoint_dir_base:
+  desc: null
+  value: checkpoints_iter
+gradient_log_dir_base:
+  desc: null
+  value: gradient_logs_iter
+active_learning_strategy:
+  desc: null
+  value: TracInCP
+task_type:
+  desc: null
+  value: regression
+num_collection_points:
+  desc: null
+  value: 30
+output_visualization_dir:
+  desc: null
+  value: visualizations_iter
+num_iterations:
+  desc: null
+  value: 3
+wandb_project:
+  desc: null
+  value: tracin_active_learning_v3
+wandb_entity:
+  desc: null
+  value: null
+disable_wandb:
+  desc: null
+  value: false
+seed:
+  desc: null
+  value: 20
+_wandb:
+  desc: null
+  value:
+    python_version: 3.9.19
+    cli_version: 0.15.10
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1748445606.901607
+    t:
+      1:
+      - 1
+      - 51
+      - 55
+      - 105
+      2:
+      - 1
+      - 51
+      - 55
+      - 105
+      3:
+      - 2
+      - 13
+      - 16
+      - 23
+      4: 3.9.19
+      5: 0.15.10
+      8:
+      - 3
+      - 5

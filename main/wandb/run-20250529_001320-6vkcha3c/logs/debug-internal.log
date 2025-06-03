@@ -1,0 +1,598 @@
+2025-05-29 00:13:20,786 INFO    StreamThr :23868 [internal.py:wandb_internal():86] W&B internal server running at pid: 23868, started at: 2025-05-29 00:13:20.786245
+2025-05-29 00:13:20,786 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: status
+2025-05-29 00:13:20,788 INFO    WriterThread:23868 [datastore.py:open_for_write():85] open: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\run-6vkcha3c.wandb
+2025-05-29 00:13:20,788 DEBUG   SenderThread:23868 [sender.py:send():379] send: header
+2025-05-29 00:13:20,789 DEBUG   SenderThread:23868 [sender.py:send():379] send: run
+2025-05-29 00:13:25,820 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:13:26,688 INFO    SenderThread:23868 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\connectionpool.py", line 711, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\connectionpool.py", line 1007, in _prepare_proxy
+    conn.connect()
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\connection.py", line 419, in connect
+    self.sock = ssl_wrap_socket(
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "D:\anaconda\envs\agent3\lib\ssl.py", line 501, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\anaconda\envs\agent3\lib\ssl.py", line 1074, in _create
+    self.do_handshake()
+  File "D:\anaconda\envs\agent3\lib\ssl.py", line 1343, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLZeroReturnError: TLS/SSL connection has been closed (EOF) (_ssl.c:1133)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\connectionpool.py", line 798, in urlopen
+    retries = retries.increment(
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 358, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\gql_request.py", line 55, in execute
+    request = self.session.post(self.url, **post_args)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+2025-05-29 00:13:30,867 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:13:32,902 INFO    SenderThread:23868 [dir_watcher.py:__init__():211] watching files in: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files
+2025-05-29 00:13:32,903 INFO    SenderThread:23868 [sender.py:_start_run_threads():1121] run started: 6vkcha3c with start time 1748448800.786562
+2025-05-29 00:13:32,903 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 00:13:32,910 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: check_version
+2025-05-29 00:13:32,910 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: check_version
+2025-05-29 00:13:33,720 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: run_start
+2025-05-29 00:13:33,749 DEBUG   HandlerThread:23868 [system_info.py:__init__():32] System info init
+2025-05-29 00:13:33,749 DEBUG   HandlerThread:23868 [system_info.py:__init__():47] System info init done
+2025-05-29 00:13:33,749 INFO    HandlerThread:23868 [system_monitor.py:start():181] Starting system monitor
+2025-05-29 00:13:33,749 INFO    SystemMonitor:23868 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2025-05-29 00:13:33,749 INFO    HandlerThread:23868 [system_monitor.py:probe():201] Collecting system info
+2025-05-29 00:13:33,753 INFO    SystemMonitor:23868 [interfaces.py:start():190] Started cpu monitoring
+2025-05-29 00:13:33,755 INFO    SystemMonitor:23868 [interfaces.py:start():190] Started disk monitoring
+2025-05-29 00:13:33,756 INFO    SystemMonitor:23868 [interfaces.py:start():190] Started gpu monitoring
+2025-05-29 00:13:33,756 INFO    SystemMonitor:23868 [interfaces.py:start():190] Started memory monitoring
+2025-05-29 00:13:33,763 INFO    SystemMonitor:23868 [interfaces.py:start():190] Started network monitoring
+2025-05-29 00:13:33,763 DEBUG   HandlerThread:23868 [system_info.py:probe():196] Probing system
+2025-05-29 00:13:33,763 DEBUG   HandlerThread:23868 [gitlib.py:_init_repo():53] git repository is invalid
+2025-05-29 00:13:33,763 DEBUG   HandlerThread:23868 [system_info.py:probe():244] Probing system done
+2025-05-29 00:13:33,763 DEBUG   HandlerThread:23868 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.22631-SP0', 'python': '3.9.19', 'heartbeatAt': '2025-05-28T16:13:33.763848', 'startedAt': '2025-05-28T16:13:20.778676', 'docker': None, 'cuda': None, 'args': ('--active_learning_strategy', 'Random'), 'state': 'running', 'program': 'D:\\github\\Opt\\main\\main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'host': 'DESKTOP-RVG428G', 'username': 'HanlinWang', 'executable': 'D:\\anaconda\\envs\\agent3\\python.exe', 'cpu_count': 24, 'cpu_count_logical': 32, 'cpu_freq': {'current': 2200.0, 'min': 0.0, 'max': 2200.0}, 'cpu_freq_per_core': [{'current': 2200.0, 'min': 0.0, 'max': 2200.0}], 'disk': {'/': {'total': 620.9248008728027, 'used': 527.5811080932617}}, 'gpu': 'NVIDIA GeForce RTX 4070 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4070 Laptop GPU', 'memory_total': 8585740288}], 'memory': {'total': 31.74596405029297}}
+2025-05-29 00:13:33,763 INFO    HandlerThread:23868 [system_monitor.py:probe():211] Finished collecting system info
+2025-05-29 00:13:33,763 INFO    HandlerThread:23868 [system_monitor.py:probe():214] Publishing system info
+2025-05-29 00:13:33,763 DEBUG   HandlerThread:23868 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2025-05-29 00:13:33,763 DEBUG   HandlerThread:23868 [system_info.py:_save_pip():68] Saving pip packages done
+2025-05-29 00:13:33,763 DEBUG   HandlerThread:23868 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2025-05-29 00:13:33,903 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\requirements.txt
+2025-05-29 00:13:33,903 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\conda-environment.yaml
+2025-05-29 00:13:39,227 DEBUG   HandlerThread:23868 [system_info.py:_save_conda():87] Saving conda packages done
+2025-05-29 00:13:39,227 INFO    HandlerThread:23868 [system_monitor.py:probe():216] Finished publishing system info
+2025-05-29 00:13:39,229 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 00:13:39,229 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:13:39,229 DEBUG   SenderThread:23868 [sender.py:send():379] send: files
+2025-05-29 00:13:39,230 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2025-05-29 00:13:39,234 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: stop_status
+2025-05-29 00:13:39,234 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: stop_status
+2025-05-29 00:13:39,235 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: internal_messages
+2025-05-29 00:13:39,575 DEBUG   SenderThread:23868 [sender.py:send():379] send: telemetry
+2025-05-29 00:13:39,950 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\conda-environment.yaml
+2025-05-29 00:13:39,950 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:13:39,950 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\wandb-metadata.json
+2025-05-29 00:13:41,130 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:13:41,130 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 00:13:41,396 INFO    wandb-upload_0:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\qxyb6n2z-wandb-metadata.json
+2025-05-29 00:13:41,966 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:13:41,966 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_1\Epoch_5_TestPredictions_0_b47e4d18d664cfb7dd2a.table.json
+2025-05-29 00:13:41,966 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media
+2025-05-29 00:13:41,966 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_1
+2025-05-29 00:13:41,967 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table
+2025-05-29 00:13:42,183 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:13:43,137 INFO    wandb-upload_0:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\0fhdkdk6-media/table/Iter_1/Epoch_5_TestPredictions_0_b47e4d18d664cfb7dd2a.table.json
+2025-05-29 00:13:43,323 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:13:43,332 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:13:43,766 INFO    wandb-upload_1:23868 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpihzf3y8y
+2025-05-29 00:13:43,970 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_1\Epoch_10_TestPredictions_4_11a814e665e86c6e1af5.table.json
+2025-05-29 00:13:43,971 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_1
+2025-05-29 00:13:44,459 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:13:44,468 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:13:44,958 INFO    SenderThread:23868 [sender.py:send_request_log_artifact():1441] logged artifact run-6vkcha3c-Iter_1Epoch_5_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc2OTU1NTMxOA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTQ0ODU1NQ==', 'latestArtifact': None}}
+2025-05-29 00:13:44,958 DEBUG   SenderThread:23868 [sender.py:send():379] send: files
+2025-05-29 00:13:44,958 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 00:13:44,958 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file media\table\Iter_1/Epoch_5_TestPredictions_0_b47e4d18d664cfb7dd2a.table.json with policy now
+2025-05-29 00:13:44,959 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 00:13:44,976 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_1\Epoch_15_TestPredictions_9_d49f33d096b0016c7004.table.json
+2025-05-29 00:13:44,977 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_1
+2025-05-29 00:13:45,184 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:13:45,191 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:13:45,209 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:13:45,880 INFO    wandb-upload_0:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\ln8wmaaj-media/table/Iter_1/Epoch_10_TestPredictions_4_11a814e665e86c6e1af5.table.json
+2025-05-29 00:13:45,981 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:13:45,981 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_1\Epoch_20_TestPredictions_14_21adafe7a38677fff30e.table.json
+2025-05-29 00:13:45,982 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_1
+2025-05-29 00:13:46,561 INFO    wandb-upload_1:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\wo03lj9c-media/table/Iter_1/Epoch_5_TestPredictions_0_b47e4d18d664cfb7dd2a.table.json
+2025-05-29 00:13:46,580 INFO    wandb-upload_2:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\7vlewxs9-media/table/Iter_1/Epoch_15_TestPredictions_9_d49f33d096b0016c7004.table.json
+2025-05-29 00:13:46,669 INFO    wandb-upload_0:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\umqfdjze-media/table/Iter_1/Epoch_20_TestPredictions_14_21adafe7a38677fff30e.table.json
+2025-05-29 00:13:47,873 INFO    wandb-upload_3:23868 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpmvgexs3o
+2025-05-29 00:13:48,249 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:13:48,261 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:13:48,991 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_2\Epoch_5_TestPredictions_20_68dddaf60087d3cd0a20.table.json
+2025-05-29 00:13:48,991 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table
+2025-05-29 00:13:48,991 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_2
+2025-05-29 00:13:49,314 INFO    SenderThread:23868 [sender.py:send_request_log_artifact():1441] logged artifact run-6vkcha3c-Iter_1Epoch_10_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc2OTU1NTQxNw==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTQ0ODU2MQ==', 'latestArtifact': None}}
+2025-05-29 00:13:49,314 DEBUG   SenderThread:23868 [sender.py:send():379] send: files
+2025-05-29 00:13:49,314 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file media\table\Iter_1/Epoch_10_TestPredictions_4_11a814e665e86c6e1af5.table.json with policy now
+2025-05-29 00:13:49,314 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:13:49,314 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:13:49,318 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:13:49,318 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 00:13:49,802 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:13:49,814 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:13:49,998 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\wandb-summary.json
+2025-05-29 00:13:49,999 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_2\Epoch_10_TestPredictions_24_f879acb4f33c5fc0ac3d.table.json
+2025-05-29 00:13:49,999 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_2
+2025-05-29 00:13:50,009 INFO    wandb-upload_1:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\e4a5w1ai-media/table/Iter_2/Epoch_5_TestPredictions_20_68dddaf60087d3cd0a20.table.json
+2025-05-29 00:13:50,130 INFO    wandb-upload_0:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\xchz4vqg-media/table/Iter_1/Epoch_10_TestPredictions_4_11a814e665e86c6e1af5.table.json
+2025-05-29 00:13:50,546 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:13:50,557 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:13:50,987 INFO    wandb-upload_2:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\nntcluo8-media/table/Iter_2/Epoch_10_TestPredictions_24_f879acb4f33c5fc0ac3d.table.json
+2025-05-29 00:13:51,001 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_2\Epoch_15_TestPredictions_29_51a52bc92194c8fe3db5.table.json
+2025-05-29 00:13:51,002 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_2
+2025-05-29 00:13:51,851 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:13:51,868 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:13:51,886 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:13:52,016 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:13:52,016 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_2\Epoch_20_TestPredictions_34_462a4e85a92231bc8f62.table.json
+2025-05-29 00:13:52,016 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_2
+2025-05-29 00:13:52,322 INFO    wandb-upload_1:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\e1jnzy01-media/table/Iter_2/Epoch_15_TestPredictions_29_51a52bc92194c8fe3db5.table.json
+2025-05-29 00:13:52,676 INFO    wandb-upload_3:23868 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmp94i9u5gt
+2025-05-29 00:13:52,752 INFO    wandb-upload_2:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\e594gsng-media/table/Iter_2/Epoch_20_TestPredictions_34_462a4e85a92231bc8f62.table.json
+2025-05-29 00:13:53,783 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:13:53,802 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:13:53,837 INFO    SenderThread:23868 [sender.py:send_request_log_artifact():1441] logged artifact run-6vkcha3c-Iter_1Epoch_15_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc2OTU1NTUyNA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTQ0ODU2OQ==', 'latestArtifact': None}}
+2025-05-29 00:13:53,840 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 00:13:54,039 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_3\Epoch_5_TestPredictions_40_35d9bdf1f8e446d89558.table.json
+2025-05-29 00:13:54,039 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table
+2025-05-29 00:13:54,039 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_3
+2025-05-29 00:13:54,150 DEBUG   SenderThread:23868 [sender.py:send():379] send: files
+2025-05-29 00:13:54,150 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file media\table\Iter_1/Epoch_15_TestPredictions_9_d49f33d096b0016c7004.table.json with policy now
+2025-05-29 00:13:54,150 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:13:54,150 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:13:54,151 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:13:54,152 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 00:13:54,224 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: internal_messages
+2025-05-29 00:13:54,240 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: stop_status
+2025-05-29 00:13:54,735 INFO    wandb-upload_0:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\yvo5cpl7-media/table/Iter_3/Epoch_5_TestPredictions_40_35d9bdf1f8e446d89558.table.json
+2025-05-29 00:13:54,950 INFO    wandb-upload_3:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\ah636r0m-media/table/Iter_1/Epoch_15_TestPredictions_9_d49f33d096b0016c7004.table.json
+2025-05-29 00:13:55,051 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\config.yaml
+2025-05-29 00:13:55,052 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\wandb-summary.json
+2025-05-29 00:13:55,439 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:13:55,451 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:13:56,055 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:13:56,055 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_3\Epoch_10_TestPredictions_44_75fc16c8fe706da80b58.table.json
+2025-05-29 00:13:56,056 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_3
+2025-05-29 00:13:56,766 INFO    wandb-upload_0:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\n5ppc7qw-media/table/Iter_3/Epoch_10_TestPredictions_44_75fc16c8fe706da80b58.table.json
+2025-05-29 00:13:56,768 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:13:56,779 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:13:57,060 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_3\Epoch_15_TestPredictions_49_93a2e11116b71a6320d1.table.json
+2025-05-29 00:13:57,060 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_3
+2025-05-29 00:13:58,141 INFO    wandb-upload_2:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\z7a4e6t2-media/table/Iter_3/Epoch_15_TestPredictions_49_93a2e11116b71a6320d1.table.json
+2025-05-29 00:13:59,058 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:13:59,070 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:13:59,075 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_3\Epoch_20_TestPredictions_54_8517d7e53ddd665b1246.table.json
+2025-05-29 00:13:59,075 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_3
+2025-05-29 00:13:59,091 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:13:59,277 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:13:59,766 INFO    wandb-upload_0:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\znq3bmgv-media/table/Iter_3/Epoch_20_TestPredictions_54_8517d7e53ddd665b1246.table.json
+2025-05-29 00:14:01,757 INFO    wandb-upload_1:23868 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmp2mm0vtu0
+2025-05-29 00:14:01,806 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:14:01,819 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:14:02,101 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_4\Epoch_5_TestPredictions_60_618a2422d17268fe77e5.table.json
+2025-05-29 00:14:02,102 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table
+2025-05-29 00:14:02,102 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_4
+2025-05-29 00:14:03,199 INFO    SenderThread:23868 [sender.py:send_request_log_artifact():1441] logged artifact run-6vkcha3c-Iter_1Epoch_20_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc2OTU1NTY0Mw==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTQ0ODU3Ng==', 'latestArtifact': None}}
+2025-05-29 00:14:03,199 DEBUG   SenderThread:23868 [sender.py:send():379] send: files
+2025-05-29 00:14:03,199 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file media\table\Iter_1/Epoch_20_TestPredictions_14_21adafe7a38677fff30e.table.json with policy now
+2025-05-29 00:14:03,199 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 00:14:03,200 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:14:03,200 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:14:03,201 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:14:03,201 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:14:03,202 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:14:03,202 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:14:03,203 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 00:14:03,273 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:14:03,285 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:14:03,957 INFO    wandb-upload_0:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\wncwo7qh-media/table/Iter_1/Epoch_20_TestPredictions_14_21adafe7a38677fff30e.table.json
+2025-05-29 00:14:04,128 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\wandb-summary.json
+2025-05-29 00:14:04,128 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:14:04,129 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_4\Epoch_10_TestPredictions_64_be16c96d6bf5c6877abc.table.json
+2025-05-29 00:14:04,129 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_4
+2025-05-29 00:14:04,222 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:14:04,232 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:14:04,315 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:14:04,435 INFO    wandb-upload_2:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\61ynhqjk-media/table/Iter_4/Epoch_5_TestPredictions_60_618a2422d17268fe77e5.table.json
+2025-05-29 00:14:05,138 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_4\Epoch_15_TestPredictions_69_54a0af7c94880575d163.table.json
+2025-05-29 00:14:05,138 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_4
+2025-05-29 00:14:05,250 INFO    wandb-upload_1:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\qq2pqlez-media/table/Iter_4/Epoch_10_TestPredictions_64_be16c96d6bf5c6877abc.table.json
+2025-05-29 00:14:05,420 INFO    wandb-upload_3:23868 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpiqo7jqup
+2025-05-29 00:14:06,159 INFO    wandb-upload_0:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\8760lces-media/table/Iter_4/Epoch_15_TestPredictions_69_54a0af7c94880575d163.table.json
+2025-05-29 00:14:06,909 INFO    SenderThread:23868 [sender.py:send_request_log_artifact():1441] logged artifact run-6vkcha3c-Iter_2Epoch_5_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc2OTU1NTkxMQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTQ0ODYxOQ==', 'latestArtifact': None}}
+2025-05-29 00:14:06,909 DEBUG   SenderThread:23868 [sender.py:send():379] send: files
+2025-05-29 00:14:06,909 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file media\table\Iter_2/Epoch_5_TestPredictions_20_68dddaf60087d3cd0a20.table.json with policy now
+2025-05-29 00:14:06,910 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:14:06,910 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:14:06,910 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:14:06,911 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 00:14:07,151 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\wandb-summary.json
+2025-05-29 00:14:07,623 INFO    wandb-upload_2:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\7s9b4erf-media/table/Iter_2/Epoch_5_TestPredictions_20_68dddaf60087d3cd0a20.table.json
+2025-05-29 00:14:07,973 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:14:07,989 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:14:08,014 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:14:08,156 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:14:08,157 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_4\Epoch_20_TestPredictions_74_c1bf5d7fcb8063277644.table.json
+2025-05-29 00:14:08,157 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_4
+2025-05-29 00:14:09,080 INFO    wandb-upload_3:23868 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpc2dukr4a
+2025-05-29 00:14:09,123 INFO    wandb-upload_1:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\7pmjt0ew-media/table/Iter_4/Epoch_20_TestPredictions_74_c1bf5d7fcb8063277644.table.json
+2025-05-29 00:14:09,227 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: internal_messages
+2025-05-29 00:14:09,323 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:14:09,337 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:14:10,083 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:14:10,093 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:14:10,176 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_5\Epoch_10_TestPredictions_84_169917be5d32d821fb96.table.json
+2025-05-29 00:14:10,177 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_5\Epoch_5_TestPredictions_80_3710b3b2d2f4195fd674.table.json
+2025-05-29 00:14:10,177 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table
+2025-05-29 00:14:10,177 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_5
+2025-05-29 00:14:10,752 INFO    SenderThread:23868 [sender.py:send_request_log_artifact():1441] logged artifact run-6vkcha3c-Iter_2Epoch_10_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc2OTU1NjAzMA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTQ0ODY0Mw==', 'latestArtifact': None}}
+2025-05-29 00:14:10,752 DEBUG   SenderThread:23868 [sender.py:send():379] send: files
+2025-05-29 00:14:10,752 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 00:14:10,752 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file media\table\Iter_2/Epoch_10_TestPredictions_24_f879acb4f33c5fc0ac3d.table.json with policy now
+2025-05-29 00:14:10,753 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:14:10,753 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:14:10,754 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:14:10,754 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 00:14:11,178 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\wandb-summary.json
+2025-05-29 00:14:11,389 INFO    wandb-upload_2:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\qolsjcxj-media/table/Iter_5/Epoch_10_TestPredictions_84_169917be5d32d821fb96.table.json
+2025-05-29 00:14:11,438 INFO    wandb-upload_0:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\ie2knc3l-media/table/Iter_5/Epoch_5_TestPredictions_80_3710b3b2d2f4195fd674.table.json
+2025-05-29 00:14:11,470 INFO    wandb-upload_1:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\out1vlap-media/table/Iter_2/Epoch_10_TestPredictions_24_f879acb4f33c5fc0ac3d.table.json
+2025-05-29 00:14:11,549 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:14:11,562 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:14:12,189 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:14:12,189 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_5\Epoch_15_TestPredictions_89_452b83c21b1d94d2c64e.table.json
+2025-05-29 00:14:12,189 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_5
+2025-05-29 00:14:12,980 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:14:12,993 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:14:13,017 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:14:13,198 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_5\Epoch_20_TestPredictions_94_4372e707ad431fe45178.table.json
+2025-05-29 00:14:13,199 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_5
+2025-05-29 00:14:13,259 INFO    wandb-upload_3:23868 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmprktcj42q
+2025-05-29 00:14:13,476 INFO    wandb-upload_0:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\pf26d8dy-media/table/Iter_5/Epoch_15_TestPredictions_89_452b83c21b1d94d2c64e.table.json
+2025-05-29 00:14:14,387 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:14:14,775 INFO    SenderThread:23868 [sender.py:send_request_log_artifact():1441] logged artifact run-6vkcha3c-Iter_2Epoch_15_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc2OTU1NjEzMw==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTQ0ODY1NQ==', 'latestArtifact': None}}
+2025-05-29 00:14:14,775 DEBUG   SenderThread:23868 [sender.py:send():379] send: files
+2025-05-29 00:14:14,775 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file media\table\Iter_2/Epoch_15_TestPredictions_29_51a52bc92194c8fe3db5.table.json with policy now
+2025-05-29 00:14:14,776 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:14:14,776 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:14:14,777 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:14:14,777 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 00:14:14,845 INFO    wandb-upload_2:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\5cn0grxs-media/table/Iter_5/Epoch_20_TestPredictions_94_4372e707ad431fe45178.table.json
+2025-05-29 00:14:14,942 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:14:14,953 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:14:15,208 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\wandb-summary.json
+2025-05-29 00:14:15,208 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_6\Epoch_5_TestPredictions_100_eef35bc474eafca68ef4.table.json
+2025-05-29 00:14:15,209 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table
+2025-05-29 00:14:15,209 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_6
+2025-05-29 00:14:15,755 INFO    wandb-upload_1:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\tacv30zu-media/table/Iter_2/Epoch_15_TestPredictions_29_51a52bc92194c8fe3db5.table.json
+2025-05-29 00:14:15,978 INFO    wandb-upload_0:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\tjjw9ncp-media/table/Iter_6/Epoch_5_TestPredictions_100_eef35bc474eafca68ef4.table.json
+2025-05-29 00:14:16,013 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:14:16,024 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:14:16,215 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:14:16,215 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_6\Epoch_10_TestPredictions_104_99a328895925f8ad7b5b.table.json
+2025-05-29 00:14:16,215 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_6
+2025-05-29 00:14:16,904 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:14:16,916 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:14:17,134 INFO    wandb-upload_2:23868 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpnx7wotl_
+2025-05-29 00:14:17,222 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_6\Epoch_15_TestPredictions_109_c8329ad5ee925caa6cb9.table.json
+2025-05-29 00:14:17,222 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_6
+2025-05-29 00:14:17,507 INFO    wandb-upload_3:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\cvvlhbin-media/table/Iter_6/Epoch_10_TestPredictions_104_99a328895925f8ad7b5b.table.json
+2025-05-29 00:14:19,005 INFO    SenderThread:23868 [sender.py:send_request_log_artifact():1441] logged artifact run-6vkcha3c-Iter_2Epoch_20_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc2OTU1NjIzNQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTQ0ODY1OQ==', 'latestArtifact': None}}
+2025-05-29 00:14:19,005 DEBUG   SenderThread:23868 [sender.py:send():379] send: files
+2025-05-29 00:14:19,005 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file media\table\Iter_2/Epoch_20_TestPredictions_34_462a4e85a92231bc8f62.table.json with policy now
+2025-05-29 00:14:19,005 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 00:14:19,006 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:14:19,006 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:14:19,007 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:14:19,007 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:14:19,007 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:14:19,008 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:14:19,008 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 00:14:19,232 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\wandb-summary.json
+2025-05-29 00:14:19,418 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:14:19,668 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 00:14:19,679 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:14:19,704 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 00:14:19,804 INFO    wandb-upload_2:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\zwm6p5fd-media/table/Iter_2/Epoch_20_TestPredictions_34_462a4e85a92231bc8f62.table.json
+2025-05-29 00:14:19,885 INFO    wandb-upload_0:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\2prdnfbo-media/table/Iter_6/Epoch_15_TestPredictions_109_c8329ad5ee925caa6cb9.table.json
+2025-05-29 00:14:20,239 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:14:20,239 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_6\Epoch_20_TestPredictions_114_8eb76114b6511f4aa43b.table.json
+2025-05-29 00:14:20,239 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\media\table\Iter_6
+2025-05-29 00:14:20,986 INFO    wandb-upload_3:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\vuds8ho5-media/table/Iter_6/Epoch_20_TestPredictions_114_8eb76114b6511f4aa43b.table.json
+2025-05-29 00:14:21,117 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: poll_exit
+2025-05-29 00:14:21,615 INFO    wandb-upload_1:23868 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpktbmwtfe
+2025-05-29 00:14:22,870 INFO    SenderThread:23868 [sender.py:send_request_log_artifact():1441] logged artifact run-6vkcha3c-Iter_3Epoch_5_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc2OTU1NjQwMA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTQ0ODcwOA==', 'latestArtifact': None}}
+2025-05-29 00:14:22,870 DEBUG   SenderThread:23868 [sender.py:send():379] send: files
+2025-05-29 00:14:22,871 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file media\table\Iter_3/Epoch_5_TestPredictions_40_35d9bdf1f8e446d89558.table.json with policy now
+2025-05-29 00:14:22,871 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:14:22,871 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:14:22,872 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:14:22,872 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: stop_status
+2025-05-29 00:14:23,203 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 00:14:23,270 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\wandb-summary.json
+2025-05-29 00:14:23,800 INFO    wandb-upload_0:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\1y97t3cn-media/table/Iter_3/Epoch_5_TestPredictions_40_35d9bdf1f8e446d89558.table.json
+2025-05-29 00:14:24,276 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:14:25,253 INFO    wandb-upload_3:23868 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpqpcj_ack
+2025-05-29 00:14:26,136 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:14:26,660 INFO    SenderThread:23868 [sender.py:send_request_log_artifact():1441] logged artifact run-6vkcha3c-Iter_3Epoch_10_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc2OTU1NjU3Mw==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTQ0ODc2OA==', 'latestArtifact': None}}
+2025-05-29 00:14:26,660 DEBUG   SenderThread:23868 [sender.py:send():379] send: files
+2025-05-29 00:14:26,660 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 00:14:26,660 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file media\table\Iter_3/Epoch_10_TestPredictions_44_75fc16c8fe706da80b58.table.json with policy now
+2025-05-29 00:14:26,661 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:14:26,661 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:14:26,662 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:14:26,662 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 00:14:27,307 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\wandb-summary.json
+2025-05-29 00:14:27,435 INFO    wandb-upload_2:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\6t5qau4z-media/table/Iter_3/Epoch_10_TestPredictions_44_75fc16c8fe706da80b58.table.json
+2025-05-29 00:14:28,313 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:14:29,985 INFO    wandb-upload_1:23868 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpq5o02j3j
+2025-05-29 00:14:31,172 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:14:31,565 INFO    SenderThread:23868 [sender.py:send_request_log_artifact():1441] logged artifact run-6vkcha3c-Iter_3Epoch_15_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc2OTU1NjY5Ng==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTQ0ODc5NA==', 'latestArtifact': None}}
+2025-05-29 00:14:31,565 DEBUG   SenderThread:23868 [sender.py:send():379] send: files
+2025-05-29 00:14:31,565 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file media\table\Iter_3/Epoch_15_TestPredictions_49_93a2e11116b71a6320d1.table.json with policy now
+2025-05-29 00:14:31,566 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:14:31,566 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:14:31,567 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:14:31,567 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 00:14:32,352 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\wandb-summary.json
+2025-05-29 00:14:32,352 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:14:32,567 INFO    wandb-upload_0:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\xhh3rnts-media/table/Iter_3/Epoch_15_TestPredictions_49_93a2e11116b71a6320d1.table.json
+2025-05-29 00:14:33,503 INFO    wandb-upload_2:23868 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpd5ejysaq
+2025-05-29 00:14:33,770 DEBUG   SystemMonitor:23868 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2025-05-29 00:14:35,757 INFO    SenderThread:23868 [sender.py:send_request_log_artifact():1441] logged artifact run-6vkcha3c-Iter_3Epoch_20_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc2OTU1Njg4Mw==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTQ0ODgxOA==', 'latestArtifact': None}}
+2025-05-29 00:14:35,757 DEBUG   SenderThread:23868 [sender.py:send():379] send: files
+2025-05-29 00:14:35,757 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 00:14:35,757 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file media\table\Iter_3/Epoch_20_TestPredictions_54_8517d7e53ddd665b1246.table.json with policy now
+2025-05-29 00:14:35,758 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:14:35,758 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:14:35,759 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:14:35,759 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:14:35,759 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:14:35,760 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:14:35,760 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 00:14:36,222 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:14:36,395 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\wandb-summary.json
+2025-05-29 00:14:36,826 INFO    wandb-upload_3:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\91416hlj-media/table/Iter_3/Epoch_20_TestPredictions_54_8517d7e53ddd665b1246.table.json
+2025-05-29 00:14:38,413 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:14:39,476 INFO    wandb-upload_0:23868 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpy6hrsw3z
+2025-05-29 00:14:40,586 INFO    SenderThread:23868 [sender.py:send_request_log_artifact():1441] logged artifact run-6vkcha3c-Iter_4Epoch_5_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc2OTU1NzAyMg==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTQ0ODg0NA==', 'latestArtifact': None}}
+2025-05-29 00:14:40,587 DEBUG   SenderThread:23868 [sender.py:send():379] send: files
+2025-05-29 00:14:40,587 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file media\table\Iter_4/Epoch_5_TestPredictions_60_618a2422d17268fe77e5.table.json with policy now
+2025-05-29 00:14:40,587 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:14:40,587 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:14:40,589 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:14:40,590 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 00:14:41,263 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:14:41,433 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\wandb-summary.json
+2025-05-29 00:14:41,840 INFO    wandb-upload_1:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\xgicyk4i-media/table/Iter_4/Epoch_5_TestPredictions_60_618a2422d17268fe77e5.table.json
+2025-05-29 00:14:42,442 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:14:42,466 INFO    wandb-upload_3:23868 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpfgbzg121
+2025-05-29 00:14:44,134 INFO    SenderThread:23868 [sender.py:send_request_log_artifact():1441] logged artifact run-6vkcha3c-Iter_4Epoch_10_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc2OTU1NzE0OA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTQ0ODg1OQ==', 'latestArtifact': None}}
+2025-05-29 00:14:44,134 DEBUG   SenderThread:23868 [sender.py:send():379] send: files
+2025-05-29 00:14:44,134 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 00:14:44,134 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file media\table\Iter_4/Epoch_10_TestPredictions_64_be16c96d6bf5c6877abc.table.json with policy now
+2025-05-29 00:14:44,135 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:14:44,135 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:14:44,135 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:14:44,135 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 00:14:44,465 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\wandb-summary.json
+2025-05-29 00:14:44,869 INFO    wandb-upload_2:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\4s4ls244-media/table/Iter_4/Epoch_10_TestPredictions_64_be16c96d6bf5c6877abc.table.json
+2025-05-29 00:14:46,303 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:14:46,491 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:14:47,174 INFO    wandb-upload_1:23868 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmp99zq3avh
+2025-05-29 00:14:48,873 INFO    SenderThread:23868 [sender.py:send_request_log_artifact():1441] logged artifact run-6vkcha3c-Iter_4Epoch_15_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc2OTU1NzI0NQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTQ0ODg3Mg==', 'latestArtifact': None}}
+2025-05-29 00:14:48,873 DEBUG   SenderThread:23868 [sender.py:send():379] send: files
+2025-05-29 00:14:48,873 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file media\table\Iter_4/Epoch_15_TestPredictions_69_54a0af7c94880575d163.table.json with policy now
+2025-05-29 00:14:48,873 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:14:48,874 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:14:48,874 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:14:48,875 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 00:14:49,516 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\wandb-summary.json
+2025-05-29 00:14:49,916 INFO    wandb-upload_0:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\qclc0mw3-media/table/Iter_4/Epoch_15_TestPredictions_69_54a0af7c94880575d163.table.json
+2025-05-29 00:14:50,519 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:14:51,351 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:14:52,726 INFO    wandb-upload_2:23868 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmp1pi5yqta
+2025-05-29 00:14:53,927 INFO    SenderThread:23868 [sender.py:send_request_log_artifact():1441] logged artifact run-6vkcha3c-Iter_4Epoch_20_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc2OTU1NzM4Nw==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTQ0ODg4OA==', 'latestArtifact': None}}
+2025-05-29 00:14:53,927 DEBUG   SenderThread:23868 [sender.py:send():379] send: files
+2025-05-29 00:14:53,927 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file media\table\Iter_4/Epoch_20_TestPredictions_74_c1bf5d7fcb8063277644.table.json with policy now
+2025-05-29 00:14:53,927 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 00:14:53,928 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:14:53,928 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:14:53,928 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:14:53,929 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:14:53,929 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:14:53,929 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:14:53,929 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 00:14:54,541 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\wandb-summary.json
+2025-05-29 00:14:54,650 INFO    wandb-upload_3:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\cryb5hl8-media/table/Iter_4/Epoch_20_TestPredictions_74_c1bf5d7fcb8063277644.table.json
+2025-05-29 00:14:56,072 INFO    wandb-upload_0:23868 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpiaxet7uu
+2025-05-29 00:14:56,364 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:14:56,552 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:14:57,246 INFO    SenderThread:23868 [sender.py:send_request_log_artifact():1441] logged artifact run-6vkcha3c-Iter_5Epoch_5_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc2OTU1NzUyOA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTQ0ODkwMQ==', 'latestArtifact': None}}
+2025-05-29 00:14:57,247 DEBUG   SenderThread:23868 [sender.py:send():379] send: files
+2025-05-29 00:14:57,247 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file media\table\Iter_5/Epoch_5_TestPredictions_80_3710b3b2d2f4195fd674.table.json with policy now
+2025-05-29 00:14:57,247 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:14:57,247 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:14:57,248 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:14:57,248 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 00:14:57,553 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\wandb-summary.json
+2025-05-29 00:14:58,287 INFO    wandb-upload_1:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\0a4cqhyy-media/table/Iter_5/Epoch_5_TestPredictions_80_3710b3b2d2f4195fd674.table.json
+2025-05-29 00:14:58,554 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:14:59,616 INFO    wandb-upload_3:23868 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmp2xt_oea7
+2025-05-29 00:15:01,042 INFO    SenderThread:23868 [sender.py:send_request_log_artifact():1441] logged artifact run-6vkcha3c-Iter_5Epoch_10_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc2OTU1NzYyNQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTQ0ODkxNQ==', 'latestArtifact': None}}
+2025-05-29 00:15:01,042 DEBUG   SenderThread:23868 [sender.py:send():379] send: files
+2025-05-29 00:15:01,042 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file media\table\Iter_5/Epoch_10_TestPredictions_84_169917be5d32d821fb96.table.json with policy now
+2025-05-29 00:15:01,042 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 00:15:01,043 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:15:01,043 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:15:01,043 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:15:01,044 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 00:15:01,390 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:15:01,575 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\wandb-summary.json
+2025-05-29 00:15:01,793 INFO    wandb-upload_2:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\z07pby0t-media/table/Iter_5/Epoch_10_TestPredictions_84_169917be5d32d821fb96.table.json
+2025-05-29 00:15:02,581 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:15:03,364 INFO    wandb-upload_1:23868 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmp0vwah1om
+2025-05-29 00:15:04,548 INFO    SenderThread:23868 [sender.py:send_request_log_artifact():1441] logged artifact run-6vkcha3c-Iter_5Epoch_15_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc2OTU1Nzc1Mg==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTQ0ODkzMQ==', 'latestArtifact': None}}
+2025-05-29 00:15:04,548 DEBUG   SenderThread:23868 [sender.py:send():379] send: files
+2025-05-29 00:15:04,548 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file media\table\Iter_5/Epoch_15_TestPredictions_89_452b83c21b1d94d2c64e.table.json with policy now
+2025-05-29 00:15:04,548 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:15:04,549 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:15:04,549 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:15:04,550 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 00:15:04,602 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\wandb-summary.json
+2025-05-29 00:15:05,292 INFO    wandb-upload_0:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\vnsmry8i-media/table/Iter_5/Epoch_15_TestPredictions_89_452b83c21b1d94d2c64e.table.json
+2025-05-29 00:15:06,430 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:15:06,618 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:15:07,354 INFO    wandb-upload_2:23868 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpnmley7g9
+2025-05-29 00:15:08,597 INFO    SenderThread:23868 [sender.py:send_request_log_artifact():1441] logged artifact run-6vkcha3c-Iter_5Epoch_20_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc2OTU1Nzg1NQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTQ0ODk0Mw==', 'latestArtifact': None}}
+2025-05-29 00:15:08,597 DEBUG   SenderThread:23868 [sender.py:send():379] send: files
+2025-05-29 00:15:08,597 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file media\table\Iter_5/Epoch_20_TestPredictions_94_4372e707ad431fe45178.table.json with policy now
+2025-05-29 00:15:08,598 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:15:08,598 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:15:08,597 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 00:15:08,599 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:15:08,606 DEBUG   SenderThread:23868 [sender.py:send():379] send: history
+2025-05-29 00:15:08,606 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 00:15:08,607 INFO    SenderThread:23868 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 00:15:08,607 DEBUG   SenderThread:23868 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 00:15:08,630 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\wandb-summary.json
+2025-05-29 00:15:09,862 INFO    wandb-upload_3:23868 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmputo_bwc6wandb\6s7bkypf-media/table/Iter_5/Epoch_20_TestPredictions_94_4372e707ad431fe45178.table.json
+2025-05-29 00:15:10,643 INFO    Thread-16 :23868 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_001320-6vkcha3c\files\output.log
+2025-05-29 00:15:11,163 ERROR   wandb-upload_1:23868 [internal_api.py:upload_file():2548] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/645448950/1769557976/6a8a722b56f2387071d74dac7c02a951?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250528%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250528T161505Z&X-Goog-Expires=86399&X-Goog-Signature=baab6d03e96fc252d5962a3ae2352f29b01c6d25021c20fbb620b7f4c302c3fc228a80cbaf8fe2f0d89fb30ca69278cf3da4c54326a75791d4d5790f4c5da9c78d992d4d1a2596ebb2b8545266b19dd54aab8effb2d7ec4d0e64421180c28f26db97e1db85ed13ba85cd705d98a00a831bf02316036a61df470d6a7be1c0dd89bb8d9cb35a08382641e021eff80f1e4e81893e0c75b650c9c67fedb24bc9f800e14053c1786b6dd4ae41d919541edca156e1ed61e0a7ea8cf3148d55673b09a538608515439baabf456e92d383338dc738e06d623c27dcd60f024d429e7e29beef7690bf9fb84e5159c33f03113b8914ea36887d10a8a2eedd0da873bd41ba0e&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/645448950/1769557976/6a8a722b56f2387071d74dac7c02a951?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250528%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250528T161505Z&X-Goog-Expires=86399&X-Goog-Signature=baab6d03e96fc252d5962a3ae2352f29b01c6d25021c20fbb620b7f4c302c3fc228a80cbaf8fe2f0d89fb30ca69278cf3da4c54326a75791d4d5790f4c5da9c78d992d4d1a2596ebb2b8545266b19dd54aab8effb2d7ec4d0e64421180c28f26db97e1db85ed13ba85cd705d98a00a831bf02316036a61df470d6a7be1c0dd89bb8d9cb35a08382641e021eff80f1e4e81893e0c75b650c9c67fedb24bc9f800e14053c1786b6dd4ae41d919541edca156e1ed61e0a7ea8cf3148d55673b09a538608515439baabf456e92d383338dc738e06d623c27dcd60f024d429e7e29beef7690bf9fb84e5159c33f03113b8914ea36887d10a8a2eedd0da873bd41ba0e&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+2025-05-29 00:15:11,163 ERROR   wandb-upload_1:23868 [internal_api.py:upload_file():2550] upload_file request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'aopyK1byOHBx102sfAKpUQ==', 'Content-Type': 'application/json', 'Content-Length': '966'}
+2025-05-29 00:15:11,163 ERROR   wandb-upload_1:23868 [internal_api.py:upload_file():2552] upload_file response body: 
+2025-05-29 00:15:11,465 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:15:12,996 ERROR   wandb-upload_1:23868 [internal_api.py:upload_file():2548] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/645448950/1769557976/6a8a722b56f2387071d74dac7c02a951?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250528%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250528T161505Z&X-Goog-Expires=86399&X-Goog-Signature=baab6d03e96fc252d5962a3ae2352f29b01c6d25021c20fbb620b7f4c302c3fc228a80cbaf8fe2f0d89fb30ca69278cf3da4c54326a75791d4d5790f4c5da9c78d992d4d1a2596ebb2b8545266b19dd54aab8effb2d7ec4d0e64421180c28f26db97e1db85ed13ba85cd705d98a00a831bf02316036a61df470d6a7be1c0dd89bb8d9cb35a08382641e021eff80f1e4e81893e0c75b650c9c67fedb24bc9f800e14053c1786b6dd4ae41d919541edca156e1ed61e0a7ea8cf3148d55673b09a538608515439baabf456e92d383338dc738e06d623c27dcd60f024d429e7e29beef7690bf9fb84e5159c33f03113b8914ea36887d10a8a2eedd0da873bd41ba0e&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/645448950/1769557976/6a8a722b56f2387071d74dac7c02a951?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250528%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250528T161505Z&X-Goog-Expires=86399&X-Goog-Signature=baab6d03e96fc252d5962a3ae2352f29b01c6d25021c20fbb620b7f4c302c3fc228a80cbaf8fe2f0d89fb30ca69278cf3da4c54326a75791d4d5790f4c5da9c78d992d4d1a2596ebb2b8545266b19dd54aab8effb2d7ec4d0e64421180c28f26db97e1db85ed13ba85cd705d98a00a831bf02316036a61df470d6a7be1c0dd89bb8d9cb35a08382641e021eff80f1e4e81893e0c75b650c9c67fedb24bc9f800e14053c1786b6dd4ae41d919541edca156e1ed61e0a7ea8cf3148d55673b09a538608515439baabf456e92d383338dc738e06d623c27dcd60f024d429e7e29beef7690bf9fb84e5159c33f03113b8914ea36887d10a8a2eedd0da873bd41ba0e&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+2025-05-29 00:15:12,997 ERROR   wandb-upload_1:23868 [internal_api.py:upload_file():2550] upload_file request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'aopyK1byOHBx102sfAKpUQ==', 'Content-Type': 'application/json', 'Content-Length': '966'}
+2025-05-29 00:15:12,997 ERROR   wandb-upload_1:23868 [internal_api.py:upload_file():2552] upload_file response body: 
+2025-05-29 00:15:16,062 ERROR   wandb-upload_1:23868 [internal_api.py:upload_file():2548] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/645448950/1769557976/6a8a722b56f2387071d74dac7c02a951?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250528%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250528T161505Z&X-Goog-Expires=86399&X-Goog-Signature=baab6d03e96fc252d5962a3ae2352f29b01c6d25021c20fbb620b7f4c302c3fc228a80cbaf8fe2f0d89fb30ca69278cf3da4c54326a75791d4d5790f4c5da9c78d992d4d1a2596ebb2b8545266b19dd54aab8effb2d7ec4d0e64421180c28f26db97e1db85ed13ba85cd705d98a00a831bf02316036a61df470d6a7be1c0dd89bb8d9cb35a08382641e021eff80f1e4e81893e0c75b650c9c67fedb24bc9f800e14053c1786b6dd4ae41d919541edca156e1ed61e0a7ea8cf3148d55673b09a538608515439baabf456e92d383338dc738e06d623c27dcd60f024d429e7e29beef7690bf9fb84e5159c33f03113b8914ea36887d10a8a2eedd0da873bd41ba0e&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/645448950/1769557976/6a8a722b56f2387071d74dac7c02a951?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250528%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250528T161505Z&X-Goog-Expires=86399&X-Goog-Signature=baab6d03e96fc252d5962a3ae2352f29b01c6d25021c20fbb620b7f4c302c3fc228a80cbaf8fe2f0d89fb30ca69278cf3da4c54326a75791d4d5790f4c5da9c78d992d4d1a2596ebb2b8545266b19dd54aab8effb2d7ec4d0e64421180c28f26db97e1db85ed13ba85cd705d98a00a831bf02316036a61df470d6a7be1c0dd89bb8d9cb35a08382641e021eff80f1e4e81893e0c75b650c9c67fedb24bc9f800e14053c1786b6dd4ae41d919541edca156e1ed61e0a7ea8cf3148d55673b09a538608515439baabf456e92d383338dc738e06d623c27dcd60f024d429e7e29beef7690bf9fb84e5159c33f03113b8914ea36887d10a8a2eedd0da873bd41ba0e&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+2025-05-29 00:15:16,063 ERROR   wandb-upload_1:23868 [internal_api.py:upload_file():2550] upload_file request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'aopyK1byOHBx102sfAKpUQ==', 'Content-Type': 'application/json', 'Content-Length': '966'}
+2025-05-29 00:15:16,063 ERROR   wandb-upload_1:23868 [internal_api.py:upload_file():2552] upload_file response body: 
+2025-05-29 00:15:16,063 INFO    wandb-upload_1:23868 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\connectionpool.py", line 711, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\connectionpool.py", line 1007, in _prepare_proxy
+    conn.connect()
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\connection.py", line 419, in connect
+    self.sock = ssl_wrap_socket(
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "D:\anaconda\envs\agent3\lib\ssl.py", line 501, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\anaconda\envs\agent3\lib\ssl.py", line 1074, in _create
+    self.do_handshake()
+  File "D:\anaconda\envs\agent3\lib\ssl.py", line 1343, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLZeroReturnError: TLS/SSL connection has been closed (EOF) (_ssl.c:1133)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\connectionpool.py", line 798, in urlopen
+    retries = retries.increment(
+  File "D:\anaconda\envs\agent3\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/645448950/1769557976/6a8a722b56f2387071d74dac7c02a951?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250528%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250528T161505Z&X-Goog-Expires=86399&X-Goog-Signature=baab6d03e96fc252d5962a3ae2352f29b01c6d25021c20fbb620b7f4c302c3fc228a80cbaf8fe2f0d89fb30ca69278cf3da4c54326a75791d4d5790f4c5da9c78d992d4d1a2596ebb2b8545266b19dd54aab8effb2d7ec4d0e64421180c28f26db97e1db85ed13ba85cd705d98a00a831bf02316036a61df470d6a7be1c0dd89bb8d9cb35a08382641e021eff80f1e4e81893e0c75b650c9c67fedb24bc9f800e14053c1786b6dd4ae41d919541edca156e1ed61e0a7ea8cf3148d55673b09a538608515439baabf456e92d383338dc738e06d623c27dcd60f024d429e7e29beef7690bf9fb84e5159c33f03113b8914ea36887d10a8a2eedd0da873bd41ba0e&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2541, in upload_file
+    response = self._upload_file_session.put(
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 649, in put
+    return self.request("PUT", url, data=data, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/645448950/1769557976/6a8a722b56f2387071d74dac7c02a951?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250528%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250528T161505Z&X-Goog-Expires=86399&X-Goog-Signature=baab6d03e96fc252d5962a3ae2352f29b01c6d25021c20fbb620b7f4c302c3fc228a80cbaf8fe2f0d89fb30ca69278cf3da4c54326a75791d4d5790f4c5da9c78d992d4d1a2596ebb2b8545266b19dd54aab8effb2d7ec4d0e64421180c28f26db97e1db85ed13ba85cd705d98a00a831bf02316036a61df470d6a7be1c0dd89bb8d9cb35a08382641e021eff80f1e4e81893e0c75b650c9c67fedb24bc9f800e14053c1786b6dd4ae41d919541edca156e1ed61e0a7ea8cf3148d55673b09a538608515439baabf456e92d383338dc738e06d623c27dcd60f024d429e7e29beef7690bf9fb84e5159c33f03113b8914ea36887d10a8a2eedd0da873bd41ba0e&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2572, in upload_file
+    raise _e.with_traceback(sys.exc_info()[2])
+  File "D:\anaconda\envs\agent3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2541, in upload_file
+    response = self._upload_file_session.put(
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 649, in put
+    return self.request("PUT", url, data=data, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\anaconda\envs\agent3\lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+wandb.sdk.lib.retry.TransientError: None
+2025-05-29 00:15:16,505 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:15:21,536 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:15:21,795 ERROR   wandb-upload_1:23868 [internal_api.py:upload_file():2548] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/645448950/1769557976/6a8a722b56f2387071d74dac7c02a951?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250528%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250528T161505Z&X-Goog-Expires=86399&X-Goog-Signature=baab6d03e96fc252d5962a3ae2352f29b01c6d25021c20fbb620b7f4c302c3fc228a80cbaf8fe2f0d89fb30ca69278cf3da4c54326a75791d4d5790f4c5da9c78d992d4d1a2596ebb2b8545266b19dd54aab8effb2d7ec4d0e64421180c28f26db97e1db85ed13ba85cd705d98a00a831bf02316036a61df470d6a7be1c0dd89bb8d9cb35a08382641e021eff80f1e4e81893e0c75b650c9c67fedb24bc9f800e14053c1786b6dd4ae41d919541edca156e1ed61e0a7ea8cf3148d55673b09a538608515439baabf456e92d383338dc738e06d623c27dcd60f024d429e7e29beef7690bf9fb84e5159c33f03113b8914ea36887d10a8a2eedd0da873bd41ba0e&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/645448950/1769557976/6a8a722b56f2387071d74dac7c02a951?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250528%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250528T161505Z&X-Goog-Expires=86399&X-Goog-Signature=baab6d03e96fc252d5962a3ae2352f29b01c6d25021c20fbb620b7f4c302c3fc228a80cbaf8fe2f0d89fb30ca69278cf3da4c54326a75791d4d5790f4c5da9c78d992d4d1a2596ebb2b8545266b19dd54aab8effb2d7ec4d0e64421180c28f26db97e1db85ed13ba85cd705d98a00a831bf02316036a61df470d6a7be1c0dd89bb8d9cb35a08382641e021eff80f1e4e81893e0c75b650c9c67fedb24bc9f800e14053c1786b6dd4ae41d919541edca156e1ed61e0a7ea8cf3148d55673b09a538608515439baabf456e92d383338dc738e06d623c27dcd60f024d429e7e29beef7690bf9fb84e5159c33f03113b8914ea36887d10a8a2eedd0da873bd41ba0e&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+2025-05-29 00:15:21,795 ERROR   wandb-upload_1:23868 [internal_api.py:upload_file():2550] upload_file request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'aopyK1byOHBx102sfAKpUQ==', 'Content-Type': 'application/json', 'Content-Length': '966'}
+2025-05-29 00:15:21,795 ERROR   wandb-upload_1:23868 [internal_api.py:upload_file():2552] upload_file response body: 
+2025-05-29 00:15:26,571 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:15:31,605 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:15:32,258 ERROR   wandb-upload_1:23868 [internal_api.py:upload_file():2548] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/645448950/1769557976/6a8a722b56f2387071d74dac7c02a951?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250528%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250528T161505Z&X-Goog-Expires=86399&X-Goog-Signature=baab6d03e96fc252d5962a3ae2352f29b01c6d25021c20fbb620b7f4c302c3fc228a80cbaf8fe2f0d89fb30ca69278cf3da4c54326a75791d4d5790f4c5da9c78d992d4d1a2596ebb2b8545266b19dd54aab8effb2d7ec4d0e64421180c28f26db97e1db85ed13ba85cd705d98a00a831bf02316036a61df470d6a7be1c0dd89bb8d9cb35a08382641e021eff80f1e4e81893e0c75b650c9c67fedb24bc9f800e14053c1786b6dd4ae41d919541edca156e1ed61e0a7ea8cf3148d55673b09a538608515439baabf456e92d383338dc738e06d623c27dcd60f024d429e7e29beef7690bf9fb84e5159c33f03113b8914ea36887d10a8a2eedd0da873bd41ba0e&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/645448950/1769557976/6a8a722b56f2387071d74dac7c02a951?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250528%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250528T161505Z&X-Goog-Expires=86399&X-Goog-Signature=baab6d03e96fc252d5962a3ae2352f29b01c6d25021c20fbb620b7f4c302c3fc228a80cbaf8fe2f0d89fb30ca69278cf3da4c54326a75791d4d5790f4c5da9c78d992d4d1a2596ebb2b8545266b19dd54aab8effb2d7ec4d0e64421180c28f26db97e1db85ed13ba85cd705d98a00a831bf02316036a61df470d6a7be1c0dd89bb8d9cb35a08382641e021eff80f1e4e81893e0c75b650c9c67fedb24bc9f800e14053c1786b6dd4ae41d919541edca156e1ed61e0a7ea8cf3148d55673b09a538608515439baabf456e92d383338dc738e06d623c27dcd60f024d429e7e29beef7690bf9fb84e5159c33f03113b8914ea36887d10a8a2eedd0da873bd41ba0e&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+2025-05-29 00:15:32,258 ERROR   wandb-upload_1:23868 [internal_api.py:upload_file():2550] upload_file request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'aopyK1byOHBx102sfAKpUQ==', 'Content-Type': 'application/json', 'Content-Length': '966'}
+2025-05-29 00:15:32,258 ERROR   wandb-upload_1:23868 [internal_api.py:upload_file():2552] upload_file response body: 
+2025-05-29 00:15:36,656 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:15:41,690 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:15:46,727 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:15:49,444 ERROR   wandb-upload_1:23868 [internal_api.py:upload_file():2548] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/645448950/1769557976/6a8a722b56f2387071d74dac7c02a951?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250528%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250528T161505Z&X-Goog-Expires=86399&X-Goog-Signature=baab6d03e96fc252d5962a3ae2352f29b01c6d25021c20fbb620b7f4c302c3fc228a80cbaf8fe2f0d89fb30ca69278cf3da4c54326a75791d4d5790f4c5da9c78d992d4d1a2596ebb2b8545266b19dd54aab8effb2d7ec4d0e64421180c28f26db97e1db85ed13ba85cd705d98a00a831bf02316036a61df470d6a7be1c0dd89bb8d9cb35a08382641e021eff80f1e4e81893e0c75b650c9c67fedb24bc9f800e14053c1786b6dd4ae41d919541edca156e1ed61e0a7ea8cf3148d55673b09a538608515439baabf456e92d383338dc738e06d623c27dcd60f024d429e7e29beef7690bf9fb84e5159c33f03113b8914ea36887d10a8a2eedd0da873bd41ba0e&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/645448950/1769557976/6a8a722b56f2387071d74dac7c02a951?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250528%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250528T161505Z&X-Goog-Expires=86399&X-Goog-Signature=baab6d03e96fc252d5962a3ae2352f29b01c6d25021c20fbb620b7f4c302c3fc228a80cbaf8fe2f0d89fb30ca69278cf3da4c54326a75791d4d5790f4c5da9c78d992d4d1a2596ebb2b8545266b19dd54aab8effb2d7ec4d0e64421180c28f26db97e1db85ed13ba85cd705d98a00a831bf02316036a61df470d6a7be1c0dd89bb8d9cb35a08382641e021eff80f1e4e81893e0c75b650c9c67fedb24bc9f800e14053c1786b6dd4ae41d919541edca156e1ed61e0a7ea8cf3148d55673b09a538608515439baabf456e92d383338dc738e06d623c27dcd60f024d429e7e29beef7690bf9fb84e5159c33f03113b8914ea36887d10a8a2eedd0da873bd41ba0e&X-Goog-SignedHeaders=content-md5%3Bcontent-type%3Bhost&X-User=939531372 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+2025-05-29 00:15:49,444 ERROR   wandb-upload_1:23868 [internal_api.py:upload_file():2550] upload_file request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'aopyK1byOHBx102sfAKpUQ==', 'Content-Type': 'application/json', 'Content-Length': '966'}
+2025-05-29 00:15:49,445 ERROR   wandb-upload_1:23868 [internal_api.py:upload_file():2552] upload_file response body: 
+2025-05-29 00:15:51,774 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:15:56,799 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:16:01,835 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:16:06,873 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:16:11,913 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:16:16,957 DEBUG   HandlerThread:23868 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 00:16:20,862 INFO    cpu       :23868 [interfaces.py:monitor():140] Process cpu has exited.
+2025-05-29 00:16:20,862 DEBUG   SystemMonitor:23868 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2025-05-29 00:16:20,863 DEBUG   SystemMonitor:23868 [system_monitor.py:_start():170] Publishing last batch of metrics
+2025-05-29 00:16:22,400 INFO    wandb-upload_1:23868 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmp0taf6y2k
+2025-05-29 00:16:22,975 INFO    MainThread:23868 [internal.py:handle_exit():76] Internal process exited

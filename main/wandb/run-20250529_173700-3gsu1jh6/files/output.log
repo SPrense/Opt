@@ -1,0 +1,387 @@
+Weights & Biases 初始化成功。
+--- 0. 加载原始完整数据从: sub_ratings.csv ---
+完整原始数据集加载: 50 用户 (max_id+1), 50 物品 (max_id+1)。
+从 'test_row.csv' 提取测试数据并更新训练集...
+  测试集针对用户 ID: 49 (来自 test_row.csv)
+  从 'test_row.csv' 提取了 8 个测试样本。
+  更新后的 original_train_df 用于生成稀疏训练数据。
+模型将基于原始数据维度初始化: 用户数=50, 物品数=50
+测试数据集初始化: 8 个有效评分。
+测试集创建成功，包含 8 个样本。
+======= 主动学习迭代轮次: 1/8 (策略: PopularItem) =======
+--- Iter 1: 准备数据 ---
+  生成初始稀疏训练数据...
+初始稀疏训练数据已生成: 335 个评分。
+  当前训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50
+--- Iter 1: 初始化/重置模型 ---
+--- Iter 1: 训练模型 ---
+--- 开始训练迭代轮次 1 (共 15 epochs) ---
+  Iter 1 Epoch [1/15], Avg Train Loss: 17.739312
+  Iter 1 Epoch [2/15], Avg Train Loss: 17.672875
+  Iter 1 Epoch [3/15], Avg Train Loss: 17.566605
+  Iter 1 Epoch [4/15], Avg Train Loss: 17.366655
+  Iter 1 Epoch [5/15], Avg Train Loss: 17.022580
+  Iter 1 Epoch [5/15], Test Loss: 20.098682
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_1\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_1\checkpoint_epoch_5_grads.pkl (包含 335 条记录)
+  Iter 1 Epoch [6/15], Avg Train Loss: 16.488048
+  Iter 1 Epoch [7/15], Avg Train Loss: 15.719140
+  Iter 1 Epoch [8/15], Avg Train Loss: 14.687229
+  Iter 1 Epoch [9/15], Avg Train Loss: 13.386149
+  Iter 1 Epoch [10/15], Avg Train Loss: 11.852275
+  Iter 1 Epoch [10/15], Test Loss: 16.493656
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_1\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_1\checkpoint_epoch_10_grads.pkl (包含 335 条记录)
+  Iter 1 Epoch [11/15], Avg Train Loss: 10.166983
+  Iter 1 Epoch [12/15], Avg Train Loss: 8.354697
+  Iter 1 Epoch [13/15], Avg Train Loss: 6.585662
+  Iter 1 Epoch [14/15], Avg Train Loss: 4.978998
+  Iter 1 Epoch [15/15], Avg Train Loss: 3.592934
+  Iter 1 Epoch [15/15], Test Loss: 8.237106
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_1\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_1\checkpoint_epoch_15_grads.pkl (包含 335 条记录)
+--- 训练迭代轮次 1 完成 ---
+--- Iter 1: 使用热门物品策略生成采集点 ---
+  热门物品策略选择了 50 个采集点。
+  Iter 1: 已识别出 50 个新的待采集位置 (目标: 50):
+    用户 41, 物品 33
+    用户 16, 物品 33
+    用户 25, 物品 12
+    用户 45, 物品 12
+    用户 29, 物品 43
+    ...
+--- Iter 1: 模拟数据采集 ---
+  Iter 1: 已为 47 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 1: 迭代结束时最终测试损失: 8.237106
+--- Iter 1: 生成可视化图像 ---
+Iter 1 (PopularItem): 评分矩阵可视化已保存至: visualizations_iter\strategy_PopularItem\rating_matrix_iter_1_collection.png
+======= 主动学习迭代轮次: 2/8 (策略: PopularItem) =======
+--- Iter 2: 准备数据 ---
+  将上一轮收集的 47 个评分添加到训练数据...
+已添加 47 个新评分到训练数据。总评分数: 382
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50
+--- Iter 2: 初始化/重置模型 ---
+--- Iter 2: 训练模型 ---
+--- 开始训练迭代轮次 2 (共 15 epochs) ---
+  Iter 2 Epoch [1/15], Avg Train Loss: 17.908406
+  Iter 2 Epoch [2/15], Avg Train Loss: 17.850956
+  Iter 2 Epoch [3/15], Avg Train Loss: 17.759613
+  Iter 2 Epoch [4/15], Avg Train Loss: 17.574114
+  Iter 2 Epoch [5/15], Avg Train Loss: 17.222292
+  Iter 2 Epoch [5/15], Test Loss: 20.203375
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_2\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_2\checkpoint_epoch_5_grads.pkl (包含 382 条记录)
+  Iter 2 Epoch [6/15], Avg Train Loss: 16.624856
+  Iter 2 Epoch [7/15], Avg Train Loss: 15.726341
+  Iter 2 Epoch [8/15], Avg Train Loss: 14.455634
+  Iter 2 Epoch [9/15], Avg Train Loss: 12.847372
+  Iter 2 Epoch [10/15], Avg Train Loss: 10.931600
+  Iter 2 Epoch [10/15], Test Loss: 15.843498
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_2\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_2\checkpoint_epoch_10_grads.pkl (包含 382 条记录)
+  Iter 2 Epoch [11/15], Avg Train Loss: 8.839315
+  Iter 2 Epoch [12/15], Avg Train Loss: 6.781305
+  Iter 2 Epoch [13/15], Avg Train Loss: 4.910977
+  Iter 2 Epoch [14/15], Avg Train Loss: 3.398449
+  Iter 2 Epoch [15/15], Avg Train Loss: 2.295769
+  Iter 2 Epoch [15/15], Test Loss: 7.275101
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_2\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_2\checkpoint_epoch_15_grads.pkl (包含 382 条记录)
+--- 训练迭代轮次 2 完成 ---
+--- Iter 2: 使用热门物品策略生成采集点 ---
+  热门物品策略选择了 50 个采集点。
+  Iter 2: 已识别出 50 个新的待采集位置 (目标: 50):
+    用户 10, 物品 33
+    用户 31, 物品 33
+    用户 27, 物品 12
+    用户 37, 物品 12
+    用户 11, 物品 43
+    ...
+--- Iter 2: 模拟数据采集 ---
+  Iter 2: 已为 44 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 2: 迭代结束时最终测试损失: 7.275101
+--- Iter 2: 生成可视化图像 ---
+Iter 2 (PopularItem): 评分矩阵可视化已保存至: visualizations_iter\strategy_PopularItem\rating_matrix_iter_2_collection.png
+======= 主动学习迭代轮次: 3/8 (策略: PopularItem) =======
+--- Iter 3: 准备数据 ---
+  将上一轮收集的 44 个评分添加到训练数据...
+已添加 44 个新评分到训练数据。总评分数: 426
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50
+--- Iter 3: 初始化/重置模型 ---
+--- Iter 3: 训练模型 ---
+--- 开始训练迭代轮次 3 (共 15 epochs) ---
+  Iter 3 Epoch [1/15], Avg Train Loss: 17.854224
+  Iter 3 Epoch [2/15], Avg Train Loss: 17.763123
+  Iter 3 Epoch [3/15], Avg Train Loss: 17.573347
+  Iter 3 Epoch [4/15], Avg Train Loss: 17.164316
+  Iter 3 Epoch [5/15], Avg Train Loss: 16.422564
+  Iter 3 Epoch [5/15], Test Loss: 19.535141
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_3\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_3\checkpoint_epoch_5_grads.pkl (包含 426 条记录)
+  Iter 3 Epoch [6/15], Avg Train Loss: 15.270630
+  Iter 3 Epoch [7/15], Avg Train Loss: 13.652481
+  Iter 3 Epoch [8/15], Avg Train Loss: 11.630226
+  Iter 3 Epoch [9/15], Avg Train Loss: 9.316705
+  Iter 3 Epoch [10/15], Avg Train Loss: 6.969904
+  Iter 3 Epoch [10/15], Test Loss: 11.747732
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_3\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_3\checkpoint_epoch_10_grads.pkl (包含 426 条记录)
+  Iter 3 Epoch [11/15], Avg Train Loss: 4.825278
+  Iter 3 Epoch [12/15], Avg Train Loss: 3.104466
+  Iter 3 Epoch [13/15], Avg Train Loss: 1.926595
+  Iter 3 Epoch [14/15], Avg Train Loss: 1.240982
+  Iter 3 Epoch [15/15], Avg Train Loss: 0.887109
+  Iter 3 Epoch [15/15], Test Loss: 3.628496
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_3\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_3\checkpoint_epoch_15_grads.pkl (包含 426 条记录)
+--- 训练迭代轮次 3 完成 ---
+--- Iter 3: 使用热门物品策略生成采集点 ---
+  热门物品策略选择了 50 个采集点。
+  Iter 3: 已识别出 50 个新的待采集位置 (目标: 50):
+    用户 31, 物品 12
+    用户 16, 物品 12
+    用户 2, 物品 33
+    用户 13, 物品 33
+    用户 38, 物品 43
+    ...
+--- Iter 3: 模拟数据采集 ---
+  Iter 3: 已为 44 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 3: 迭代结束时最终测试损失: 3.628496
+--- Iter 3: 生成可视化图像 ---
+Iter 3 (PopularItem): 评分矩阵可视化已保存至: visualizations_iter\strategy_PopularItem\rating_matrix_iter_3_collection.png
+======= 主动学习迭代轮次: 4/8 (策略: PopularItem) =======
+--- Iter 4: 准备数据 ---
+  将上一轮收集的 44 个评分添加到训练数据...
+已添加 44 个新评分到训练数据。总评分数: 470
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50
+--- Iter 4: 初始化/重置模型 ---
+--- Iter 4: 训练模型 ---
+--- 开始训练迭代轮次 4 (共 15 epochs) ---
+  Iter 4 Epoch [1/15], Avg Train Loss: 17.858154
+  Iter 4 Epoch [2/15], Avg Train Loss: 17.789612
+  Iter 4 Epoch [3/15], Avg Train Loss: 17.660299
+  Iter 4 Epoch [4/15], Avg Train Loss: 17.366586
+  Iter 4 Epoch [5/15], Avg Train Loss: 16.758570
+  Iter 4 Epoch [5/15], Test Loss: 20.290621
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_4\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_4\checkpoint_epoch_5_grads.pkl (包含 470 条记录)
+  Iter 4 Epoch [6/15], Avg Train Loss: 15.665082
+  Iter 4 Epoch [7/15], Avg Train Loss: 13.986607
+  Iter 4 Epoch [8/15], Avg Train Loss: 11.741023
+  Iter 4 Epoch [9/15], Avg Train Loss: 9.114644
+  Iter 4 Epoch [10/15], Avg Train Loss: 6.431408
+  Iter 4 Epoch [10/15], Test Loss: 12.183264
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_4\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_4\checkpoint_epoch_10_grads.pkl (包含 470 条记录)
+  Iter 4 Epoch [11/15], Avg Train Loss: 4.155925
+  Iter 4 Epoch [12/15], Avg Train Loss: 2.512973
+  Iter 4 Epoch [13/15], Avg Train Loss: 1.523866
+  Iter 4 Epoch [14/15], Avg Train Loss: 1.045875
+  Iter 4 Epoch [15/15], Avg Train Loss: 0.810399
+  Iter 4 Epoch [15/15], Test Loss: 3.241467
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_4\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_4\checkpoint_epoch_15_grads.pkl (包含 470 条记录)
+--- 训练迭代轮次 4 完成 ---
+--- Iter 4: 使用热门物品策略生成采集点 ---
+  热门物品策略选择了 50 个采集点。
+  Iter 4: 已识别出 50 个新的待采集位置 (目标: 50):
+    用户 8, 物品 12
+    用户 40, 物品 12
+    用户 33, 物品 33
+    用户 20, 物品 33
+    用户 10, 物品 43
+    ...
+--- Iter 4: 模拟数据采集 ---
+  Iter 4: 已为 42 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 4: 迭代结束时最终测试损失: 3.241467
+--- Iter 4: 生成可视化图像 ---
+Iter 4 (PopularItem): 评分矩阵可视化已保存至: visualizations_iter\strategy_PopularItem\rating_matrix_iter_4_collection.png
+======= 主动学习迭代轮次: 5/8 (策略: PopularItem) =======
+--- Iter 5: 准备数据 ---
+  将上一轮收集的 42 个评分添加到训练数据...
+已添加 42 个新评分到训练数据。总评分数: 512
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50
+--- Iter 5: 初始化/重置模型 ---
+--- Iter 5: 训练模型 ---
+--- 开始训练迭代轮次 5 (共 15 epochs) ---
+  Iter 5 Epoch [1/15], Avg Train Loss: 17.922950
+  Iter 5 Epoch [2/15], Avg Train Loss: 17.839956
+  Iter 5 Epoch [3/15], Avg Train Loss: 17.634488
+  Iter 5 Epoch [4/15], Avg Train Loss: 17.120082
+  Iter 5 Epoch [5/15], Avg Train Loss: 16.077143
+  Iter 5 Epoch [5/15], Test Loss: 18.779629
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_5\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_5\checkpoint_epoch_5_grads.pkl (包含 512 条记录)
+  Iter 5 Epoch [6/15], Avg Train Loss: 14.365813
+  Iter 5 Epoch [7/15], Avg Train Loss: 12.011671
+  Iter 5 Epoch [8/15], Avg Train Loss: 9.155712
+  Iter 5 Epoch [9/15], Avg Train Loss: 6.267964
+  Iter 5 Epoch [10/15], Avg Train Loss: 3.835310
+  Iter 5 Epoch [10/15], Test Loss: 7.055050
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_5\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_5\checkpoint_epoch_10_grads.pkl (包含 512 条记录)
+  Iter 5 Epoch [11/15], Avg Train Loss: 2.161461
+  Iter 5 Epoch [12/15], Avg Train Loss: 1.287396
+  Iter 5 Epoch [13/15], Avg Train Loss: 0.897122
+  Iter 5 Epoch [14/15], Avg Train Loss: 0.723697
+  Iter 5 Epoch [15/15], Avg Train Loss: 0.626047
+  Iter 5 Epoch [15/15], Test Loss: 1.558454
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_5\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_5\checkpoint_epoch_15_grads.pkl (包含 512 条记录)
+--- 训练迭代轮次 5 完成 ---
+--- Iter 5: 使用热门物品策略生成采集点 ---
+  热门物品策略选择了 50 个采集点。
+  Iter 5: 已识别出 50 个新的待采集位置 (目标: 50):
+    用户 46, 物品 12
+    用户 33, 物品 12
+    用户 9, 物品 43
+    用户 42, 物品 43
+    用户 0, 物品 18
+    ...
+--- Iter 5: 模拟数据采集 ---
+  Iter 5: 已为 45 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 5: 迭代结束时最终测试损失: 1.558454
+--- Iter 5: 生成可视化图像 ---
+Iter 5 (PopularItem): 评分矩阵可视化已保存至: visualizations_iter\strategy_PopularItem\rating_matrix_iter_5_collection.png
+======= 主动学习迭代轮次: 6/8 (策略: PopularItem) =======
+--- Iter 6: 准备数据 ---
+  将上一轮收集的 45 个评分添加到训练数据...
+已添加 45 个新评分到训练数据。总评分数: 557
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50
+--- Iter 6: 初始化/重置模型 ---
+--- Iter 6: 训练模型 ---
+--- 开始训练迭代轮次 6 (共 15 epochs) ---
+  Iter 6 Epoch [1/15], Avg Train Loss: 17.876509
+  Iter 6 Epoch [2/15], Avg Train Loss: 17.749482
+  Iter 6 Epoch [3/15], Avg Train Loss: 17.389355
+  Iter 6 Epoch [4/15], Avg Train Loss: 16.533994
+  Iter 6 Epoch [5/15], Avg Train Loss: 14.957610
+  Iter 6 Epoch [5/15], Test Loss: 17.407545
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_6\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_6\checkpoint_epoch_5_grads.pkl (包含 557 条记录)
+  Iter 6 Epoch [6/15], Avg Train Loss: 12.609301
+  Iter 6 Epoch [7/15], Avg Train Loss: 9.714290
+  Iter 6 Epoch [8/15], Avg Train Loss: 6.687924
+  Iter 6 Epoch [9/15], Avg Train Loss: 4.096132
+  Iter 6 Epoch [10/15], Avg Train Loss: 2.343138
+  Iter 6 Epoch [10/15], Test Loss: 4.199162
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_6\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_6\checkpoint_epoch_10_grads.pkl (包含 557 条记录)
+  Iter 6 Epoch [11/15], Avg Train Loss: 1.399055
+  Iter 6 Epoch [12/15], Avg Train Loss: 0.967719
+  Iter 6 Epoch [13/15], Avg Train Loss: 0.771659
+  Iter 6 Epoch [14/15], Avg Train Loss: 0.668531
+  Iter 6 Epoch [15/15], Avg Train Loss: 0.601847
+  Iter 6 Epoch [15/15], Test Loss: 1.487525
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_6\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_6\checkpoint_epoch_15_grads.pkl (包含 557 条记录)
+--- 训练迭代轮次 6 完成 ---
+--- Iter 6: 使用热门物品策略生成采集点 ---
+  热门物品策略选择了 50 个采集点。
+  Iter 6: 已识别出 50 个新的待采集位置 (目标: 50):
+    用户 0, 物品 12
+    用户 39, 物品 12
+    用户 25, 物品 43
+    用户 41, 物品 43
+    用户 28, 物品 18
+    ...
+--- Iter 6: 模拟数据采集 ---
+  Iter 6: 已为 43 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 6: 迭代结束时最终测试损失: 1.487525
+--- Iter 6: 生成可视化图像 ---
+Iter 6 (PopularItem): 评分矩阵可视化已保存至: visualizations_iter\strategy_PopularItem\rating_matrix_iter_6_collection.png
+======= 主动学习迭代轮次: 7/8 (策略: PopularItem) =======
+--- Iter 7: 准备数据 ---
+  将上一轮收集的 43 个评分添加到训练数据...
+已添加 43 个新评分到训练数据。总评分数: 600
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50
+--- Iter 7: 初始化/重置模型 ---
+--- Iter 7: 训练模型 ---
+--- 开始训练迭代轮次 7 (共 15 epochs) ---
+  Iter 7 Epoch [1/15], Avg Train Loss: 17.865209
+  Iter 7 Epoch [2/15], Avg Train Loss: 17.732126
+  Iter 7 Epoch [3/15], Avg Train Loss: 17.296620
+  Iter 7 Epoch [4/15], Avg Train Loss: 16.159995
+  Iter 7 Epoch [5/15], Avg Train Loss: 14.072100
+  Iter 7 Epoch [5/15], Test Loss: 16.494692
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_7\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_7\checkpoint_epoch_5_grads.pkl (包含 600 条记录)
+  Iter 7 Epoch [6/15], Avg Train Loss: 11.084102
+  Iter 7 Epoch [7/15], Avg Train Loss: 7.655945
+  Iter 7 Epoch [8/15], Avg Train Loss: 4.513256
+  Iter 7 Epoch [9/15], Avg Train Loss: 2.314905
+  Iter 7 Epoch [10/15], Avg Train Loss: 1.201847
+  Iter 7 Epoch [10/15], Test Loss: 2.729363
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_7\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_7\checkpoint_epoch_10_grads.pkl (包含 600 条记录)
+  Iter 7 Epoch [11/15], Avg Train Loss: 0.812375
+  Iter 7 Epoch [12/15], Avg Train Loss: 0.671397
+  Iter 7 Epoch [13/15], Avg Train Loss: 0.590241
+  Iter 7 Epoch [14/15], Avg Train Loss: 0.550353
+  Iter 7 Epoch [15/15], Avg Train Loss: 0.524749
+  Iter 7 Epoch [15/15], Test Loss: 0.906201
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_7\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_7\checkpoint_epoch_15_grads.pkl (包含 600 条记录)
+--- 训练迭代轮次 7 完成 ---
+--- Iter 7: 使用热门物品策略生成采集点 ---
+  热门物品策略选择了 50 个采集点。
+  Iter 7: 已识别出 50 个新的待采集位置 (目标: 50):
+    用户 17, 物品 12
+    用户 19, 物品 12
+    用户 20, 物品 18
+    用户 16, 物品 18
+    用户 38, 物品 3
+    ...
+--- Iter 7: 模拟数据采集 ---
+  Iter 7: 已为 46 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 7: 迭代结束时最终测试损失: 0.906201
+--- Iter 7: 生成可视化图像 ---
+Iter 7 (PopularItem): 评分矩阵可视化已保存至: visualizations_iter\strategy_PopularItem\rating_matrix_iter_7_collection.png
+======= 主动学习迭代轮次: 8/8 (策略: PopularItem) =======
+--- Iter 8: 准备数据 ---
+  将上一轮收集的 46 个评分添加到训练数据...
+已添加 46 个新评分到训练数据。总评分数: 646
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50
+--- Iter 8: 初始化/重置模型 ---
+--- Iter 8: 训练模型 ---
+--- 开始训练迭代轮次 8 (共 15 epochs) ---
+  Iter 8 Epoch [1/15], Avg Train Loss: 18.012059
+  Iter 8 Epoch [2/15], Avg Train Loss: 17.856449
+  Iter 8 Epoch [3/15], Avg Train Loss: 17.289169
+  Iter 8 Epoch [4/15], Avg Train Loss: 15.803883
+  Iter 8 Epoch [5/15], Avg Train Loss: 13.121370
+  Iter 8 Epoch [5/15], Test Loss: 15.267292
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_8\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_8\checkpoint_epoch_5_grads.pkl (包含 646 条记录)
+  Iter 8 Epoch [6/15], Avg Train Loss: 9.441017
+  Iter 8 Epoch [7/15], Avg Train Loss: 5.664414
+  Iter 8 Epoch [8/15], Avg Train Loss: 2.828709
+  Iter 8 Epoch [9/15], Avg Train Loss: 1.381902
+  Iter 8 Epoch [10/15], Avg Train Loss: 0.916373
+  Iter 8 Epoch [10/15], Test Loss: 2.042341
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_8\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_8\checkpoint_epoch_10_grads.pkl (包含 646 条记录)
+  Iter 8 Epoch [11/15], Avg Train Loss: 0.736441
+  Iter 8 Epoch [12/15], Avg Train Loss: 0.646257
+  Iter 8 Epoch [13/15], Avg Train Loss: 0.593197
+  Iter 8 Epoch [14/15], Avg Train Loss: 0.571133
+  Iter 8 Epoch [15/15], Avg Train Loss: 0.557519
+  Iter 8 Epoch [15/15], Test Loss: 0.806071
+    已保存checkpoint: checkpoints_iter\strategy_PopularItem\iter_8\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_PopularItem\iter_8\checkpoint_epoch_15_grads.pkl (包含 646 条记录)
+--- 训练迭代轮次 8 完成 ---
+--- Iter 8: 使用热门物品策略生成采集点 ---
+  热门物品策略选择了 50 个采集点。
+  Iter 8: 已识别出 50 个新的待采集位置 (目标: 50):
+    用户 29, 物品 12
+    用户 18, 物品 12
+    用户 10, 物品 18
+    用户 21, 物品 18
+    用户 21, 物品 3
+    ...
+--- Iter 8: 模拟数据采集 ---
+  Iter 8: 已为 49 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 8: 迭代结束时最终测试损失: 0.806071
+--- Iter 8: 生成可视化图像 ---
+Iter 8 (PopularItem): 评分矩阵可视化已保存至: visualizations_iter\strategy_PopularItem\rating_matrix_iter_8_collection.png
+======= 主动学习所有 8 轮迭代完成 =======

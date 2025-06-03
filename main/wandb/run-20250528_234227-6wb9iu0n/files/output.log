@@ -1,0 +1,809 @@
+Weights & Biases 初始化成功。
+--- 0. 加载原始完整数据从: sub_ratings.csv ---
+完整原始数据集加载: 50 用户 (max_id+1), 50 物品 (max_id+1)。
+从 'test_col.csv' 提取测试数据并更新训练集...
+  测试集针对物品 ID: 49 (来自 test_col.csv)
+  从 'test_col.csv' 提取了 46 个测试样本。
+  更新后的 original_train_df 用于生成稀疏训练数据。
+模型将基于原始数据维度初始化: 用户数=50, 物品数=50
+测试数据集初始化: 46 个有效评分。
+测试集创建成功，包含 46 个样本。
+======= 主动学习迭代轮次: 1/6 (策略: TracInCP) =======
+--- Iter 1: 准备数据 ---
+  生成初始稀疏训练数据...
+初始稀疏训练数据已生成: 334 个评分。
+  当前训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 49
+--- Iter 1: 初始化/重置模型 ---
+--- Iter 1: 训练模型 ---
+--- 开始训练迭代轮次 1 (共 20 epochs) ---
+  Iter 1 Epoch [1/20], Avg Train Loss: 18.515196
+  Iter 1 Epoch [2/20], Avg Train Loss: 18.452219
+  Iter 1 Epoch [3/20], Avg Train Loss: 18.343072
+  Iter 1 Epoch [4/20], Avg Train Loss: 18.124856
+  Iter 1 Epoch [5/20], Avg Train Loss: 17.728965
+  Iter 1 Epoch [5/20], Test Loss: 20.330211
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_1\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_1\checkpoint_epoch_5_grads.pkl (包含 334 条记录)
+  Iter 1 Epoch [6/20], Avg Train Loss: 17.080126
+  Iter 1 Epoch [7/20], Avg Train Loss: 16.123069
+  Iter 1 Epoch [8/20], Avg Train Loss: 14.850348
+  Iter 1 Epoch [9/20], Avg Train Loss: 13.258004
+  Iter 1 Epoch [10/20], Avg Train Loss: 11.409977
+  Iter 1 Epoch [10/20], Test Loss: 20.430809
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_1\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_1\checkpoint_epoch_10_grads.pkl (包含 334 条记录)
+  Iter 1 Epoch [11/20], Avg Train Loss: 9.413372
+  Iter 1 Epoch [12/20], Avg Train Loss: 7.402549
+  Iter 1 Epoch [13/20], Avg Train Loss: 5.515320
+  Iter 1 Epoch [14/20], Avg Train Loss: 3.939095
+  Iter 1 Epoch [15/20], Avg Train Loss: 2.742036
+  Iter 1 Epoch [15/20], Test Loss: 20.567428
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_1\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_1\checkpoint_epoch_15_grads.pkl (包含 334 条记录)
+  Iter 1 Epoch [16/20], Avg Train Loss: 1.885154
+  Iter 1 Epoch [17/20], Avg Train Loss: 1.346352
+  Iter 1 Epoch [18/20], Avg Train Loss: 1.038192
+  Iter 1 Epoch [19/20], Avg Train Loss: 0.824975
+  Iter 1 Epoch [20/20], Avg Train Loss: 0.695911
+  Iter 1 Epoch [20/20], Test Loss: 20.647289
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_1\model_epoch_20.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_1\checkpoint_epoch_20_grads.pkl (包含 334 条记录)
+--- 训练迭代轮次 1 完成 ---
+--- Iter 1: 计算 TracInCP 解耦影响值 ---
+  TracInCP: 使用整个测试集 (包含 46 个样本) 作为影响目标。
+  TracInCP: 正在为每个checkpoint预计算测试集的平均梯度...
+  TracInCP: 测试集平均梯度预计算完成。
+  Iter 1: 已识别出 30 个新的待采集位置 (目标: 30):
+    用户 40, 物品 0
+    用户 40, 物品 24
+    用户 17, 物品 0
+    用户 40, 物品 11
+    用户 17, 物品 24
+    ...
+--- Iter 1: 模拟数据采集 ---
+  Iter 1: 已为 27 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 1: 迭代结束时最终测试损失: 20.647289
+--- Iter 1: 生成可视化图像 ---
+Iter 1 (TracInCP): 评分矩阵可视化已保存至: visualizations_iter\strategy_TracInCP\rating_matrix_iter_1_collection.png
+======= 主动学习迭代轮次: 2/6 (策略: TracInCP) =======
+--- Iter 2: 准备数据 ---
+  将上一轮收集的 27 个评分添加到训练数据...
+已添加 27 个新评分到训练数据。总评分数: 361
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 49
+--- Iter 2: 初始化/重置模型 ---
+--- Iter 2: 训练模型 ---
+--- 开始训练迭代轮次 2 (共 20 epochs) ---
+  Iter 2 Epoch [1/20], Avg Train Loss: 18.755431
+  Iter 2 Epoch [2/20], Avg Train Loss: 18.685786
+  Iter 2 Epoch [3/20], Avg Train Loss: 18.562735
+  Iter 2 Epoch [4/20], Avg Train Loss: 18.310008
+  Iter 2 Epoch [5/20], Avg Train Loss: 17.851808
+  Iter 2 Epoch [5/20], Test Loss: 20.239294
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 29289 (\N{CJK UNIFIED IDEOGRAPH-7269}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 21697 (\N{CJK UNIFIED IDEOGRAPH-54C1}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 29992 (\N{CJK UNIFIED IDEOGRAPH-7528}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 25143 (\N{CJK UNIFIED IDEOGRAPH-6237}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 35780 (\N{CJK UNIFIED IDEOGRAPH-8BC4}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 20998 (\N{CJK UNIFIED IDEOGRAPH-5206}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 30697 (\N{CJK UNIFIED IDEOGRAPH-77E9}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 38453 (\N{CJK UNIFIED IDEOGRAPH-9635}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 32418 (\N{CJK UNIFIED IDEOGRAPH-7EA2}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 33394 (\N{CJK UNIFIED IDEOGRAPH-8272}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 24453 (\N{CJK UNIFIED IDEOGRAPH-5F85}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 37319 (\N{CJK UNIFIED IDEOGRAPH-91C7}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 38598 (\N{CJK UNIFIED IDEOGRAPH-96C6}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 32511 (\N{CJK UNIFIED IDEOGRAPH-7EFF}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 24050 (\N{CJK UNIFIED IDEOGRAPH-5DF2}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 26377 (\N{CJK UNIFIED IDEOGRAPH-6709}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 28784 (\N{CJK UNIFIED IDEOGRAPH-7070}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 31354 (\N{CJK UNIFIED IDEOGRAPH-7A7A}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 32570 (\N{CJK UNIFIED IDEOGRAPH-7F3A}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 29992 (\N{CJK UNIFIED IDEOGRAPH-7528}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 25143 (\N{CJK UNIFIED IDEOGRAPH-6237}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 29289 (\N{CJK UNIFIED IDEOGRAPH-7269}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 21697 (\N{CJK UNIFIED IDEOGRAPH-54C1}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 35780 (\N{CJK UNIFIED IDEOGRAPH-8BC4}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 20998 (\N{CJK UNIFIED IDEOGRAPH-5206}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 30697 (\N{CJK UNIFIED IDEOGRAPH-77E9}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 38453 (\N{CJK UNIFIED IDEOGRAPH-9635}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 32418 (\N{CJK UNIFIED IDEOGRAPH-7EA2}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 33394 (\N{CJK UNIFIED IDEOGRAPH-8272}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 24453 (\N{CJK UNIFIED IDEOGRAPH-5F85}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 37319 (\N{CJK UNIFIED IDEOGRAPH-91C7}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 38598 (\N{CJK UNIFIED IDEOGRAPH-96C6}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 32511 (\N{CJK UNIFIED IDEOGRAPH-7EFF}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 24050 (\N{CJK UNIFIED IDEOGRAPH-5DF2}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 26377 (\N{CJK UNIFIED IDEOGRAPH-6709}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 28784 (\N{CJK UNIFIED IDEOGRAPH-7070}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 31354 (\N{CJK UNIFIED IDEOGRAPH-7A7A}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 32570 (\N{CJK UNIFIED IDEOGRAPH-7F3A}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_2\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_2\checkpoint_epoch_5_grads.pkl (包含 361 条记录)
+  Iter 2 Epoch [6/20], Avg Train Loss: 17.109932
+  Iter 2 Epoch [7/20], Avg Train Loss: 16.038328
+  Iter 2 Epoch [8/20], Avg Train Loss: 14.596948
+  Iter 2 Epoch [9/20], Avg Train Loss: 12.846749
+  Iter 2 Epoch [10/20], Avg Train Loss: 10.857231
+  Iter 2 Epoch [10/20], Test Loss: 20.211045
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_2\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_2\checkpoint_epoch_10_grads.pkl (包含 361 条记录)
+  Iter 2 Epoch [11/20], Avg Train Loss: 8.742522
+  Iter 2 Epoch [12/20], Avg Train Loss: 6.710261
+  Iter 2 Epoch [13/20], Avg Train Loss: 4.871989
+  Iter 2 Epoch [14/20], Avg Train Loss: 3.423817
+  Iter 2 Epoch [15/20], Avg Train Loss: 2.337305
+  Iter 2 Epoch [15/20], Test Loss: 20.223093
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_2\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_2\checkpoint_epoch_15_grads.pkl (包含 361 条记录)
+  Iter 2 Epoch [16/20], Avg Train Loss: 1.629296
+  Iter 2 Epoch [17/20], Avg Train Loss: 1.169261
+  Iter 2 Epoch [18/20], Avg Train Loss: 0.879807
+  Iter 2 Epoch [19/20], Avg Train Loss: 0.700157
+  Iter 2 Epoch [20/20], Avg Train Loss: 0.575609
+  Iter 2 Epoch [20/20], Test Loss: 20.233203
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 29289 (\N{CJK UNIFIED IDEOGRAPH-7269}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 21697 (\N{CJK UNIFIED IDEOGRAPH-54C1}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 29992 (\N{CJK UNIFIED IDEOGRAPH-7528}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 25143 (\N{CJK UNIFIED IDEOGRAPH-6237}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 35780 (\N{CJK UNIFIED IDEOGRAPH-8BC4}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 20998 (\N{CJK UNIFIED IDEOGRAPH-5206}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 30697 (\N{CJK UNIFIED IDEOGRAPH-77E9}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 38453 (\N{CJK UNIFIED IDEOGRAPH-9635}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 32418 (\N{CJK UNIFIED IDEOGRAPH-7EA2}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 33394 (\N{CJK UNIFIED IDEOGRAPH-8272}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 24453 (\N{CJK UNIFIED IDEOGRAPH-5F85}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 37319 (\N{CJK UNIFIED IDEOGRAPH-91C7}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 38598 (\N{CJK UNIFIED IDEOGRAPH-96C6}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 32511 (\N{CJK UNIFIED IDEOGRAPH-7EFF}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 24050 (\N{CJK UNIFIED IDEOGRAPH-5DF2}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 26377 (\N{CJK UNIFIED IDEOGRAPH-6709}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 28784 (\N{CJK UNIFIED IDEOGRAPH-7070}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 31354 (\N{CJK UNIFIED IDEOGRAPH-7A7A}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 32570 (\N{CJK UNIFIED IDEOGRAPH-7F3A}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 29992 (\N{CJK UNIFIED IDEOGRAPH-7528}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 25143 (\N{CJK UNIFIED IDEOGRAPH-6237}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 29289 (\N{CJK UNIFIED IDEOGRAPH-7269}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 21697 (\N{CJK UNIFIED IDEOGRAPH-54C1}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 35780 (\N{CJK UNIFIED IDEOGRAPH-8BC4}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 20998 (\N{CJK UNIFIED IDEOGRAPH-5206}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 30697 (\N{CJK UNIFIED IDEOGRAPH-77E9}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 38453 (\N{CJK UNIFIED IDEOGRAPH-9635}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 32418 (\N{CJK UNIFIED IDEOGRAPH-7EA2}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 33394 (\N{CJK UNIFIED IDEOGRAPH-8272}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 24453 (\N{CJK UNIFIED IDEOGRAPH-5F85}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 37319 (\N{CJK UNIFIED IDEOGRAPH-91C7}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 38598 (\N{CJK UNIFIED IDEOGRAPH-96C6}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 32511 (\N{CJK UNIFIED IDEOGRAPH-7EFF}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 24050 (\N{CJK UNIFIED IDEOGRAPH-5DF2}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 26377 (\N{CJK UNIFIED IDEOGRAPH-6709}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 28784 (\N{CJK UNIFIED IDEOGRAPH-7070}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 31354 (\N{CJK UNIFIED IDEOGRAPH-7A7A}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 32570 (\N{CJK UNIFIED IDEOGRAPH-7F3A}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_2\model_epoch_20.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_2\checkpoint_epoch_20_grads.pkl (包含 361 条记录)
+--- 训练迭代轮次 2 完成 ---
+--- Iter 2: 计算 TracInCP 解耦影响值 ---
+  TracInCP: 使用整个测试集 (包含 46 个样本) 作为影响目标。
+  TracInCP: 正在为每个checkpoint预计算测试集的平均梯度...
+  TracInCP: 测试集平均梯度预计算完成。
+  Iter 2: 已识别出 30 个新的待采集位置 (目标: 30):
+    用户 36, 物品 44
+    用户 36, 物品 0
+    用户 33, 物品 44
+    用户 36, 物品 18
+    用户 33, 物品 0
+    ...
+--- Iter 2: 模拟数据采集 ---
+  Iter 2: 已为 27 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 2: 迭代结束时最终测试损失: 20.233203
+--- Iter 2: 生成可视化图像 ---
+Iter 2 (TracInCP): 评分矩阵可视化已保存至: visualizations_iter\strategy_TracInCP\rating_matrix_iter_2_collection.png
+======= 主动学习迭代轮次: 3/6 (策略: TracInCP) =======
+--- Iter 3: 准备数据 ---
+  将上一轮收集的 27 个评分添加到训练数据...
+已添加 27 个新评分到训练数据。总评分数: 388
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 49
+--- Iter 3: 初始化/重置模型 ---
+--- Iter 3: 训练模型 ---
+--- 开始训练迭代轮次 3 (共 20 epochs) ---
+  Iter 3 Epoch [1/20], Avg Train Loss: 18.992195
+  Iter 3 Epoch [2/20], Avg Train Loss: 18.923184
+  Iter 3 Epoch [3/20], Avg Train Loss: 18.799459
+  Iter 3 Epoch [4/20], Avg Train Loss: 18.535720
+  Iter 3 Epoch [5/20], Avg Train Loss: 18.046656
+  Iter 3 Epoch [5/20], Test Loss: 20.373545
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_3\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_3\checkpoint_epoch_5_grads.pkl (包含 388 条记录)
+  Iter 3 Epoch [6/20], Avg Train Loss: 17.257709
+  Iter 3 Epoch [7/20], Avg Train Loss: 16.068493
+  Iter 3 Epoch [8/20], Avg Train Loss: 14.503980
+  Iter 3 Epoch [9/20], Avg Train Loss: 12.559743
+  Iter 3 Epoch [10/20], Avg Train Loss: 10.350993
+  Iter 3 Epoch [10/20], Test Loss: 20.588094
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_3\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_3\checkpoint_epoch_10_grads.pkl (包含 388 条记录)
+  Iter 3 Epoch [11/20], Avg Train Loss: 8.069363
+  Iter 3 Epoch [12/20], Avg Train Loss: 5.911842
+  Iter 3 Epoch [13/20], Avg Train Loss: 4.048960
+  Iter 3 Epoch [14/20], Avg Train Loss: 2.658104
+  Iter 3 Epoch [15/20], Avg Train Loss: 1.720632
+  Iter 3 Epoch [15/20], Test Loss: 20.778818
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_3\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_3\checkpoint_epoch_15_grads.pkl (包含 388 条记录)
+  Iter 3 Epoch [16/20], Avg Train Loss: 1.146346
+  Iter 3 Epoch [17/20], Avg Train Loss: 0.833033
+  Iter 3 Epoch [18/20], Avg Train Loss: 0.630012
+  Iter 3 Epoch [19/20], Avg Train Loss: 0.514171
+  Iter 3 Epoch [20/20], Avg Train Loss: 0.451937
+  Iter 3 Epoch [20/20], Test Loss: 20.852025
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 29289 (\N{CJK UNIFIED IDEOGRAPH-7269}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 21697 (\N{CJK UNIFIED IDEOGRAPH-54C1}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 29992 (\N{CJK UNIFIED IDEOGRAPH-7528}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 25143 (\N{CJK UNIFIED IDEOGRAPH-6237}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 35780 (\N{CJK UNIFIED IDEOGRAPH-8BC4}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 20998 (\N{CJK UNIFIED IDEOGRAPH-5206}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 30697 (\N{CJK UNIFIED IDEOGRAPH-77E9}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 38453 (\N{CJK UNIFIED IDEOGRAPH-9635}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 32418 (\N{CJK UNIFIED IDEOGRAPH-7EA2}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 33394 (\N{CJK UNIFIED IDEOGRAPH-8272}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 24453 (\N{CJK UNIFIED IDEOGRAPH-5F85}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 37319 (\N{CJK UNIFIED IDEOGRAPH-91C7}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 38598 (\N{CJK UNIFIED IDEOGRAPH-96C6}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 32511 (\N{CJK UNIFIED IDEOGRAPH-7EFF}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 24050 (\N{CJK UNIFIED IDEOGRAPH-5DF2}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 26377 (\N{CJK UNIFIED IDEOGRAPH-6709}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 28784 (\N{CJK UNIFIED IDEOGRAPH-7070}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 31354 (\N{CJK UNIFIED IDEOGRAPH-7A7A}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 32570 (\N{CJK UNIFIED IDEOGRAPH-7F3A}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 29992 (\N{CJK UNIFIED IDEOGRAPH-7528}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 25143 (\N{CJK UNIFIED IDEOGRAPH-6237}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 29289 (\N{CJK UNIFIED IDEOGRAPH-7269}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 21697 (\N{CJK UNIFIED IDEOGRAPH-54C1}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 35780 (\N{CJK UNIFIED IDEOGRAPH-8BC4}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 20998 (\N{CJK UNIFIED IDEOGRAPH-5206}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 30697 (\N{CJK UNIFIED IDEOGRAPH-77E9}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 38453 (\N{CJK UNIFIED IDEOGRAPH-9635}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 32418 (\N{CJK UNIFIED IDEOGRAPH-7EA2}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 33394 (\N{CJK UNIFIED IDEOGRAPH-8272}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 24453 (\N{CJK UNIFIED IDEOGRAPH-5F85}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 37319 (\N{CJK UNIFIED IDEOGRAPH-91C7}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 38598 (\N{CJK UNIFIED IDEOGRAPH-96C6}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 32511 (\N{CJK UNIFIED IDEOGRAPH-7EFF}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 24050 (\N{CJK UNIFIED IDEOGRAPH-5DF2}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 26377 (\N{CJK UNIFIED IDEOGRAPH-6709}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 28784 (\N{CJK UNIFIED IDEOGRAPH-7070}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 31354 (\N{CJK UNIFIED IDEOGRAPH-7A7A}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 32570 (\N{CJK UNIFIED IDEOGRAPH-7F3A}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_3\model_epoch_20.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_3\checkpoint_epoch_20_grads.pkl (包含 388 条记录)
+--- 训练迭代轮次 3 完成 ---
+--- Iter 3: 计算 TracInCP 解耦影响值 ---
+  TracInCP: 使用整个测试集 (包含 46 个样本) 作为影响目标。
+  TracInCP: 正在为每个checkpoint预计算测试集的平均梯度...
+  TracInCP: 测试集平均梯度预计算完成。
+  Iter 3: 已识别出 30 个新的待采集位置 (目标: 30):
+    用户 27, 物品 0
+    用户 27, 物品 48
+    用户 27, 物品 18
+    用户 41, 物品 48
+    用户 17, 物品 0
+    ...
+--- Iter 3: 模拟数据采集 ---
+  Iter 3: 已为 24 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 3: 迭代结束时最终测试损失: 20.852025
+--- Iter 3: 生成可视化图像 ---
+Iter 3 (TracInCP): 评分矩阵可视化已保存至: visualizations_iter\strategy_TracInCP\rating_matrix_iter_3_collection.png
+======= 主动学习迭代轮次: 4/6 (策略: TracInCP) =======
+--- Iter 4: 准备数据 ---
+  将上一轮收集的 24 个评分添加到训练数据...
+已添加 24 个新评分到训练数据。总评分数: 412
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 49
+--- Iter 4: 初始化/重置模型 ---
+--- Iter 4: 训练模型 ---
+--- 开始训练迭代轮次 4 (共 20 epochs) ---
+  Iter 4 Epoch [1/20], Avg Train Loss: 19.057803
+  Iter 4 Epoch [2/20], Avg Train Loss: 18.990407
+  Iter 4 Epoch [3/20], Avg Train Loss: 18.870826
+  Iter 4 Epoch [4/20], Avg Train Loss: 18.612245
+  Iter 4 Epoch [5/20], Avg Train Loss: 18.118510
+  Iter 4 Epoch [5/20], Test Loss: 20.425621
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_4\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_4\checkpoint_epoch_5_grads.pkl (包含 412 条记录)
+  Iter 4 Epoch [6/20], Avg Train Loss: 17.265713
+  Iter 4 Epoch [7/20], Avg Train Loss: 15.970592
+  Iter 4 Epoch [8/20], Avg Train Loss: 14.223615
+  Iter 4 Epoch [9/20], Avg Train Loss: 12.080851
+  Iter 4 Epoch [10/20], Avg Train Loss: 9.696806
+  Iter 4 Epoch [10/20], Test Loss: 20.774962
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_4\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_4\checkpoint_epoch_10_grads.pkl (包含 412 条记录)
+  Iter 4 Epoch [11/20], Avg Train Loss: 7.264923
+  Iter 4 Epoch [12/20], Avg Train Loss: 5.081874
+  Iter 4 Epoch [13/20], Avg Train Loss: 3.329795
+  Iter 4 Epoch [14/20], Avg Train Loss: 2.125026
+  Iter 4 Epoch [15/20], Avg Train Loss: 1.381617
+  Iter 4 Epoch [15/20], Test Loss: 21.061854
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_4\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_4\checkpoint_epoch_15_grads.pkl (包含 412 条记录)
+  Iter 4 Epoch [16/20], Avg Train Loss: 0.972369
+  Iter 4 Epoch [17/20], Avg Train Loss: 0.748348
+  Iter 4 Epoch [18/20], Avg Train Loss: 0.618163
+  Iter 4 Epoch [19/20], Avg Train Loss: 0.528817
+  Iter 4 Epoch [20/20], Avg Train Loss: 0.465851
+  Iter 4 Epoch [20/20], Test Loss: 21.138641
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_4\model_epoch_20.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_4\checkpoint_epoch_20_grads.pkl (包含 412 条记录)
+--- 训练迭代轮次 4 完成 ---
+--- Iter 4: 计算 TracInCP 解耦影响值 ---
+  TracInCP: 使用整个测试集 (包含 46 个样本) 作为影响目标。
+  TracInCP: 正在为每个checkpoint预计算测试集的平均梯度...
+  TracInCP: 测试集平均梯度预计算完成。
+  Iter 4: 已识别出 30 个新的待采集位置 (目标: 30):
+    用户 31, 物品 2
+    用户 31, 物品 1
+    用户 47, 物品 2
+    用户 47, 物品 1
+    用户 21, 物品 2
+    ...
+--- Iter 4: 模拟数据采集 ---
+  Iter 4: 已为 25 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 4: 迭代结束时最终测试损失: 21.138641
+--- Iter 4: 生成可视化图像 ---
+Iter 4 (TracInCP): 评分矩阵可视化已保存至: visualizations_iter\strategy_TracInCP\rating_matrix_iter_4_collection.png
+======= 主动学习迭代轮次: 5/6 (策略: TracInCP) =======
+--- Iter 5: 准备数据 ---
+  将上一轮收集的 25 个评分添加到训练数据...
+已添加 25 个新评分到训练数据。总评分数: 437
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 49
+--- Iter 5: 初始化/重置模型 ---
+--- Iter 5: 训练模型 ---
+--- 开始训练迭代轮次 5 (共 20 epochs) ---
+  Iter 5 Epoch [1/20], Avg Train Loss: 19.081761
+  Iter 5 Epoch [2/20], Avg Train Loss: 19.005006
+  Iter 5 Epoch [3/20], Avg Train Loss: 18.836629
+  Iter 5 Epoch [4/20], Avg Train Loss: 18.451713
+  Iter 5 Epoch [5/20], Avg Train Loss: 17.712767
+  Iter 5 Epoch [5/20], Test Loss: 20.236731
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 29289 (\N{CJK UNIFIED IDEOGRAPH-7269}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 21697 (\N{CJK UNIFIED IDEOGRAPH-54C1}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 29992 (\N{CJK UNIFIED IDEOGRAPH-7528}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 25143 (\N{CJK UNIFIED IDEOGRAPH-6237}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 35780 (\N{CJK UNIFIED IDEOGRAPH-8BC4}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 20998 (\N{CJK UNIFIED IDEOGRAPH-5206}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 30697 (\N{CJK UNIFIED IDEOGRAPH-77E9}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 38453 (\N{CJK UNIFIED IDEOGRAPH-9635}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 32418 (\N{CJK UNIFIED IDEOGRAPH-7EA2}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 33394 (\N{CJK UNIFIED IDEOGRAPH-8272}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 24453 (\N{CJK UNIFIED IDEOGRAPH-5F85}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 37319 (\N{CJK UNIFIED IDEOGRAPH-91C7}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 38598 (\N{CJK UNIFIED IDEOGRAPH-96C6}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 32511 (\N{CJK UNIFIED IDEOGRAPH-7EFF}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 24050 (\N{CJK UNIFIED IDEOGRAPH-5DF2}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 26377 (\N{CJK UNIFIED IDEOGRAPH-6709}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 28784 (\N{CJK UNIFIED IDEOGRAPH-7070}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 31354 (\N{CJK UNIFIED IDEOGRAPH-7A7A}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 32570 (\N{CJK UNIFIED IDEOGRAPH-7F3A}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 29992 (\N{CJK UNIFIED IDEOGRAPH-7528}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 25143 (\N{CJK UNIFIED IDEOGRAPH-6237}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 29289 (\N{CJK UNIFIED IDEOGRAPH-7269}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 21697 (\N{CJK UNIFIED IDEOGRAPH-54C1}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 35780 (\N{CJK UNIFIED IDEOGRAPH-8BC4}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 20998 (\N{CJK UNIFIED IDEOGRAPH-5206}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 30697 (\N{CJK UNIFIED IDEOGRAPH-77E9}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 38453 (\N{CJK UNIFIED IDEOGRAPH-9635}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 32418 (\N{CJK UNIFIED IDEOGRAPH-7EA2}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 33394 (\N{CJK UNIFIED IDEOGRAPH-8272}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 24453 (\N{CJK UNIFIED IDEOGRAPH-5F85}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 37319 (\N{CJK UNIFIED IDEOGRAPH-91C7}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 38598 (\N{CJK UNIFIED IDEOGRAPH-96C6}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 32511 (\N{CJK UNIFIED IDEOGRAPH-7EFF}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 24050 (\N{CJK UNIFIED IDEOGRAPH-5DF2}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 26377 (\N{CJK UNIFIED IDEOGRAPH-6709}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 28784 (\N{CJK UNIFIED IDEOGRAPH-7070}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 31354 (\N{CJK UNIFIED IDEOGRAPH-7A7A}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 32570 (\N{CJK UNIFIED IDEOGRAPH-7F3A}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_5\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_5\checkpoint_epoch_5_grads.pkl (包含 437 条记录)
+  Iter 5 Epoch [6/20], Avg Train Loss: 16.522336
+  Iter 5 Epoch [7/20], Avg Train Loss: 14.839145
+  Iter 5 Epoch [8/20], Avg Train Loss: 12.709952
+  Iter 5 Epoch [9/20], Avg Train Loss: 10.213241
+  Iter 5 Epoch [10/20], Avg Train Loss: 7.706925
+  Iter 5 Epoch [10/20], Test Loss: 20.145805
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_5\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_5\checkpoint_epoch_10_grads.pkl (包含 437 条记录)
+  Iter 5 Epoch [11/20], Avg Train Loss: 5.327289
+  Iter 5 Epoch [12/20], Avg Train Loss: 3.390436
+  Iter 5 Epoch [13/20], Avg Train Loss: 2.042270
+  Iter 5 Epoch [14/20], Avg Train Loss: 1.273192
+  Iter 5 Epoch [15/20], Avg Train Loss: 0.864665
+  Iter 5 Epoch [15/20], Test Loss: 20.089195
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_5\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_5\checkpoint_epoch_15_grads.pkl (包含 437 条记录)
+  Iter 5 Epoch [16/20], Avg Train Loss: 0.676548
+  Iter 5 Epoch [17/20], Avg Train Loss: 0.561841
+  Iter 5 Epoch [18/20], Avg Train Loss: 0.502868
+  Iter 5 Epoch [19/20], Avg Train Loss: 0.460449
+  Iter 5 Epoch [20/20], Avg Train Loss: 0.435926
+  Iter 5 Epoch [20/20], Test Loss: 20.074281
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 29289 (\N{CJK UNIFIED IDEOGRAPH-7269}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 21697 (\N{CJK UNIFIED IDEOGRAPH-54C1}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 29992 (\N{CJK UNIFIED IDEOGRAPH-7528}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 25143 (\N{CJK UNIFIED IDEOGRAPH-6237}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 35780 (\N{CJK UNIFIED IDEOGRAPH-8BC4}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 20998 (\N{CJK UNIFIED IDEOGRAPH-5206}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 30697 (\N{CJK UNIFIED IDEOGRAPH-77E9}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 38453 (\N{CJK UNIFIED IDEOGRAPH-9635}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 32418 (\N{CJK UNIFIED IDEOGRAPH-7EA2}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 33394 (\N{CJK UNIFIED IDEOGRAPH-8272}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 24453 (\N{CJK UNIFIED IDEOGRAPH-5F85}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 37319 (\N{CJK UNIFIED IDEOGRAPH-91C7}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 38598 (\N{CJK UNIFIED IDEOGRAPH-96C6}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 32511 (\N{CJK UNIFIED IDEOGRAPH-7EFF}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 24050 (\N{CJK UNIFIED IDEOGRAPH-5DF2}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 26377 (\N{CJK UNIFIED IDEOGRAPH-6709}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 28784 (\N{CJK UNIFIED IDEOGRAPH-7070}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 31354 (\N{CJK UNIFIED IDEOGRAPH-7A7A}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 32570 (\N{CJK UNIFIED IDEOGRAPH-7F3A}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 29992 (\N{CJK UNIFIED IDEOGRAPH-7528}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 25143 (\N{CJK UNIFIED IDEOGRAPH-6237}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 29289 (\N{CJK UNIFIED IDEOGRAPH-7269}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 21697 (\N{CJK UNIFIED IDEOGRAPH-54C1}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 35780 (\N{CJK UNIFIED IDEOGRAPH-8BC4}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 20998 (\N{CJK UNIFIED IDEOGRAPH-5206}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 30697 (\N{CJK UNIFIED IDEOGRAPH-77E9}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 38453 (\N{CJK UNIFIED IDEOGRAPH-9635}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 32418 (\N{CJK UNIFIED IDEOGRAPH-7EA2}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 33394 (\N{CJK UNIFIED IDEOGRAPH-8272}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 24453 (\N{CJK UNIFIED IDEOGRAPH-5F85}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 37319 (\N{CJK UNIFIED IDEOGRAPH-91C7}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 38598 (\N{CJK UNIFIED IDEOGRAPH-96C6}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 32511 (\N{CJK UNIFIED IDEOGRAPH-7EFF}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 24050 (\N{CJK UNIFIED IDEOGRAPH-5DF2}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 26377 (\N{CJK UNIFIED IDEOGRAPH-6709}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 28784 (\N{CJK UNIFIED IDEOGRAPH-7070}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 31354 (\N{CJK UNIFIED IDEOGRAPH-7A7A}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 32570 (\N{CJK UNIFIED IDEOGRAPH-7F3A}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_5\model_epoch_20.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_5\checkpoint_epoch_20_grads.pkl (包含 437 条记录)
+--- 训练迭代轮次 5 完成 ---
+--- Iter 5: 计算 TracInCP 解耦影响值 ---
+  TracInCP: 使用整个测试集 (包含 46 个样本) 作为影响目标。
+  TracInCP: 正在为每个checkpoint预计算测试集的平均梯度...
+  TracInCP: 测试集平均梯度预计算完成。
+  Iter 5: 已识别出 30 个新的待采集位置 (目标: 30):
+    用户 21, 物品 34
+    用户 21, 物品 5
+    用户 20, 物品 34
+    用户 21, 物品 37
+    用户 20, 物品 5
+    ...
+--- Iter 5: 模拟数据采集 ---
+  Iter 5: 已为 26 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 5: 迭代结束时最终测试损失: 20.074281
+--- Iter 5: 生成可视化图像 ---
+Iter 5 (TracInCP): 评分矩阵可视化已保存至: visualizations_iter\strategy_TracInCP\rating_matrix_iter_5_collection.png
+======= 主动学习迭代轮次: 6/6 (策略: TracInCP) =======
+--- Iter 6: 准备数据 ---
+  将上一轮收集的 26 个评分添加到训练数据...
+已添加 26 个新评分到训练数据。总评分数: 463
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 49
+--- Iter 6: 初始化/重置模型 ---
+--- Iter 6: 训练模型 ---
+--- 开始训练迭代轮次 6 (共 20 epochs) ---
+  Iter 6 Epoch [1/20], Avg Train Loss: 19.075208
+  Iter 6 Epoch [2/20], Avg Train Loss: 18.996135
+  Iter 6 Epoch [3/20], Avg Train Loss: 18.816606
+  Iter 6 Epoch [4/20], Avg Train Loss: 18.386948
+  Iter 6 Epoch [5/20], Avg Train Loss: 17.539456
+  Iter 6 Epoch [5/20], Test Loss: 20.365108
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_6\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_6\checkpoint_epoch_5_grads.pkl (包含 463 条记录)
+  Iter 6 Epoch [6/20], Avg Train Loss: 16.115010
+  Iter 6 Epoch [7/20], Avg Train Loss: 14.082885
+  Iter 6 Epoch [8/20], Avg Train Loss: 11.544229
+  Iter 6 Epoch [9/20], Avg Train Loss: 8.701629
+  Iter 6 Epoch [10/20], Avg Train Loss: 5.966508
+  Iter 6 Epoch [10/20], Test Loss: 20.553853
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_6\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_6\checkpoint_epoch_10_grads.pkl (包含 463 条记录)
+  Iter 6 Epoch [11/20], Avg Train Loss: 3.677342
+  Iter 6 Epoch [12/20], Avg Train Loss: 2.120682
+  Iter 6 Epoch [13/20], Avg Train Loss: 1.221227
+  Iter 6 Epoch [14/20], Avg Train Loss: 0.822009
+  Iter 6 Epoch [15/20], Avg Train Loss: 0.645494
+  Iter 6 Epoch [15/20], Test Loss: 20.665871
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_6\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_6\checkpoint_epoch_15_grads.pkl (包含 463 条记录)
+  Iter 6 Epoch [16/20], Avg Train Loss: 0.549265
+  Iter 6 Epoch [17/20], Avg Train Loss: 0.496564
+  Iter 6 Epoch [18/20], Avg Train Loss: 0.469450
+  Iter 6 Epoch [19/20], Avg Train Loss: 0.449032
+  Iter 6 Epoch [20/20], Avg Train Loss: 0.434719
+  Iter 6 Epoch [20/20], Test Loss: 20.676523
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 29289 (\N{CJK UNIFIED IDEOGRAPH-7269}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 21697 (\N{CJK UNIFIED IDEOGRAPH-54C1}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 29992 (\N{CJK UNIFIED IDEOGRAPH-7528}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 25143 (\N{CJK UNIFIED IDEOGRAPH-6237}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 35780 (\N{CJK UNIFIED IDEOGRAPH-8BC4}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 20998 (\N{CJK UNIFIED IDEOGRAPH-5206}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 30697 (\N{CJK UNIFIED IDEOGRAPH-77E9}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 38453 (\N{CJK UNIFIED IDEOGRAPH-9635}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 32418 (\N{CJK UNIFIED IDEOGRAPH-7EA2}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 33394 (\N{CJK UNIFIED IDEOGRAPH-8272}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 24453 (\N{CJK UNIFIED IDEOGRAPH-5F85}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 37319 (\N{CJK UNIFIED IDEOGRAPH-91C7}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 38598 (\N{CJK UNIFIED IDEOGRAPH-96C6}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 32511 (\N{CJK UNIFIED IDEOGRAPH-7EFF}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 24050 (\N{CJK UNIFIED IDEOGRAPH-5DF2}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 26377 (\N{CJK UNIFIED IDEOGRAPH-6709}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 28784 (\N{CJK UNIFIED IDEOGRAPH-7070}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 31354 (\N{CJK UNIFIED IDEOGRAPH-7A7A}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:120: UserWarning: Glyph 32570 (\N{CJK UNIFIED IDEOGRAPH-7F3A}) missing from current font.
+  plt.tight_layout()
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 29992 (\N{CJK UNIFIED IDEOGRAPH-7528}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 25143 (\N{CJK UNIFIED IDEOGRAPH-6237}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 29289 (\N{CJK UNIFIED IDEOGRAPH-7269}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 21697 (\N{CJK UNIFIED IDEOGRAPH-54C1}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 35780 (\N{CJK UNIFIED IDEOGRAPH-8BC4}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 20998 (\N{CJK UNIFIED IDEOGRAPH-5206}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 30697 (\N{CJK UNIFIED IDEOGRAPH-77E9}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 38453 (\N{CJK UNIFIED IDEOGRAPH-9635}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 32418 (\N{CJK UNIFIED IDEOGRAPH-7EA2}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 33394 (\N{CJK UNIFIED IDEOGRAPH-8272}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 24453 (\N{CJK UNIFIED IDEOGRAPH-5F85}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 37319 (\N{CJK UNIFIED IDEOGRAPH-91C7}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 38598 (\N{CJK UNIFIED IDEOGRAPH-96C6}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 32511 (\N{CJK UNIFIED IDEOGRAPH-7EFF}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 24050 (\N{CJK UNIFIED IDEOGRAPH-5DF2}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 26377 (\N{CJK UNIFIED IDEOGRAPH-6709}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 28784 (\N{CJK UNIFIED IDEOGRAPH-7070}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 31354 (\N{CJK UNIFIED IDEOGRAPH-7A7A}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+D:\github\Opt\main\main.py:123: UserWarning: Glyph 32570 (\N{CJK UNIFIED IDEOGRAPH-7F3A}) missing from current font.
+  plt.savefig(output_path, dpi=150)
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_6\model_epoch_20.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_6\checkpoint_epoch_20_grads.pkl (包含 463 条记录)
+--- 训练迭代轮次 6 完成 ---
+--- Iter 6: 计算 TracInCP 解耦影响值 ---
+  TracInCP: 使用整个测试集 (包含 46 个样本) 作为影响目标。
+  TracInCP: 正在为每个checkpoint预计算测试集的平均梯度...
+  TracInCP: 测试集平均梯度预计算完成。
+  Iter 6: 已识别出 30 个新的待采集位置 (目标: 30):
+    用户 10, 物品 31
+    用户 10, 物品 12
+    用户 22, 物品 31
+    用户 10, 物品 6
+    用户 22, 物品 12
+    ...
+--- Iter 6: 模拟数据采集 ---
+  Iter 6: 已为 29 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 6: 迭代结束时最终测试损失: 20.676523
+--- Iter 6: 生成可视化图像 ---
+Iter 6 (TracInCP): 评分矩阵可视化已保存至: visualizations_iter\strategy_TracInCP\rating_matrix_iter_6_collection.png
+======= 主动学习所有 6 轮迭代完成 =======

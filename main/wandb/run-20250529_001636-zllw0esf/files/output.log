@@ -1,0 +1,306 @@
+Weights & Biases 初始化成功。
+--- 0. 加载原始完整数据从: sub_ratings.csv ---
+完整原始数据集加载: 50 用户 (max_id+1), 50 物品 (max_id+1)。
+从 'test_row.csv' 提取测试数据并更新训练集...
+  测试集针对用户 ID: 49 (来自 test_row.csv)
+  从 'test_row.csv' 提取了 10 个测试样本。
+  更新后的 original_train_df 用于生成稀疏训练数据。
+模型将基于原始数据维度初始化: 用户数=50, 物品数=50
+测试数据集初始化: 10 个有效评分。
+测试集创建成功，包含 10 个样本。
+======= 主动学习迭代轮次: 1/6 (策略: ActiveUser) =======
+--- Iter 1: 准备数据 ---
+  生成初始稀疏训练数据...
+初始稀疏训练数据已生成: 289 个评分。
+  当前训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50
+--- Iter 1: 初始化/重置模型 ---
+--- Iter 1: 训练模型 ---
+--- 开始训练迭代轮次 1 (共 20 epochs) ---
+  Iter 1 Epoch [1/20], Avg Train Loss: 18.567794
+  Iter 1 Epoch [2/20], Avg Train Loss: 18.513380
+  Iter 1 Epoch [3/20], Avg Train Loss: 18.438840
+  Iter 1 Epoch [4/20], Avg Train Loss: 18.305283
+  Iter 1 Epoch [5/20], Avg Train Loss: 18.075027
+  Iter 1 Epoch [5/20], Test Loss: 20.407368
+    已保存checkpoint: checkpoints_iter\strategy_ActiveUser\iter_1\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_ActiveUser\iter_1\checkpoint_epoch_5_grads.pkl (包含 289 条记录)
+  Iter 1 Epoch [6/20], Avg Train Loss: 17.707028
+  Iter 1 Epoch [7/20], Avg Train Loss: 17.157430
+  Iter 1 Epoch [8/20], Avg Train Loss: 16.390406
+  Iter 1 Epoch [9/20], Avg Train Loss: 15.424763
+  Iter 1 Epoch [10/20], Avg Train Loss: 14.211519
+  Iter 1 Epoch [10/20], Test Loss: 17.422291
+    已保存checkpoint: checkpoints_iter\strategy_ActiveUser\iter_1\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_ActiveUser\iter_1\checkpoint_epoch_10_grads.pkl (包含 289 条记录)
+  Iter 1 Epoch [11/20], Avg Train Loss: 12.786567
+  Iter 1 Epoch [12/20], Avg Train Loss: 11.194979
+  Iter 1 Epoch [13/20], Avg Train Loss: 9.488824
+  Iter 1 Epoch [14/20], Avg Train Loss: 7.791909
+  Iter 1 Epoch [15/20], Avg Train Loss: 6.155729
+  Iter 1 Epoch [15/20], Test Loss: 9.998801
+    已保存checkpoint: checkpoints_iter\strategy_ActiveUser\iter_1\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_ActiveUser\iter_1\checkpoint_epoch_15_grads.pkl (包含 289 条记录)
+  Iter 1 Epoch [16/20], Avg Train Loss: 4.690924
+  Iter 1 Epoch [17/20], Avg Train Loss: 3.446107
+  Iter 1 Epoch [18/20], Avg Train Loss: 2.476585
+  Iter 1 Epoch [19/20], Avg Train Loss: 1.783889
+  Iter 1 Epoch [20/20], Avg Train Loss: 1.307388
+  Iter 1 Epoch [20/20], Test Loss: 3.662413
+    已保存checkpoint: checkpoints_iter\strategy_ActiveUser\iter_1\model_epoch_20.pt
+    已保存梯度日志: gradient_logs_iter\strategy_ActiveUser\iter_1\checkpoint_epoch_20_grads.pkl (包含 289 条记录)
+--- 训练迭代轮次 1 完成 ---
+--- Iter 1: 使用活跃用户策略生成采集点 ---
+  活跃用户策略选择了 30 个采集点。
+  Iter 1: 已识别出 30 个新的待采集位置 (目标: 30):
+    用户 9, 物品 42
+    用户 9, 物品 18
+    用户 42, 物品 43
+    用户 42, 物品 9
+    用户 20, 物品 18
+    ...
+--- Iter 1: 模拟数据采集 ---
+  Iter 1: 已为 28 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 1: 迭代结束时最终测试损失: 3.662413
+--- Iter 1: 生成可视化图像 ---
+Iter 1 (ActiveUser): 评分矩阵可视化已保存至: visualizations_iter\strategy_ActiveUser\rating_matrix_iter_1_collection.png
+======= 主动学习迭代轮次: 2/6 (策略: ActiveUser) =======
+--- Iter 2: 准备数据 ---
+  将上一轮收集的 28 个评分添加到训练数据...
+已添加 28 个新评分到训练数据。总评分数: 317
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50
+--- Iter 2: 初始化/重置模型 ---
+--- Iter 2: 训练模型 ---
+--- 开始训练迭代轮次 2 (共 20 epochs) ---
+  Iter 2 Epoch [1/20], Avg Train Loss: 18.509946
+  Iter 2 Epoch [2/20], Avg Train Loss: 18.430942
+  Iter 2 Epoch [3/20], Avg Train Loss: 18.294015
+  Iter 2 Epoch [4/20], Avg Train Loss: 18.031590
+  Iter 2 Epoch [5/20], Avg Train Loss: 17.575508
+  Iter 2 Epoch [5/20], Test Loss: 20.077982
+    已保存checkpoint: checkpoints_iter\strategy_ActiveUser\iter_2\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_ActiveUser\iter_2\checkpoint_epoch_5_grads.pkl (包含 317 条记录)
+  Iter 2 Epoch [6/20], Avg Train Loss: 16.860693
+  Iter 2 Epoch [7/20], Avg Train Loss: 15.840482
+  Iter 2 Epoch [8/20], Avg Train Loss: 14.532641
+  Iter 2 Epoch [9/20], Avg Train Loss: 12.921436
+  Iter 2 Epoch [10/20], Avg Train Loss: 11.101961
+  Iter 2 Epoch [10/20], Test Loss: 15.567690
+    已保存checkpoint: checkpoints_iter\strategy_ActiveUser\iter_2\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_ActiveUser\iter_2\checkpoint_epoch_10_grads.pkl (包含 317 条记录)
+  Iter 2 Epoch [11/20], Avg Train Loss: 9.118900
+  Iter 2 Epoch [12/20], Avg Train Loss: 7.167528
+  Iter 2 Epoch [13/20], Avg Train Loss: 5.358223
+  Iter 2 Epoch [14/20], Avg Train Loss: 3.848708
+  Iter 2 Epoch [15/20], Avg Train Loss: 2.666682
+  Iter 2 Epoch [15/20], Test Loss: 7.356487
+    已保存checkpoint: checkpoints_iter\strategy_ActiveUser\iter_2\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_ActiveUser\iter_2\checkpoint_epoch_15_grads.pkl (包含 317 条记录)
+  Iter 2 Epoch [16/20], Avg Train Loss: 1.859406
+  Iter 2 Epoch [17/20], Avg Train Loss: 1.346519
+  Iter 2 Epoch [18/20], Avg Train Loss: 1.049430
+  Iter 2 Epoch [19/20], Avg Train Loss: 0.852170
+  Iter 2 Epoch [20/20], Avg Train Loss: 0.727060
+  Iter 2 Epoch [20/20], Test Loss: 2.729995
+    已保存checkpoint: checkpoints_iter\strategy_ActiveUser\iter_2\model_epoch_20.pt
+    已保存梯度日志: gradient_logs_iter\strategy_ActiveUser\iter_2\checkpoint_epoch_20_grads.pkl (包含 317 条记录)
+--- 训练迭代轮次 2 完成 ---
+--- Iter 2: 使用活跃用户策略生成采集点 ---
+  活跃用户策略选择了 30 个采集点。
+  Iter 2: 已识别出 30 个新的待采集位置 (目标: 30):
+    用户 9, 物品 7
+    用户 9, 物品 14
+    用户 42, 物品 17
+    用户 42, 物品 41
+    用户 20, 物品 13
+    ...
+--- Iter 2: 模拟数据采集 ---
+  Iter 2: 已为 27 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 2: 迭代结束时最终测试损失: 2.729995
+--- Iter 2: 生成可视化图像 ---
+Iter 2 (ActiveUser): 评分矩阵可视化已保存至: visualizations_iter\strategy_ActiveUser\rating_matrix_iter_2_collection.png
+======= 主动学习迭代轮次: 3/6 (策略: ActiveUser) =======
+--- Iter 3: 准备数据 ---
+  将上一轮收集的 27 个评分添加到训练数据...
+已添加 27 个新评分到训练数据。总评分数: 344
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50
+--- Iter 3: 初始化/重置模型 ---
+--- Iter 3: 训练模型 ---
+--- 开始训练迭代轮次 3 (共 20 epochs) ---
+  Iter 3 Epoch [1/20], Avg Train Loss: 18.614144
+  Iter 3 Epoch [2/20], Avg Train Loss: 18.551654
+  Iter 3 Epoch [3/20], Avg Train Loss: 18.441140
+  Iter 3 Epoch [4/20], Avg Train Loss: 18.219499
+  Iter 3 Epoch [5/20], Avg Train Loss: 17.821574
+  Iter 3 Epoch [5/20], Test Loss: 20.268625
+    已保存checkpoint: checkpoints_iter\strategy_ActiveUser\iter_3\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_ActiveUser\iter_3\checkpoint_epoch_5_grads.pkl (包含 344 条记录)
+  Iter 3 Epoch [6/20], Avg Train Loss: 17.162824
+  Iter 3 Epoch [7/20], Avg Train Loss: 16.178580
+  Iter 3 Epoch [8/20], Avg Train Loss: 14.863899
+  Iter 3 Epoch [9/20], Avg Train Loss: 13.228288
+  Iter 3 Epoch [10/20], Avg Train Loss: 11.319867
+  Iter 3 Epoch [10/20], Test Loss: 15.857623
+    已保存checkpoint: checkpoints_iter\strategy_ActiveUser\iter_3\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_ActiveUser\iter_3\checkpoint_epoch_10_grads.pkl (包含 344 条记录)
+  Iter 3 Epoch [11/20], Avg Train Loss: 9.282370
+  Iter 3 Epoch [12/20], Avg Train Loss: 7.222636
+  Iter 3 Epoch [13/20], Avg Train Loss: 5.342151
+  Iter 3 Epoch [14/20], Avg Train Loss: 3.743309
+  Iter 3 Epoch [15/20], Avg Train Loss: 2.534038
+  Iter 3 Epoch [15/20], Test Loss: 6.933213
+    已保存checkpoint: checkpoints_iter\strategy_ActiveUser\iter_3\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_ActiveUser\iter_3\checkpoint_epoch_15_grads.pkl (包含 344 条记录)
+  Iter 3 Epoch [16/20], Avg Train Loss: 1.761378
+  Iter 3 Epoch [17/20], Avg Train Loss: 1.286104
+  Iter 3 Epoch [18/20], Avg Train Loss: 1.008363
+  Iter 3 Epoch [19/20], Avg Train Loss: 0.839623
+  Iter 3 Epoch [20/20], Avg Train Loss: 0.707100
+  Iter 3 Epoch [20/20], Test Loss: 1.973945
+    已保存checkpoint: checkpoints_iter\strategy_ActiveUser\iter_3\model_epoch_20.pt
+    已保存梯度日志: gradient_logs_iter\strategy_ActiveUser\iter_3\checkpoint_epoch_20_grads.pkl (包含 344 条记录)
+--- 训练迭代轮次 3 完成 ---
+--- Iter 3: 使用活跃用户策略生成采集点 ---
+  活跃用户策略选择了 30 个采集点。
+  Iter 3: 已识别出 30 个新的待采集位置 (目标: 30):
+    用户 9, 物品 49
+    用户 9, 物品 38
+    用户 42, 物品 5
+    用户 42, 物品 3
+    用户 36, 物品 0
+    ...
+--- Iter 3: 模拟数据采集 ---
+  Iter 3: 已为 29 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 3: 迭代结束时最终测试损失: 1.973945
+--- Iter 3: 生成可视化图像 ---
+Iter 3 (ActiveUser): 评分矩阵可视化已保存至: visualizations_iter\strategy_ActiveUser\rating_matrix_iter_3_collection.png
+======= 主动学习迭代轮次: 4/6 (策略: ActiveUser) =======
+--- Iter 4: 准备数据 ---
+  将上一轮收集的 29 个评分添加到训练数据...
+已添加 29 个新评分到训练数据。总评分数: 373
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50
+--- Iter 4: 初始化/重置模型 ---
+--- Iter 4: 训练模型 ---
+--- 开始训练迭代轮次 4 (共 20 epochs) ---
+  Iter 4 Epoch [1/20], Avg Train Loss: 18.542783
+  Iter 4 Epoch [2/20], Avg Train Loss: 18.474554
+  Iter 4 Epoch [3/20], Avg Train Loss: 18.343745
+  Iter 4 Epoch [4/20], Avg Train Loss: 18.063051
+  Iter 4 Epoch [5/20], Avg Train Loss: 17.530045
+  Iter 4 Epoch [5/20], Test Loss: 20.070133
+    已保存checkpoint: checkpoints_iter\strategy_ActiveUser\iter_4\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_ActiveUser\iter_4\checkpoint_epoch_5_grads.pkl (包含 373 条记录)
+  Iter 4 Epoch [6/20], Avg Train Loss: 16.652218
+  Iter 4 Epoch [7/20], Avg Train Loss: 15.345532
+  Iter 4 Epoch [8/20], Avg Train Loss: 13.628513
+  Iter 4 Epoch [9/20], Avg Train Loss: 11.544851
+  Iter 4 Epoch [10/20], Avg Train Loss: 9.295782
+  Iter 4 Epoch [10/20], Test Loss: 13.847587
+    已保存checkpoint: checkpoints_iter\strategy_ActiveUser\iter_4\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_ActiveUser\iter_4\checkpoint_epoch_10_grads.pkl (包含 373 条记录)
+  Iter 4 Epoch [11/20], Avg Train Loss: 7.021838
+  Iter 4 Epoch [12/20], Avg Train Loss: 4.993398
+  Iter 4 Epoch [13/20], Avg Train Loss: 3.374288
+  Iter 4 Epoch [14/20], Avg Train Loss: 2.243607
+  Iter 4 Epoch [15/20], Avg Train Loss: 1.571995
+  Iter 4 Epoch [15/20], Test Loss: 5.478470
+    已保存checkpoint: checkpoints_iter\strategy_ActiveUser\iter_4\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_ActiveUser\iter_4\checkpoint_epoch_15_grads.pkl (包含 373 条记录)
+  Iter 4 Epoch [16/20], Avg Train Loss: 1.186144
+  Iter 4 Epoch [17/20], Avg Train Loss: 0.958821
+  Iter 4 Epoch [18/20], Avg Train Loss: 0.795723
+  Iter 4 Epoch [19/20], Avg Train Loss: 0.679746
+  Iter 4 Epoch [20/20], Avg Train Loss: 0.600075
+  Iter 4 Epoch [20/20], Test Loss: 2.144684
+    已保存checkpoint: checkpoints_iter\strategy_ActiveUser\iter_4\model_epoch_20.pt
+    已保存梯度日志: gradient_logs_iter\strategy_ActiveUser\iter_4\checkpoint_epoch_20_grads.pkl (包含 373 条记录)
+--- 训练迭代轮次 4 完成 ---
+--- Iter 4: 使用活跃用户策略生成采集点 ---
+  活跃用户策略选择了 30 个采集点。
+  Iter 4: 已识别出 30 个新的待采集位置 (目标: 30):
+    用户 9, 物品 20
+    用户 9, 物品 28
+    用户 42, 物品 16
+    用户 42, 物品 28
+    用户 36, 物品 39
+    ...
+--- Iter 4: 模拟数据采集 ---
+  Iter 4: 已为 29 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 4: 迭代结束时最终测试损失: 2.144684
+--- Iter 4: 生成可视化图像 ---
+Iter 4 (ActiveUser): 评分矩阵可视化已保存至: visualizations_iter\strategy_ActiveUser\rating_matrix_iter_4_collection.png
+======= 主动学习迭代轮次: 5/6 (策略: ActiveUser) =======
+--- Iter 5: 准备数据 ---
+  将上一轮收集的 29 个评分添加到训练数据...
+已添加 29 个新评分到训练数据。总评分数: 402
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50
+--- Iter 5: 初始化/重置模型 ---
+--- Iter 5: 训练模型 ---
+--- 开始训练迭代轮次 5 (共 20 epochs) ---
+  Iter 5 Epoch [1/20], Avg Train Loss: 18.601727
+  Iter 5 Epoch [2/20], Avg Train Loss: 18.509853
+  Iter 5 Epoch [3/20], Avg Train Loss: 18.315291
+  Iter 5 Epoch [4/20], Avg Train Loss: 17.916037
+  Iter 5 Epoch [5/20], Avg Train Loss: 17.200377
+  Iter 5 Epoch [5/20], Test Loss: 19.325949
+    已保存checkpoint: checkpoints_iter\strategy_ActiveUser\iter_5\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_ActiveUser\iter_5\checkpoint_epoch_5_grads.pkl (包含 402 条记录)
+  Iter 5 Epoch [6/20], Avg Train Loss: 16.107331
+  Iter 5 Epoch [7/20], Avg Train Loss: 14.612354
+  Iter 5 Epoch [8/20], Avg Train Loss: 12.780304
+  Iter 5 Epoch [9/20], Avg Train Loss: 10.666245
+  Iter 5 Epoch [10/20], Avg Train Loss: 8.507949
+  Iter 5 Epoch [10/20], Test Loss: 10.861847
+    已保存checkpoint: checkpoints_iter\strategy_ActiveUser\iter_5\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_ActiveUser\iter_5\checkpoint_epoch_10_grads.pkl (包含 402 条记录)
+  Iter 5 Epoch [11/20], Avg Train Loss: 6.409193
+  Iter 5 Epoch [12/20], Avg Train Loss: 4.638949
+  Iter 5 Epoch [13/20], Avg Train Loss: 3.233814
+  Iter 5 Epoch [14/20], Avg Train Loss: 2.251555
+  Iter 5 Epoch [15/20], Avg Train Loss: 1.669184
+  Iter 5 Epoch [15/20], Test Loss: 2.841359
+    已保存checkpoint: checkpoints_iter\strategy_ActiveUser\iter_5\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_ActiveUser\iter_5\checkpoint_epoch_15_grads.pkl (包含 402 条记录)
+  Iter 5 Epoch [16/20], Avg Train Loss: 1.291624
+  Iter 5 Epoch [17/20], Avg Train Loss: 1.046733
+  Iter 5 Epoch [18/20], Avg Train Loss: 0.886302
+  Iter 5 Epoch [19/20], Avg Train Loss: 0.765541
+  Iter 5 Epoch [20/20], Avg Train Loss: 0.676754
+  Iter 5 Epoch [20/20], Test Loss: 0.855685
+    已保存checkpoint: checkpoints_iter\strategy_ActiveUser\iter_5\model_epoch_20.pt
+    已保存梯度日志: gradient_logs_iter\strategy_ActiveUser\iter_5\checkpoint_epoch_20_grads.pkl (包含 402 条记录)
+--- 训练迭代轮次 5 完成 ---
+--- Iter 5: 使用活跃用户策略生成采集点 ---
+  活跃用户策略选择了 30 个采集点。
+  Iter 5: 已识别出 30 个新的待采集位置 (目标: 30):
+    用户 42, 物品 19
+    用户 42, 物品 1
+    用户 36, 物品 22
+    用户 36, 物品 34
+    用户 21, 物品 6
+    ...
+--- Iter 5: 模拟数据采集 ---
+  Iter 5: 已为 29 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 5: 迭代结束时最终测试损失: 0.855685
+--- Iter 5: 生成可视化图像 ---
+Iter 5 (ActiveUser): 评分矩阵可视化已保存至: visualizations_iter\strategy_ActiveUser\rating_matrix_iter_5_collection.png
+======= 主动学习迭代轮次: 6/6 (策略: ActiveUser) =======
+--- Iter 6: 准备数据 ---
+  将上一轮收集的 29 个评分添加到训练数据...
+已添加 29 个新评分到训练数据。总评分数: 431
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50
+--- Iter 6: 初始化/重置模型 ---
+--- Iter 6: 训练模型 ---
+--- 开始训练迭代轮次 6 (共 20 epochs) ---
+  Iter 6 Epoch [1/20], Avg Train Loss: 18.642090
+  Iter 6 Epoch [2/20], Avg Train Loss: 18.556875
+  Iter 6 Epoch [3/20], Avg Train Loss: 18.346113
+  Iter 6 Epoch [4/20], Avg Train Loss: 17.851055
+  Iter 6 Epoch [5/20], Avg Train Loss: 16.898606
+  Iter 6 Epoch [5/20], Test Loss: 19.685818
+    已保存checkpoint: checkpoints_iter\strategy_ActiveUser\iter_6\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_ActiveUser\iter_6\checkpoint_epoch_5_grads.pkl (包含 431 条记录)
+  Iter 6 Epoch [6/20], Avg Train Loss: 15.389829
+  Iter 6 Epoch [7/20], Avg Train Loss: 13.324500
+  Iter 6 Epoch [8/20], Avg Train Loss: 10.805926
+  Iter 6 Epoch [9/20], Avg Train Loss: 8.120039
+  Iter 6 Epoch [10/20], Avg Train Loss: 5.552016

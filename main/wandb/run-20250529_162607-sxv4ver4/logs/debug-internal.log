@@ -1,0 +1,830 @@
+2025-05-29 16:26:07,715 INFO    StreamThr :21864 [internal.py:wandb_internal():86] W&B internal server running at pid: 21864, started at: 2025-05-29 16:26:07.715327
+2025-05-29 16:26:07,715 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status
+2025-05-29 16:26:07,717 INFO    WriterThread:21864 [datastore.py:open_for_write():85] open: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\run-sxv4ver4.wandb
+2025-05-29 16:26:07,719 DEBUG   SenderThread:21864 [sender.py:send():379] send: header
+2025-05-29 16:26:07,719 DEBUG   SenderThread:21864 [sender.py:send():379] send: run
+2025-05-29 16:26:09,927 INFO    SenderThread:21864 [dir_watcher.py:__init__():211] watching files in: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files
+2025-05-29 16:26:09,931 INFO    SenderThread:21864 [sender.py:_start_run_threads():1121] run started: sxv4ver4 with start time 1748507167.715326
+2025-05-29 16:26:09,931 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: check_version
+2025-05-29 16:26:09,931 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: check_version
+2025-05-29 16:26:10,678 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: run_start
+2025-05-29 16:26:10,703 DEBUG   HandlerThread:21864 [system_info.py:__init__():32] System info init
+2025-05-29 16:26:10,703 DEBUG   HandlerThread:21864 [system_info.py:__init__():47] System info init done
+2025-05-29 16:26:10,703 INFO    HandlerThread:21864 [system_monitor.py:start():181] Starting system monitor
+2025-05-29 16:26:10,703 INFO    SystemMonitor:21864 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2025-05-29 16:26:10,703 INFO    HandlerThread:21864 [system_monitor.py:probe():201] Collecting system info
+2025-05-29 16:26:10,706 INFO    SystemMonitor:21864 [interfaces.py:start():190] Started cpu monitoring
+2025-05-29 16:26:10,706 INFO    SystemMonitor:21864 [interfaces.py:start():190] Started disk monitoring
+2025-05-29 16:26:10,706 INFO    SystemMonitor:21864 [interfaces.py:start():190] Started gpu monitoring
+2025-05-29 16:26:10,706 INFO    SystemMonitor:21864 [interfaces.py:start():190] Started memory monitoring
+2025-05-29 16:26:10,715 INFO    SystemMonitor:21864 [interfaces.py:start():190] Started network monitoring
+2025-05-29 16:26:10,715 DEBUG   HandlerThread:21864 [system_info.py:probe():196] Probing system
+2025-05-29 16:26:10,715 DEBUG   HandlerThread:21864 [gitlib.py:_init_repo():53] git repository is invalid
+2025-05-29 16:26:10,715 DEBUG   HandlerThread:21864 [system_info.py:probe():244] Probing system done
+2025-05-29 16:26:10,715 DEBUG   HandlerThread:21864 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.22631-SP0', 'python': '3.9.19', 'heartbeatAt': '2025-05-29T08:26:10.715648', 'startedAt': '2025-05-29T08:26:07.707339', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'D:\\github\\Opt\\main\\main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'host': 'DESKTOP-RVG428G', 'username': 'HanlinWang', 'executable': 'D:\\anaconda\\envs\\agent3\\python.exe', 'cpu_count': 24, 'cpu_count_logical': 32, 'cpu_freq': {'current': 2200.0, 'min': 0.0, 'max': 2200.0}, 'cpu_freq_per_core': [{'current': 2200.0, 'min': 0.0, 'max': 2200.0}], 'disk': {'/': {'total': 620.9248008728027, 'used': 527.6210289001465}}, 'gpu': 'NVIDIA GeForce RTX 4070 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4070 Laptop GPU', 'memory_total': 8585740288}], 'memory': {'total': 31.74596405029297}}
+2025-05-29 16:26:10,715 INFO    HandlerThread:21864 [system_monitor.py:probe():211] Finished collecting system info
+2025-05-29 16:26:10,715 INFO    HandlerThread:21864 [system_monitor.py:probe():214] Publishing system info
+2025-05-29 16:26:10,715 DEBUG   HandlerThread:21864 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2025-05-29 16:26:10,715 DEBUG   HandlerThread:21864 [system_info.py:_save_pip():68] Saving pip packages done
+2025-05-29 16:26:10,715 DEBUG   HandlerThread:21864 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2025-05-29 16:26:10,939 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\conda-environment.yaml
+2025-05-29 16:26:10,939 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\requirements.txt
+2025-05-29 16:26:15,834 DEBUG   HandlerThread:21864 [system_info.py:_save_conda():87] Saving conda packages done
+2025-05-29 16:26:15,834 INFO    HandlerThread:21864 [system_monitor.py:probe():216] Finished publishing system info
+2025-05-29 16:26:15,836 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:26:15,840 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:26:15,840 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:26:15,840 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2025-05-29 16:26:15,845 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: stop_status
+2025-05-29 16:26:15,845 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: stop_status
+2025-05-29 16:26:15,845 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: internal_messages
+2025-05-29 16:26:15,962 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\conda-environment.yaml
+2025-05-29 16:26:15,962 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-metadata.json
+2025-05-29 16:26:16,356 DEBUG   SenderThread:21864 [sender.py:send():379] send: telemetry
+2025-05-29 16:26:16,969 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:26:17,535 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\r8auorpx-wandb-metadata.json
+2025-05-29 16:26:18,529 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:26:18,529 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:26:18,989 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:26:18,991 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_1\Epoch_5_TestPredictions_0_5d8952b8d12c628ca857.table.json
+2025-05-29 16:26:18,991 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table
+2025-05-29 16:26:18,991 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media
+2025-05-29 16:26:18,991 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_1
+2025-05-29 16:26:19,373 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:20,108 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:26:20,120 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:20,440 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\h89fgbo6-media/table/Iter_1/Epoch_5_TestPredictions_0_5d8952b8d12c628ca857.table.json
+2025-05-29 16:26:20,818 INFO    wandb-upload_1:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmppxfm63sf
+2025-05-29 16:26:20,826 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:26:20,835 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:21,004 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_1\Epoch_10_TestPredictions_4_2746222c13169e8f4331.table.json
+2025-05-29 16:26:21,004 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_1\Epoch_15_TestPredictions_9_ac024a798a0bc652bbcc.table.json
+2025-05-29 16:26:21,004 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_1
+2025-05-29 16:26:21,077 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:21,994 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_1Epoch_5_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MDMwOA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTAzNA==', 'latestArtifact': None}}
+2025-05-29 16:26:21,994 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:26:21,994 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_1/Epoch_5_TestPredictions_0_5d8952b8d12c628ca857.table.json with policy now
+2025-05-29 16:26:21,994 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:26:21,994 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:26:22,215 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:26:22,224 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:22,612 INFO    wandb-upload_1:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\60c71t12-media/table/Iter_1/Epoch_15_TestPredictions_9_ac024a798a0bc652bbcc.table.json
+2025-05-29 16:26:23,028 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_2\Epoch_5_TestPredictions_15_a303f6d22946383ac256.table.json
+2025-05-29 16:26:23,028 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table
+2025-05-29 16:26:23,028 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_2
+2025-05-29 16:26:23,028 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\d6jy44vb-media/table/Iter_1/Epoch_10_TestPredictions_4_2746222c13169e8f4331.table.json
+2025-05-29 16:26:23,302 INFO    wandb-upload_2:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\wn74p69t-media/table/Iter_1/Epoch_5_TestPredictions_0_5d8952b8d12c628ca857.table.json
+2025-05-29 16:26:23,686 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\187s57yf-media/table/Iter_2/Epoch_5_TestPredictions_15_a303f6d22946383ac256.table.json
+2025-05-29 16:26:24,152 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:26:24,165 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:24,798 INFO    wandb-upload_1:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpx31znlw5
+2025-05-29 16:26:25,036 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:26:25,037 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_2\Epoch_10_TestPredictions_19_e92f0b19b2000745f27b.table.json
+2025-05-29 16:26:25,037 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_2
+2025-05-29 16:26:25,577 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:26:25,586 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:25,854 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:25,963 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_1Epoch_10_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MDM3Mw==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTA1MQ==', 'latestArtifact': None}}
+2025-05-29 16:26:25,963 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:26:25,963 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_1/Epoch_10_TestPredictions_4_2746222c13169e8f4331.table.json with policy now
+2025-05-29 16:26:25,963 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:26:25,963 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:26:25,967 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:26:25,967 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:26:26,043 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:26:26,043 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_2\Epoch_15_TestPredictions_24_2f2bd471098aed311518.table.json
+2025-05-29 16:26:26,043 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_2
+2025-05-29 16:26:26,605 INFO    wandb-upload_1:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\kevvhmej-media/table/Iter_1/Epoch_10_TestPredictions_4_2746222c13169e8f4331.table.json
+2025-05-29 16:26:26,609 INFO    wandb-upload_2:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\fmunempc-media/table/Iter_2/Epoch_10_TestPredictions_19_e92f0b19b2000745f27b.table.json
+2025-05-29 16:26:27,010 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\l68xdckt-media/table/Iter_2/Epoch_15_TestPredictions_24_2f2bd471098aed311518.table.json
+2025-05-29 16:26:27,058 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:26:27,118 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:26:27,131 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:28,070 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_3\Epoch_5_TestPredictions_30_6ce352285efe9356cb0d.table.json
+2025-05-29 16:26:28,070 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table
+2025-05-29 16:26:28,070 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_3
+2025-05-29 16:26:28,765 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\qoz1kuem-media/table/Iter_3/Epoch_5_TestPredictions_30_6ce352285efe9356cb0d.table.json
+2025-05-29 16:26:29,939 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:26:29,953 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:30,097 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_3\Epoch_10_TestPredictions_34_9eadd822aed5fd90b6b6.table.json
+2025-05-29 16:26:30,097 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_3
+2025-05-29 16:26:30,736 INFO    wandb-upload_2:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\dxpzfpd9-media/table/Iter_3/Epoch_10_TestPredictions_34_9eadd822aed5fd90b6b6.table.json
+2025-05-29 16:26:30,833 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: internal_messages
+2025-05-29 16:26:30,864 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: stop_status
+2025-05-29 16:26:31,012 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:26:31,029 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:31,101 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_3\Epoch_15_TestPredictions_39_2d80bf7eb10948efbfcf.table.json
+2025-05-29 16:26:31,101 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_3
+2025-05-29 16:26:31,314 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:31,619 INFO    wandb-upload_1:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpaflmj71v
+2025-05-29 16:26:31,707 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\io2nnyt6-media/table/Iter_3/Epoch_15_TestPredictions_39_2d80bf7eb10948efbfcf.table.json
+2025-05-29 16:26:32,507 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:26:32,519 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:32,806 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_1Epoch_15_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MDQ1Nw==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTA2OA==', 'latestArtifact': None}}
+2025-05-29 16:26:32,806 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:26:32,807 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_1/Epoch_15_TestPredictions_9_ac024a798a0bc652bbcc.table.json with policy now
+2025-05-29 16:26:32,807 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:26:32,807 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:26:32,807 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:26:32,808 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:26:32,809 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:26:32,809 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:26:32,809 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:26:32,809 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:26:33,114 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:26:33,114 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_4\Epoch_5_TestPredictions_45_c335f47d4e0d4ff74454.table.json
+2025-05-29 16:26:33,114 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table
+2025-05-29 16:26:33,114 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_4
+2025-05-29 16:26:33,624 INFO    wandb-upload_2:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\3g7ehckf-media/table/Iter_1/Epoch_15_TestPredictions_9_ac024a798a0bc652bbcc.table.json
+2025-05-29 16:26:34,412 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\c5mggb7v-media/table/Iter_4/Epoch_5_TestPredictions_45_c335f47d4e0d4ff74454.table.json
+2025-05-29 16:26:35,135 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:26:35,895 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:26:36,955 INFO    wandb-upload_1:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmppoynoa1m
+2025-05-29 16:26:38,130 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_2Epoch_5_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MDYwMQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTA4Mw==', 'latestArtifact': None}}
+2025-05-29 16:26:38,134 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:26:38,221 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:26:38,232 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:38,462 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:26:38,462 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_2/Epoch_5_TestPredictions_15_a303f6d22946383ac256.table.json with policy now
+2025-05-29 16:26:38,462 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:26:38,462 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:26:38,464 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:26:38,464 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:26:39,118 INFO    wandb-upload_2:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\1a8y34yg-media/table/Iter_2/Epoch_5_TestPredictions_15_a303f6d22946383ac256.table.json
+2025-05-29 16:26:39,169 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:26:39,169 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\config.yaml
+2025-05-29 16:26:39,169 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_4\Epoch_10_TestPredictions_49_866e15cf62850edd373d.table.json
+2025-05-29 16:26:39,169 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_4
+2025-05-29 16:26:39,398 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:26:39,410 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:39,701 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:39,838 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\dgvqnotz-media/table/Iter_4/Epoch_10_TestPredictions_49_866e15cf62850edd373d.table.json
+2025-05-29 16:26:40,184 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_4\Epoch_15_TestPredictions_54_79581276d5038e3215db.table.json
+2025-05-29 16:26:40,184 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_4
+2025-05-29 16:26:40,387 INFO    wandb-upload_1:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmp6ehpqj2v
+2025-05-29 16:26:40,798 INFO    wandb-upload_2:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\fkg7c96c-media/table/Iter_4/Epoch_15_TestPredictions_54_79581276d5038e3215db.table.json
+2025-05-29 16:26:40,948 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:26:41,194 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:26:41,310 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:26:41,322 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:41,585 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_2Epoch_10_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MDczNQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTEwNA==', 'latestArtifact': None}}
+2025-05-29 16:26:41,585 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:26:41,585 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_2/Epoch_10_TestPredictions_19_e92f0b19b2000745f27b.table.json with policy now
+2025-05-29 16:26:41,585 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:26:41,585 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:26:41,585 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:26:41,585 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:26:42,202 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:26:42,202 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_5\Epoch_5_TestPredictions_60_dbec4ddbfd44efa8c84c.table.json
+2025-05-29 16:26:42,204 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table
+2025-05-29 16:26:42,204 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_5
+2025-05-29 16:26:42,265 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\okx6wpkc-media/table/Iter_2/Epoch_10_TestPredictions_19_e92f0b19b2000745f27b.table.json
+2025-05-29 16:26:42,876 INFO    wandb-upload_1:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\y5vlqe8g-media/table/Iter_5/Epoch_5_TestPredictions_60_dbec4ddbfd44efa8c84c.table.json
+2025-05-29 16:26:43,213 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:26:44,194 INFO    wandb-upload_2:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmp9wujnwgk
+2025-05-29 16:26:45,477 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_2Epoch_15_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MDgwMg==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTExMw==', 'latestArtifact': None}}
+2025-05-29 16:26:45,481 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:26:45,481 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:26:45,481 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_2/Epoch_15_TestPredictions_24_2f2bd471098aed311518.table.json with policy now
+2025-05-29 16:26:45,481 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:26:45,481 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:26:45,485 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:26:45,485 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:26:45,485 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:26:45,485 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:26:45,487 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:26:45,696 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:26:45,706 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:45,840 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: internal_messages
+2025-05-29 16:26:46,164 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\ey34vrh5-media/table/Iter_2/Epoch_15_TestPredictions_24_2f2bd471098aed311518.table.json
+2025-05-29 16:26:46,247 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:26:46,247 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_5\Epoch_10_TestPredictions_64_b3dbe35575d2332ddb20.table.json
+2025-05-29 16:26:46,248 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_5
+2025-05-29 16:26:46,874 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:26:46,886 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:46,935 INFO    wandb-upload_1:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\drmzt0y2-media/table/Iter_5/Epoch_10_TestPredictions_64_b3dbe35575d2332ddb20.table.json
+2025-05-29 16:26:47,207 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:47,249 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:26:47,250 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_5\Epoch_15_TestPredictions_69_a9132c1ab34f22dcf233.table.json
+2025-05-29 16:26:47,250 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_5
+2025-05-29 16:26:47,459 INFO    wandb-upload_2:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpxxnr0_46
+2025-05-29 16:26:47,863 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\la4ckxpt-media/table/Iter_5/Epoch_15_TestPredictions_69_a9132c1ab34f22dcf233.table.json
+2025-05-29 16:26:48,652 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_3Epoch_5_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MDg4OQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTEzOA==', 'latestArtifact': None}}
+2025-05-29 16:26:48,652 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:26:48,652 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_3/Epoch_5_TestPredictions_30_6ce352285efe9356cb0d.table.json with policy now
+2025-05-29 16:26:48,652 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:26:48,652 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:26:48,656 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:26:48,656 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:26:49,263 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:26:49,328 INFO    wandb-upload_1:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\ogcalo1c-media/table/Iter_3/Epoch_5_TestPredictions_30_6ce352285efe9356cb0d.table.json
+2025-05-29 16:26:49,946 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:26:49,959 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:50,278 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_6\Epoch_5_TestPredictions_75_8a988455eb5606b5ca93.table.json
+2025-05-29 16:26:50,278 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table
+2025-05-29 16:26:50,278 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_6
+2025-05-29 16:26:50,435 INFO    wandb-upload_0:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpc0b9orwk
+2025-05-29 16:26:50,915 INFO    wandb-upload_2:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\hgbv8xku-media/table/Iter_6/Epoch_5_TestPredictions_75_8a988455eb5606b5ca93.table.json
+2025-05-29 16:26:50,995 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:26:51,284 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:26:51,555 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_3Epoch_10_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MDk0OQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTE0NQ==', 'latestArtifact': None}}
+2025-05-29 16:26:51,555 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:26:51,555 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_3/Epoch_10_TestPredictions_34_9eadd822aed5fd90b6b6.table.json with policy now
+2025-05-29 16:26:51,555 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:26:51,557 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:26:51,557 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:26:51,557 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:26:51,557 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: stop_status
+2025-05-29 16:26:51,871 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:26:52,234 INFO    wandb-upload_1:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\kh8rk6kd-media/table/Iter_3/Epoch_10_TestPredictions_34_9eadd822aed5fd90b6b6.table.json
+2025-05-29 16:26:52,288 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:26:53,294 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:26:53,486 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:26:53,499 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:54,299 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_6\Epoch_10_TestPredictions_79_9c89128bcc80fd9769f7.table.json
+2025-05-29 16:26:54,299 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_6
+2025-05-29 16:26:54,582 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:26:54,594 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:54,932 INFO    wandb-upload_1:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\rudk5fke-media/table/Iter_6/Epoch_10_TestPredictions_79_9c89128bcc80fd9769f7.table.json
+2025-05-29 16:26:54,998 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:55,311 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_6\Epoch_15_TestPredictions_84_edc1b3f5ed3fbfd78471.table.json
+2025-05-29 16:26:55,311 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_6
+2025-05-29 16:26:55,707 INFO    wandb-upload_2:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpxmh73o1i
+2025-05-29 16:26:56,048 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:26:56,131 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\9vfija0g-media/table/Iter_6/Epoch_15_TestPredictions_84_edc1b3f5ed3fbfd78471.table.json
+2025-05-29 16:26:56,844 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_3Epoch_15_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MTAwNw==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTE1Mg==', 'latestArtifact': None}}
+2025-05-29 16:26:56,844 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:26:56,844 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_3/Epoch_15_TestPredictions_39_2d80bf7eb10948efbfcf.table.json with policy now
+2025-05-29 16:26:56,844 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:26:56,844 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:26:56,844 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:26:56,848 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:26:56,848 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:26:56,848 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:26:56,848 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:26:56,848 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:26:57,143 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:26:57,156 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:57,320 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:26:57,320 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_7\Epoch_5_TestPredictions_90_ed02b5651c0f4d53d911.table.json
+2025-05-29 16:26:57,320 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table
+2025-05-29 16:26:57,320 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_7
+2025-05-29 16:26:57,702 INFO    wandb-upload_1:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\2rj4rdv6-media/table/Iter_3/Epoch_15_TestPredictions_39_2d80bf7eb10948efbfcf.table.json
+2025-05-29 16:26:57,977 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\qg6zddip-media/table/Iter_7/Epoch_5_TestPredictions_90_ed02b5651c0f4d53d911.table.json
+2025-05-29 16:26:58,668 INFO    wandb-upload_2:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmp6ff6pb8y
+2025-05-29 16:26:59,291 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:26:59,304 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:26:59,336 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:26:59,337 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_7\Epoch_10_TestPredictions_94_8ae664056ef4c0288d5c.table.json
+2025-05-29 16:26:59,337 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_7
+2025-05-29 16:26:59,725 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_4Epoch_5_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MTExOA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTE2Ng==', 'latestArtifact': None}}
+2025-05-29 16:26:59,725 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:26:59,725 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_4/Epoch_5_TestPredictions_45_c335f47d4e0d4ff74454.table.json with policy now
+2025-05-29 16:26:59,725 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:26:59,725 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:26:59,725 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:26:59,725 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:27:00,340 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:27:00,392 INFO    wandb-upload_1:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\fnfwsdw0-media/table/Iter_7/Epoch_10_TestPredictions_94_8ae664056ef4c0288d5c.table.json
+2025-05-29 16:27:00,777 INFO    wandb-upload_2:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\s4dqcdu2-media/table/Iter_4/Epoch_5_TestPredictions_45_c335f47d4e0d4ff74454.table.json
+2025-05-29 16:27:00,853 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: internal_messages
+2025-05-29 16:27:01,346 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:27:02,842 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:27:02,852 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:27:02,950 INFO    wandb-upload_0:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmp2jqzh5q_
+2025-05-29 16:27:03,279 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:27:03,369 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_7\Epoch_15_TestPredictions_99_d1117d79418f199db922.table.json
+2025-05-29 16:27:03,369 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_7
+2025-05-29 16:27:04,096 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_4Epoch_10_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MTE3NQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTE3Nw==', 'latestArtifact': None}}
+2025-05-29 16:27:04,096 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:27:04,096 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_4/Epoch_10_TestPredictions_49_866e15cf62850edd373d.table.json with policy now
+2025-05-29 16:27:04,096 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:27:04,100 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:27:04,101 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:27:04,102 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:27:04,102 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:27:04,374 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:27:04,738 INFO    wandb-upload_1:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\9xsb0o2f-media/table/Iter_7/Epoch_15_TestPredictions_99_d1117d79418f199db922.table.json
+2025-05-29 16:27:04,828 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\lpzqncl0-media/table/Iter_4/Epoch_10_TestPredictions_49_866e15cf62850edd373d.table.json
+2025-05-29 16:27:04,867 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:27:04,879 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:27:05,379 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_8\Epoch_5_TestPredictions_105_d7afad26f61666729421.table.json
+2025-05-29 16:27:05,380 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table
+2025-05-29 16:27:05,380 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_8
+2025-05-29 16:27:05,865 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:27:05,874 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:27:06,036 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\hkm8bwra-media/table/Iter_8/Epoch_5_TestPredictions_105_d7afad26f61666729421.table.json
+2025-05-29 16:27:06,107 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:27:06,390 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_8\Epoch_10_TestPredictions_109_09edbd3ebc0e680cbfec.table.json
+2025-05-29 16:27:06,390 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_8
+2025-05-29 16:27:06,807 INFO    wandb-upload_2:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpglmf5re9
+2025-05-29 16:27:07,391 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:27:07,477 INFO    wandb-upload_1:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\91g5hick-media/table/Iter_8/Epoch_10_TestPredictions_109_09edbd3ebc0e680cbfec.table.json
+2025-05-29 16:27:08,096 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_4Epoch_15_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MTI2NA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTE4OQ==', 'latestArtifact': None}}
+2025-05-29 16:27:08,096 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:27:08,096 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_4/Epoch_15_TestPredictions_54_79581276d5038e3215db.table.json with policy now
+2025-05-29 16:27:08,096 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:27:08,096 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:27:08,096 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:27:08,099 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:27:08,099 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:27:08,099 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:27:08,099 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:27:08,405 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:27:08,775 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\pe0d7jwp-media/table/Iter_4/Epoch_15_TestPredictions_54_79581276d5038e3215db.table.json
+2025-05-29 16:27:09,409 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:27:10,048 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:27:10,062 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:27:10,415 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_8\Epoch_15_TestPredictions_114_05102bdb5e49a7fb4a01.table.json
+2025-05-29 16:27:10,415 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_8
+2025-05-29 16:27:10,451 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:27:10,716 DEBUG   SystemMonitor:21864 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2025-05-29 16:27:11,045 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\7oi84gqu-media/table/Iter_8/Epoch_15_TestPredictions_114_05102bdb5e49a7fb4a01.table.json
+2025-05-29 16:27:11,148 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:27:11,465 INFO    wandb-upload_1:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpjl8jhb56
+2025-05-29 16:27:12,161 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:27:12,173 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:27:12,432 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_9\Epoch_5_TestPredictions_120_808c04a4a714f2a20802.table.json
+2025-05-29 16:27:12,432 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table
+2025-05-29 16:27:12,432 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_9
+2025-05-29 16:27:12,919 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_5Epoch_5_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MTM1MA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTIwNA==', 'latestArtifact': None}}
+2025-05-29 16:27:12,919 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:27:12,919 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_5/Epoch_5_TestPredictions_60_dbec4ddbfd44efa8c84c.table.json with policy now
+2025-05-29 16:27:12,923 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:27:12,923 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:27:12,923 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:27:12,924 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:27:12,924 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:27:13,289 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:27:13,301 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:27:13,445 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:27:13,445 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_9\Epoch_10_TestPredictions_124_ca3cec487a8b67e40e62.table.json
+2025-05-29 16:27:13,445 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_9
+2025-05-29 16:27:13,618 INFO    wandb-upload_1:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\dhv2xltl-media/table/Iter_5/Epoch_5_TestPredictions_60_dbec4ddbfd44efa8c84c.table.json
+2025-05-29 16:27:13,712 INFO    wandb-upload_2:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\bsafqwif-media/table/Iter_9/Epoch_5_TestPredictions_120_808c04a4a714f2a20802.table.json
+2025-05-29 16:27:14,335 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\czypc7to-media/table/Iter_9/Epoch_10_TestPredictions_124_ca3cec487a8b67e40e62.table.json
+2025-05-29 16:27:14,941 INFO    wandb-upload_3:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmp6m0wqxgi
+2025-05-29 16:27:15,471 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:27:15,861 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: internal_messages
+2025-05-29 16:27:16,375 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_5Epoch_10_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MTQ0MQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTIxNQ==', 'latestArtifact': None}}
+2025-05-29 16:27:16,375 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:27:16,375 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_5/Epoch_10_TestPredictions_64_b3dbe35575d2332ddb20.table.json with policy now
+2025-05-29 16:27:16,379 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:27:16,379 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:27:16,380 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:27:16,380 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:27:16,480 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:27:17,272 INFO    wandb-upload_1:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\k6xxbd0y-media/table/Iter_5/Epoch_10_TestPredictions_64_b3dbe35575d2332ddb20.table.json
+2025-05-29 16:27:17,686 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:27:17,698 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:27:18,113 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:27:18,498 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_9\Epoch_15_TestPredictions_129_5f2dffb0da18876e6b51.table.json
+2025-05-29 16:27:18,498 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_9
+2025-05-29 16:27:18,655 INFO    wandb-upload_0:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmps1u83kdl
+2025-05-29 16:27:19,114 INFO    wandb-upload_2:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\hukkqcyq-media/table/Iter_9/Epoch_15_TestPredictions_129_5f2dffb0da18876e6b51.table.json
+2025-05-29 16:27:19,517 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:27:20,052 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_5Epoch_15_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MTUxNw==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTIzMg==', 'latestArtifact': None}}
+2025-05-29 16:27:20,052 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:27:20,052 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_5/Epoch_15_TestPredictions_69_a9132c1ab34f22dcf233.table.json with policy now
+2025-05-29 16:27:20,052 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:27:20,052 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:27:20,052 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:27:20,052 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:27:20,052 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:27:20,052 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:27:20,055 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:27:20,055 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:27:20,177 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:27:20,189 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:27:20,523 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:27:20,523 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_10\Epoch_5_TestPredictions_135_20af0904e9ba7c9e0e23.table.json
+2025-05-29 16:27:20,523 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table
+2025-05-29 16:27:20,523 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_10
+2025-05-29 16:27:20,763 INFO    wandb-upload_1:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\fjptqgn9-media/table/Iter_5/Epoch_15_TestPredictions_69_a9132c1ab34f22dcf233.table.json
+2025-05-29 16:27:21,162 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\mnmeyov3-media/table/Iter_10/Epoch_5_TestPredictions_135_20af0904e9ba7c9e0e23.table.json
+2025-05-29 16:27:21,264 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:27:21,526 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:27:21,870 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:27:21,877 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:27:22,540 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_10\Epoch_10_TestPredictions_139_e5f19c55e34ac30d6a02.table.json
+2025-05-29 16:27:22,540 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_10
+2025-05-29 16:27:23,379 INFO    wandb-upload_1:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\7c630kgc-media/table/Iter_10/Epoch_10_TestPredictions_139_e5f19c55e34ac30d6a02.table.json
+2025-05-29 16:27:24,103 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: log_artifact
+2025-05-29 16:27:24,115 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:27:24,553 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_created():271] file/dir created: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_10\Epoch_15_TestPredictions_144_c5f2d214a8daab8cbf9a.table.json
+2025-05-29 16:27:24,553 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_10
+2025-05-29 16:27:24,666 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: partial_history
+2025-05-29 16:27:24,719 INFO    wandb-upload_3:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpz8g_0o0b
+2025-05-29 16:27:25,415 INFO    wandb-upload_2:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\q4b9uqs0-media/table/Iter_10/Epoch_15_TestPredictions_144_c5f2d214a8daab8cbf9a.table.json
+2025-05-29 16:27:25,898 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_6Epoch_5_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MTYyMQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTI1NQ==', 'latestArtifact': None}}
+2025-05-29 16:27:25,898 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:27:25,898 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:27:25,898 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_6/Epoch_5_TestPredictions_75_8a988455eb5606b5ca93.table.json with policy now
+2025-05-29 16:27:25,898 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:27:25,898 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:27:25,898 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:27:25,898 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:27:25,995 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: poll_exit
+2025-05-29 16:27:26,577 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:27:26,721 INFO    wandb-upload_1:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\dfvks0vn-media/table/Iter_6/Epoch_5_TestPredictions_75_8a988455eb5606b5ca93.table.json
+2025-05-29 16:27:27,586 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:27:27,763 INFO    wandb-upload_3:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpy1oeixe_
+2025-05-29 16:27:28,884 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_6Epoch_10_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MTcyOQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTI2NQ==', 'latestArtifact': None}}
+2025-05-29 16:27:28,884 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:27:28,884 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_6/Epoch_10_TestPredictions_79_9c89128bcc80fd9769f7.table.json with policy now
+2025-05-29 16:27:28,885 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:27:28,885 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:27:28,885 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:27:28,885 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:27:29,599 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:27:29,790 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\e2d4qrm1-media/table/Iter_6/Epoch_10_TestPredictions_79_9c89128bcc80fd9769f7.table.json
+2025-05-29 16:27:31,030 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:27:31,218 INFO    wandb-upload_1:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmp0xmklxnk
+2025-05-29 16:27:31,623 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:27:32,332 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_6Epoch_15_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MTc5Ng==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTI4Mg==', 'latestArtifact': None}}
+2025-05-29 16:27:32,332 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:27:32,332 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:27:32,332 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_6/Epoch_15_TestPredictions_84_edc1b3f5ed3fbfd78471.table.json with policy now
+2025-05-29 16:27:32,332 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:27:32,333 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:27:32,333 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:27:32,333 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:27:32,333 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:27:32,335 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:27:32,335 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:27:32,635 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:27:33,185 INFO    wandb-upload_2:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\9xnhnhx0-media/table/Iter_6/Epoch_15_TestPredictions_84_edc1b3f5ed3fbfd78471.table.json
+2025-05-29 16:27:33,648 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:27:34,555 INFO    wandb-upload_0:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpsupm56kg
+2025-05-29 16:27:35,770 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_7Epoch_5_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MTg1NQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTI5MA==', 'latestArtifact': None}}
+2025-05-29 16:27:35,770 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:27:35,770 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_7/Epoch_5_TestPredictions_90_ed02b5651c0f4d53d911.table.json with policy now
+2025-05-29 16:27:35,770 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:27:35,770 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:27:35,770 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:27:35,770 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:27:36,074 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:27:36,640 INFO    wandb-upload_3:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\gz582fzq-media/table/Iter_7/Epoch_5_TestPredictions_90_ed02b5651c0f4d53d911.table.json
+2025-05-29 16:27:36,679 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:27:37,680 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:27:38,561 INFO    wandb-upload_2:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpeyk00un1
+2025-05-29 16:27:39,731 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_7Epoch_10_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MTkxOQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTI5OQ==', 'latestArtifact': None}}
+2025-05-29 16:27:39,731 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:27:39,731 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_7/Epoch_10_TestPredictions_94_8ae664056ef4c0288d5c.table.json with policy now
+2025-05-29 16:27:39,731 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:27:39,731 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:27:39,731 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:27:39,732 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:27:39,732 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:27:40,559 INFO    wandb-upload_1:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\ketrnyfy-media/table/Iter_7/Epoch_10_TestPredictions_94_8ae664056ef4c0288d5c.table.json
+2025-05-29 16:27:40,708 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:27:41,116 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:27:41,721 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:27:42,035 INFO    wandb-upload_3:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmp0jf_p_y2
+2025-05-29 16:27:43,132 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_7Epoch_15_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MjAwOA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTMxNg==', 'latestArtifact': None}}
+2025-05-29 16:27:43,132 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:27:43,132 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_7/Epoch_15_TestPredictions_99_d1117d79418f199db922.table.json with policy now
+2025-05-29 16:27:43,132 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:27:43,132 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:27:43,132 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:27:43,132 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:27:43,132 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:27:43,136 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:27:43,136 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:27:43,747 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:27:43,857 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\367t3jbo-media/table/Iter_7/Epoch_15_TestPredictions_99_d1117d79418f199db922.table.json
+2025-05-29 16:27:45,770 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:27:46,152 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:27:46,873 INFO    wandb-upload_1:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpr17lgjuf
+2025-05-29 16:27:48,273 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_8Epoch_5_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MjA5MA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTMzNQ==', 'latestArtifact': None}}
+2025-05-29 16:27:48,273 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:27:48,273 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_8/Epoch_5_TestPredictions_105_d7afad26f61666729421.table.json with policy now
+2025-05-29 16:27:48,273 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:27:48,273 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:27:48,273 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:27:48,277 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:27:48,277 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:27:48,796 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:27:48,796 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:27:48,962 INFO    wandb-upload_2:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\hxjnkyzs-media/table/Iter_8/Epoch_5_TestPredictions_105_d7afad26f61666729421.table.json
+2025-05-29 16:27:50,884 INFO    wandb-upload_3:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmp22lmpz8h
+2025-05-29 16:27:51,189 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:27:52,352 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_8Epoch_10_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MjE5Mg==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTM1NA==', 'latestArtifact': None}}
+2025-05-29 16:27:52,352 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:27:52,352 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_8/Epoch_10_TestPredictions_109_09edbd3ebc0e680cbfec.table.json with policy now
+2025-05-29 16:27:52,352 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:27:52,352 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:27:52,352 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:27:52,352 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:27:52,839 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:27:52,839 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:27:53,035 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\30h4hkux-media/table/Iter_8/Epoch_10_TestPredictions_109_09edbd3ebc0e680cbfec.table.json
+2025-05-29 16:27:55,533 INFO    wandb-upload_1:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpr8o2efuv
+2025-05-29 16:27:56,236 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:27:56,962 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_8Epoch_15_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MjMwNw==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTM2OA==', 'latestArtifact': None}}
+2025-05-29 16:27:56,963 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:27:56,963 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:27:56,963 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_8/Epoch_15_TestPredictions_114_05102bdb5e49a7fb4a01.table.json with policy now
+2025-05-29 16:27:56,963 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:27:56,963 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:27:56,965 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:27:56,965 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:27:56,965 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:27:56,966 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:27:56,966 DEBUG   SenderThread:21864 [sender.py:send():379] send: stats
+2025-05-29 16:27:56,966 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:27:57,720 INFO    wandb-upload_2:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\hrkfx4vi-media/table/Iter_8/Epoch_15_TestPredictions_114_05102bdb5e49a7fb4a01.table.json
+2025-05-29 16:27:57,887 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:27:58,887 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:27:59,543 INFO    wandb-upload_3:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpauro75jf
+2025-05-29 16:28:01,120 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_9Epoch_5_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MjM5MQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTM4OA==', 'latestArtifact': None}}
+2025-05-29 16:28:01,120 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:28:01,120 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_9/Epoch_5_TestPredictions_120_808c04a4a714f2a20802.table.json with policy now
+2025-05-29 16:28:01,120 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:28:01,120 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:28:01,120 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:28:01,124 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:28:01,286 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:28:01,824 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\cho8jqfk-media/table/Iter_9/Epoch_5_TestPredictions_120_808c04a4a714f2a20802.table.json
+2025-05-29 16:28:01,923 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:28:02,935 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:28:05,776 INFO    wandb-upload_1:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmp0frnj78b
+2025-05-29 16:28:06,324 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:28:07,173 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_9Epoch_10_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MjQ3Mg==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTM5OQ==', 'latestArtifact': None}}
+2025-05-29 16:28:07,173 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:28:07,173 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:28:07,173 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_9/Epoch_10_TestPredictions_124_ca3cec487a8b67e40e62.table.json with policy now
+2025-05-29 16:28:07,173 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:28:07,173 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:28:07,178 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:28:07,178 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:28:07,840 INFO    wandb-upload_2:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\yv3hraij-media/table/Iter_9/Epoch_10_TestPredictions_124_ca3cec487a8b67e40e62.table.json
+2025-05-29 16:28:07,990 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:28:09,003 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:28:09,674 INFO    wandb-upload_3:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmp347sjo9u
+2025-05-29 16:28:11,352 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:28:11,809 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_9Epoch_15_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MjU4Mg==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTQwOA==', 'latestArtifact': None}}
+2025-05-29 16:28:11,809 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:28:11,809 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_9/Epoch_15_TestPredictions_129_5f2dffb0da18876e6b51.table.json with policy now
+2025-05-29 16:28:11,811 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:28:11,811 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:28:11,811 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:28:11,811 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:28:11,811 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:28:11,811 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:28:11,811 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:28:12,021 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:28:12,555 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\m81qvdk6-media/table/Iter_9/Epoch_15_TestPredictions_129_5f2dffb0da18876e6b51.table.json
+2025-05-29 16:28:13,029 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:28:14,712 INFO    wandb-upload_1:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmp79ebxrn7
+2025-05-29 16:28:16,382 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:28:16,849 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_10Epoch_5_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MjY2MQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTQxOQ==', 'latestArtifact': None}}
+2025-05-29 16:28:16,849 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:28:16,849 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_10/Epoch_5_TestPredictions_135_20af0904e9ba7c9e0e23.table.json with policy now
+2025-05-29 16:28:16,849 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:28:16,849 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:28:16,849 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:28:16,849 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:28:16,849 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:28:17,074 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:28:17,543 INFO    wandb-upload_2:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\r3j015pt-media/table/Iter_10/Epoch_5_TestPredictions_135_20af0904e9ba7c9e0e23.table.json
+2025-05-29 16:28:19,091 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:28:19,680 INFO    wandb-upload_3:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmpqlxj3y0d
+2025-05-29 16:28:21,216 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_10Epoch_10_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4Mjc1OA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTQzMA==', 'latestArtifact': None}}
+2025-05-29 16:28:21,216 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:28:21,216 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_10/Epoch_10_TestPredictions_139_e5f19c55e34ac30d6a02.table.json with policy now
+2025-05-29 16:28:21,220 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:28:21,220 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:28:21,220 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:28:21,221 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: log_artifact
+2025-05-29 16:28:21,412 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:28:21,895 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\ucix1y9k-media/table/Iter_10/Epoch_10_TestPredictions_139_e5f19c55e34ac30d6a02.table.json
+2025-05-29 16:28:22,128 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:28:23,140 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:28:25,781 INFO    wandb-upload_1:21864 [upload_job.py:push():89] Uploaded file C:\Users\HanlinWang\AppData\Local\wandb\wandb\artifacts\staging\tmp7eo8aolu
+2025-05-29 16:28:26,449 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:28:27,774 INFO    SenderThread:21864 [sender.py:send_request_log_artifact():1441] logged artifact run-sxv4ver4-Iter_10Epoch_15_TestPredictions - {'id': 'QXJ0aWZhY3Q6MTc3MTE4MjgzNA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NTY3OTQ0NA==', 'latestArtifact': None}}
+2025-05-29 16:28:27,774 DEBUG   SenderThread:21864 [sender.py:send():379] send: files
+2025-05-29 16:28:27,774 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:28:27,774 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file media\table\Iter_10/Epoch_15_TestPredictions_144_c5f2d214a8daab8cbf9a.table.json with policy now
+2025-05-29 16:28:27,774 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:28:27,774 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:28:27,778 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:28:27,778 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:28:27,778 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:28:27,778 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:28:27,778 DEBUG   SenderThread:21864 [sender.py:send():379] send: telemetry
+2025-05-29 16:28:27,778 DEBUG   SenderThread:21864 [sender.py:send():379] send: exit
+2025-05-29 16:28:27,778 INFO    SenderThread:21864 [sender.py:send_exit():584] handling exit code: 0
+2025-05-29 16:28:27,778 INFO    SenderThread:21864 [sender.py:send_exit():586] handling runtime: 74
+2025-05-29 16:28:27,778 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:28:27,778 INFO    SenderThread:21864 [sender.py:send_exit():592] send defer
+2025-05-29 16:28:27,778 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: poll_exit
+2025-05-29 16:28:27,778 DEBUG   SenderThread:21864 [sender.py:send():379] send: stats
+2025-05-29 16:28:27,778 DEBUG   SenderThread:21864 [sender.py:send():379] send: stats
+2025-05-29 16:28:27,778 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: defer
+2025-05-29 16:28:27,778 INFO    HandlerThread:21864 [handler.py:handle_request_defer():170] handle defer: 0
+2025-05-29 16:28:27,782 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: defer
+2025-05-29 16:28:27,782 INFO    SenderThread:21864 [sender.py:send_request_defer():608] handle sender defer: 0
+2025-05-29 16:28:27,782 INFO    SenderThread:21864 [sender.py:transition_state():612] send defer: 1
+2025-05-29 16:28:27,782 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: defer
+2025-05-29 16:28:27,782 INFO    HandlerThread:21864 [handler.py:handle_request_defer():170] handle defer: 1
+2025-05-29 16:28:27,782 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: defer
+2025-05-29 16:28:27,782 INFO    SenderThread:21864 [sender.py:send_request_defer():608] handle sender defer: 1
+2025-05-29 16:28:27,782 INFO    SenderThread:21864 [sender.py:transition_state():612] send defer: 2
+2025-05-29 16:28:27,782 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: defer
+2025-05-29 16:28:27,782 INFO    HandlerThread:21864 [handler.py:handle_request_defer():170] handle defer: 2
+2025-05-29 16:28:27,782 INFO    HandlerThread:21864 [system_monitor.py:finish():190] Stopping system monitor
+2025-05-29 16:28:27,782 DEBUG   SystemMonitor:21864 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2025-05-29 16:28:27,782 INFO    HandlerThread:21864 [interfaces.py:finish():202] Joined cpu monitor
+2025-05-29 16:28:27,786 DEBUG   SystemMonitor:21864 [system_monitor.py:_start():170] Publishing last batch of metrics
+2025-05-29 16:28:27,786 INFO    HandlerThread:21864 [interfaces.py:finish():202] Joined disk monitor
+2025-05-29 16:28:27,829 INFO    HandlerThread:21864 [interfaces.py:finish():202] Joined gpu monitor
+2025-05-29 16:28:27,829 INFO    HandlerThread:21864 [interfaces.py:finish():202] Joined memory monitor
+2025-05-29 16:28:27,829 INFO    HandlerThread:21864 [interfaces.py:finish():202] Joined network monitor
+2025-05-29 16:28:27,829 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: defer
+2025-05-29 16:28:27,829 INFO    SenderThread:21864 [sender.py:send_request_defer():608] handle sender defer: 2
+2025-05-29 16:28:27,829 INFO    SenderThread:21864 [sender.py:transition_state():612] send defer: 3
+2025-05-29 16:28:27,829 DEBUG   SenderThread:21864 [sender.py:send():379] send: stats
+2025-05-29 16:28:27,829 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: defer
+2025-05-29 16:28:27,829 INFO    HandlerThread:21864 [handler.py:handle_request_defer():170] handle defer: 3
+2025-05-29 16:28:27,829 DEBUG   SenderThread:21864 [sender.py:send():379] send: history
+2025-05-29 16:28:27,829 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: summary_record
+2025-05-29 16:28:27,832 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:28:27,832 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: defer
+2025-05-29 16:28:27,832 INFO    SenderThread:21864 [sender.py:send_request_defer():608] handle sender defer: 3
+2025-05-29 16:28:27,832 INFO    SenderThread:21864 [sender.py:transition_state():612] send defer: 4
+2025-05-29 16:28:27,832 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: defer
+2025-05-29 16:28:27,832 INFO    HandlerThread:21864 [handler.py:handle_request_defer():170] handle defer: 4
+2025-05-29 16:28:27,832 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: defer
+2025-05-29 16:28:27,832 INFO    SenderThread:21864 [sender.py:send_request_defer():608] handle sender defer: 4
+2025-05-29 16:28:27,832 INFO    SenderThread:21864 [sender.py:transition_state():612] send defer: 5
+2025-05-29 16:28:27,832 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: defer
+2025-05-29 16:28:27,832 INFO    HandlerThread:21864 [handler.py:handle_request_defer():170] handle defer: 5
+2025-05-29 16:28:27,832 DEBUG   SenderThread:21864 [sender.py:send():379] send: summary
+2025-05-29 16:28:27,832 INFO    SenderThread:21864 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-05-29 16:28:27,832 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: defer
+2025-05-29 16:28:27,832 INFO    SenderThread:21864 [sender.py:send_request_defer():608] handle sender defer: 5
+2025-05-29 16:28:27,832 INFO    SenderThread:21864 [sender.py:transition_state():612] send defer: 6
+2025-05-29 16:28:27,832 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: defer
+2025-05-29 16:28:27,832 INFO    HandlerThread:21864 [handler.py:handle_request_defer():170] handle defer: 6
+2025-05-29 16:28:27,832 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: defer
+2025-05-29 16:28:27,832 INFO    SenderThread:21864 [sender.py:send_request_defer():608] handle sender defer: 6
+2025-05-29 16:28:27,837 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:28:28,148 INFO    SenderThread:21864 [sender.py:transition_state():612] send defer: 7
+2025-05-29 16:28:28,148 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: defer
+2025-05-29 16:28:28,148 INFO    HandlerThread:21864 [handler.py:handle_request_defer():170] handle defer: 7
+2025-05-29 16:28:28,148 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: defer
+2025-05-29 16:28:28,148 INFO    SenderThread:21864 [sender.py:send_request_defer():608] handle sender defer: 7
+2025-05-29 16:28:28,185 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:28:28,185 INFO    Thread-16 :21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\config.yaml
+2025-05-29 16:28:28,628 INFO    wandb-upload_2:21864 [upload_job.py:push():131] Uploaded file C:\Users\HANLIN~1\AppData\Local\Temp\tmp0kajmwyjwandb\qoagk1pq-media/table/Iter_10/Epoch_15_TestPredictions_144_c5f2d214a8daab8cbf9a.table.json
+2025-05-29 16:28:28,965 INFO    SenderThread:21864 [sender.py:transition_state():612] send defer: 8
+2025-05-29 16:28:28,965 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: defer
+2025-05-29 16:28:28,965 INFO    HandlerThread:21864 [handler.py:handle_request_defer():170] handle defer: 8
+2025-05-29 16:28:28,965 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: defer
+2025-05-29 16:28:28,965 INFO    SenderThread:21864 [sender.py:send_request_defer():608] handle sender defer: 8
+2025-05-29 16:28:28,965 INFO    SenderThread:21864 [job_builder.py:build():281] Attempting to build job artifact
+2025-05-29 16:28:28,965 INFO    SenderThread:21864 [job_builder.py:_get_source_type():404] no source found
+2025-05-29 16:28:28,965 INFO    SenderThread:21864 [sender.py:transition_state():612] send defer: 9
+2025-05-29 16:28:28,965 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: defer
+2025-05-29 16:28:28,965 INFO    HandlerThread:21864 [handler.py:handle_request_defer():170] handle defer: 9
+2025-05-29 16:28:28,965 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: defer
+2025-05-29 16:28:28,965 INFO    SenderThread:21864 [sender.py:send_request_defer():608] handle sender defer: 9
+2025-05-29 16:28:28,965 INFO    SenderThread:21864 [dir_watcher.py:finish():358] shutting down directory watcher
+2025-05-29 16:28:29,191 INFO    SenderThread:21864 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:28:29,191 INFO    SenderThread:21864 [dir_watcher.py:finish():388] scan: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files
+2025-05-29 16:28:29,191 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\conda-environment.yaml conda-environment.yaml
+2025-05-29 16:28:29,191 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\config.yaml config.yaml
+2025-05-29 16:28:29,194 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log output.log
+2025-05-29 16:28:29,194 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\requirements.txt requirements.txt
+2025-05-29 16:28:29,194 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-metadata.json wandb-metadata.json
+2025-05-29 16:28:29,194 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json wandb-summary.json
+2025-05-29 16:28:29,198 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_1\Epoch_10_TestPredictions_4_2746222c13169e8f4331.table.json media/table/Iter_1/Epoch_10_TestPredictions_4_2746222c13169e8f4331.table.json
+2025-05-29 16:28:29,198 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_1\Epoch_15_TestPredictions_9_ac024a798a0bc652bbcc.table.json media/table/Iter_1/Epoch_15_TestPredictions_9_ac024a798a0bc652bbcc.table.json
+2025-05-29 16:28:29,198 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_1\Epoch_5_TestPredictions_0_5d8952b8d12c628ca857.table.json media/table/Iter_1/Epoch_5_TestPredictions_0_5d8952b8d12c628ca857.table.json
+2025-05-29 16:28:29,200 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_10\Epoch_10_TestPredictions_139_e5f19c55e34ac30d6a02.table.json media/table/Iter_10/Epoch_10_TestPredictions_139_e5f19c55e34ac30d6a02.table.json
+2025-05-29 16:28:29,200 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_10\Epoch_15_TestPredictions_144_c5f2d214a8daab8cbf9a.table.json media/table/Iter_10/Epoch_15_TestPredictions_144_c5f2d214a8daab8cbf9a.table.json
+2025-05-29 16:28:29,200 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_10\Epoch_5_TestPredictions_135_20af0904e9ba7c9e0e23.table.json media/table/Iter_10/Epoch_5_TestPredictions_135_20af0904e9ba7c9e0e23.table.json
+2025-05-29 16:28:29,200 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_2\Epoch_10_TestPredictions_19_e92f0b19b2000745f27b.table.json media/table/Iter_2/Epoch_10_TestPredictions_19_e92f0b19b2000745f27b.table.json
+2025-05-29 16:28:29,200 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_2\Epoch_15_TestPredictions_24_2f2bd471098aed311518.table.json media/table/Iter_2/Epoch_15_TestPredictions_24_2f2bd471098aed311518.table.json
+2025-05-29 16:28:29,200 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_2\Epoch_5_TestPredictions_15_a303f6d22946383ac256.table.json media/table/Iter_2/Epoch_5_TestPredictions_15_a303f6d22946383ac256.table.json
+2025-05-29 16:28:29,201 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_3\Epoch_10_TestPredictions_34_9eadd822aed5fd90b6b6.table.json media/table/Iter_3/Epoch_10_TestPredictions_34_9eadd822aed5fd90b6b6.table.json
+2025-05-29 16:28:29,201 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_3\Epoch_15_TestPredictions_39_2d80bf7eb10948efbfcf.table.json media/table/Iter_3/Epoch_15_TestPredictions_39_2d80bf7eb10948efbfcf.table.json
+2025-05-29 16:28:29,201 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_3\Epoch_5_TestPredictions_30_6ce352285efe9356cb0d.table.json media/table/Iter_3/Epoch_5_TestPredictions_30_6ce352285efe9356cb0d.table.json
+2025-05-29 16:28:29,201 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_4\Epoch_10_TestPredictions_49_866e15cf62850edd373d.table.json media/table/Iter_4/Epoch_10_TestPredictions_49_866e15cf62850edd373d.table.json
+2025-05-29 16:28:29,201 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_4\Epoch_15_TestPredictions_54_79581276d5038e3215db.table.json media/table/Iter_4/Epoch_15_TestPredictions_54_79581276d5038e3215db.table.json
+2025-05-29 16:28:29,201 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_4\Epoch_5_TestPredictions_45_c335f47d4e0d4ff74454.table.json media/table/Iter_4/Epoch_5_TestPredictions_45_c335f47d4e0d4ff74454.table.json
+2025-05-29 16:28:29,201 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_5\Epoch_10_TestPredictions_64_b3dbe35575d2332ddb20.table.json media/table/Iter_5/Epoch_10_TestPredictions_64_b3dbe35575d2332ddb20.table.json
+2025-05-29 16:28:29,201 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_5\Epoch_15_TestPredictions_69_a9132c1ab34f22dcf233.table.json media/table/Iter_5/Epoch_15_TestPredictions_69_a9132c1ab34f22dcf233.table.json
+2025-05-29 16:28:29,201 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_5\Epoch_5_TestPredictions_60_dbec4ddbfd44efa8c84c.table.json media/table/Iter_5/Epoch_5_TestPredictions_60_dbec4ddbfd44efa8c84c.table.json
+2025-05-29 16:28:29,202 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_6\Epoch_10_TestPredictions_79_9c89128bcc80fd9769f7.table.json media/table/Iter_6/Epoch_10_TestPredictions_79_9c89128bcc80fd9769f7.table.json
+2025-05-29 16:28:29,202 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_6\Epoch_15_TestPredictions_84_edc1b3f5ed3fbfd78471.table.json media/table/Iter_6/Epoch_15_TestPredictions_84_edc1b3f5ed3fbfd78471.table.json
+2025-05-29 16:28:29,202 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_6\Epoch_5_TestPredictions_75_8a988455eb5606b5ca93.table.json media/table/Iter_6/Epoch_5_TestPredictions_75_8a988455eb5606b5ca93.table.json
+2025-05-29 16:28:29,202 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_7\Epoch_10_TestPredictions_94_8ae664056ef4c0288d5c.table.json media/table/Iter_7/Epoch_10_TestPredictions_94_8ae664056ef4c0288d5c.table.json
+2025-05-29 16:28:29,202 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_7\Epoch_15_TestPredictions_99_d1117d79418f199db922.table.json media/table/Iter_7/Epoch_15_TestPredictions_99_d1117d79418f199db922.table.json
+2025-05-29 16:28:29,202 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_7\Epoch_5_TestPredictions_90_ed02b5651c0f4d53d911.table.json media/table/Iter_7/Epoch_5_TestPredictions_90_ed02b5651c0f4d53d911.table.json
+2025-05-29 16:28:29,202 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_8\Epoch_10_TestPredictions_109_09edbd3ebc0e680cbfec.table.json media/table/Iter_8/Epoch_10_TestPredictions_109_09edbd3ebc0e680cbfec.table.json
+2025-05-29 16:28:29,202 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_8\Epoch_15_TestPredictions_114_05102bdb5e49a7fb4a01.table.json media/table/Iter_8/Epoch_15_TestPredictions_114_05102bdb5e49a7fb4a01.table.json
+2025-05-29 16:28:29,202 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_8\Epoch_5_TestPredictions_105_d7afad26f61666729421.table.json media/table/Iter_8/Epoch_5_TestPredictions_105_d7afad26f61666729421.table.json
+2025-05-29 16:28:29,202 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_9\Epoch_10_TestPredictions_124_ca3cec487a8b67e40e62.table.json media/table/Iter_9/Epoch_10_TestPredictions_124_ca3cec487a8b67e40e62.table.json
+2025-05-29 16:28:29,202 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_9\Epoch_15_TestPredictions_129_5f2dffb0da18876e6b51.table.json media/table/Iter_9/Epoch_15_TestPredictions_129_5f2dffb0da18876e6b51.table.json
+2025-05-29 16:28:29,202 INFO    SenderThread:21864 [dir_watcher.py:finish():402] scan save: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\media\table\Iter_9\Epoch_5_TestPredictions_120_808c04a4a714f2a20802.table.json media/table/Iter_9/Epoch_5_TestPredictions_120_808c04a4a714f2a20802.table.json
+2025-05-29 16:28:29,202 INFO    SenderThread:21864 [sender.py:transition_state():612] send defer: 10
+2025-05-29 16:28:29,202 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: defer
+2025-05-29 16:28:29,202 INFO    HandlerThread:21864 [handler.py:handle_request_defer():170] handle defer: 10
+2025-05-29 16:28:29,203 DEBUG   SenderThread:21864 [sender.py:send_request():406] send_request: defer
+2025-05-29 16:28:29,203 INFO    SenderThread:21864 [sender.py:send_request_defer():608] handle sender defer: 10
+2025-05-29 16:28:29,203 INFO    SenderThread:21864 [file_pusher.py:finish():175] shutting down file pusher
+2025-05-29 16:28:29,839 INFO    wandb-upload_0:21864 [upload_job.py:push():131] Uploaded file D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\config.yaml
+2025-05-29 16:28:29,982 INFO    wandb-upload_2:21864 [upload_job.py:push():131] Uploaded file D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\output.log
+2025-05-29 16:28:31,411 INFO    wandb-upload_3:21864 [upload_job.py:push():131] Uploaded file D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\conda-environment.yaml
+2025-05-29 16:28:31,495 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:28:31,499 INFO    wandb-upload_4:21864 [upload_job.py:push():131] Uploaded file D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\wandb-summary.json
+2025-05-29 16:28:33,249 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:28:36,533 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:28:38,283 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:28:41,578 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:28:43,328 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:28:46,628 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:28:48,357 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:28:51,661 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:28:53,394 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:28:56,685 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:28:58,435 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:29:01,711 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:29:03,449 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:29:06,746 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:29:08,508 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:29:11,786 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:29:13,541 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:29:16,816 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:29:18,591 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:29:21,864 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:29:23,640 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:29:26,907 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:29:28,661 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:29:31,949 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:29:33,698 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:29:36,995 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:29:38,737 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:29:42,033 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:29:43,767 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:29:47,074 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:29:48,820 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:29:52,086 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:29:53,861 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:29:57,121 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:29:58,893 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:30:02,158 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:30:03,933 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:30:07,193 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:30:08,953 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:30:12,227 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:30:13,978 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:30:17,254 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:30:19,012 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:30:22,294 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:30:24,058 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:30:27,332 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:30:29,104 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:30:32,384 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:30:34,148 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:30:37,428 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:30:39,181 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:30:42,471 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:30:44,204 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:30:47,508 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:30:49,237 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:30:52,559 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:30:54,271 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:30:57,606 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:30:59,302 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:31:02,654 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:31:04,346 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:31:07,696 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:31:09,404 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:31:12,742 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:31:14,453 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:31:17,775 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:31:19,504 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:31:22,808 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:31:24,538 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:31:27,829 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:31:29,575 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:31:32,862 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:31:34,625 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:31:37,919 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:31:39,670 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:31:42,964 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: keepalive
+2025-05-29 16:31:44,697 DEBUG   HandlerThread:21864 [handler.py:handle_request():144] handle_request: status_report
+2025-05-29 16:31:47,664 WARNING StreamThr :21864 [internal.py:is_dead():414] Internal process exiting, parent pid 18448 disappeared
+2025-05-29 16:31:47,664 ERROR   StreamThr :21864 [internal.py:wandb_internal():152] Internal process shutdown.
+2025-05-29 16:31:47,717 INFO    HandlerThread:21864 [handler.py:finish():840] shutting down handler
+2025-05-29 16:31:47,717 INFO    WriterThread:21864 [datastore.py:close():294] close: D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\run-sxv4ver4.wandb
+2025-05-29 16:31:47,717 INFO    SenderThread:21864 [sender.py:finish():1531] shutting down sender
+2025-05-29 16:31:47,717 INFO    SenderThread:21864 [file_pusher.py:finish():175] shutting down file pusher
+2025-05-29 16:31:47,717 INFO    SenderThread:21864 [file_pusher.py:join():181] waiting for file pusher
+2025-05-29 16:45:11,180 INFO    wandb-upload_1:21864 [upload_job.py:push():131] Uploaded file D:\github\Opt\main\wandb\run-20250529_162607-sxv4ver4\files\requirements.txt
+2025-05-29 16:45:11,180 INFO    MainThread:21864 [internal.py:handle_exit():76] Internal process exited
+2025-05-29 16:45:11,393 INFO    Thread-15 :21864 [sender.py:transition_state():612] send defer: 11

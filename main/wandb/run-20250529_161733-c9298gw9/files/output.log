@@ -1,0 +1,340 @@
+Weights & Biases 初始化成功。
+--- 0. 加载原始完整数据从: sub_ratings.csv ---
+完整原始数据集加载: 50 用户 (max_id+1), 50 物品 (max_id+1)。
+从 'test_row.csv' 提取测试数据并更新训练集...
+  测试集针对用户 ID: 49 (来自 test_row.csv)
+  从 'test_row.csv' 提取了 27 个测试样本。
+  更新后的 original_train_df 用于生成稀疏训练数据。
+模型将基于原始数据维度初始化: 用户数=50, 物品数=50
+测试数据集初始化: 27 个有效评分。
+测试集创建成功，包含 27 个样本。
+======= 主动学习迭代轮次: 1/10 (策略: TracInCP) =======
+--- Iter 1: 准备数据 ---
+  生成初始稀疏训练数据...
+初始稀疏训练数据已生成: 327 个评分。
+  当前训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50
+--- Iter 1: 初始化/重置模型 ---
+--- Iter 1: 训练模型 ---
+--- 开始训练迭代轮次 1 (共 15 epochs) ---
+  Iter 1 Epoch [1/15], Avg Train Loss: 18.108058
+  Iter 1 Epoch [2/15], Avg Train Loss: 17.989047
+  Iter 1 Epoch [3/15], Avg Train Loss: 17.704236
+  Iter 1 Epoch [4/15], Avg Train Loss: 17.051710
+  Iter 1 Epoch [5/15], Avg Train Loss: 15.832293
+  Iter 1 Epoch [5/15], Test Loss: 17.085391
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_1\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_1\checkpoint_epoch_5_grads.pkl (包含 327 条记录)
+  Iter 1 Epoch [6/15], Avg Train Loss: 13.970733
+  Iter 1 Epoch [7/15], Avg Train Loss: 11.619132
+  Iter 1 Epoch [8/15], Avg Train Loss: 9.034301
+  Iter 1 Epoch [9/15], Avg Train Loss: 6.524015
+  Iter 1 Epoch [10/15], Avg Train Loss: 4.448597
+  Iter 1 Epoch [10/15], Test Loss: 6.395237
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_1\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_1\checkpoint_epoch_10_grads.pkl (包含 327 条记录)
+  Iter 1 Epoch [11/15], Avg Train Loss: 2.922551
+  Iter 1 Epoch [12/15], Avg Train Loss: 1.964516
+  Iter 1 Epoch [13/15], Avg Train Loss: 1.377323
+  Iter 1 Epoch [14/15], Avg Train Loss: 1.036548
+  Iter 1 Epoch [15/15], Avg Train Loss: 0.824140
+  Iter 1 Epoch [15/15], Test Loss: 1.613304
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_1\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_1\checkpoint_epoch_15_grads.pkl (包含 327 条记录)
+--- 训练迭代轮次 1 完成 ---
+--- Iter 1: 计算 TracInCP 解耦影响值 ---
+  TracInCP: 使用整个测试集 (包含 27 个样本) 作为影响目标。
+  TracInCP: 正在为每个checkpoint和每个测试样本计算梯度并累加影响...
+  TracInCP: 考虑 50 个有影响的用户和 50 个有影响的物品进行组合...
+  Iter 1 (TracInCP): 从 2173 个候选对中选择了采集点。
+  Iter 1: 已识别出 50 个新的待采集位置 (目标: 50):
+    用户 22, 物品 29
+    用户 22, 物品 11
+    用户 22, 物品 39
+    用户 22, 物品 38
+    用户 22, 物品 18
+    ...
+--- Iter 1: 模拟数据采集 ---
+  Iter 1: 已为 47 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 1: 迭代结束时最终测试损失: 1.613304
+--- Iter 1: 生成可视化图像 ---
+Iter 1 (TracInCP): 评分矩阵可视化已保存至: visualizations_iter\strategy_TracInCP\rating_matrix_iter_1_collection.png
+======= 主动学习迭代轮次: 2/10 (策略: TracInCP) =======
+--- Iter 2: 准备数据 ---
+  将上一轮收集的 47 个评分添加到训练数据...
+已添加 47 个新评分到训练数据。总评分数: 374
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50
+--- Iter 2: 初始化/重置模型 ---
+--- Iter 2: 训练模型 ---
+--- 开始训练迭代轮次 2 (共 15 epochs) ---
+  Iter 2 Epoch [1/15], Avg Train Loss: 18.396121
+  Iter 2 Epoch [2/15], Avg Train Loss: 18.284020
+  Iter 2 Epoch [3/15], Avg Train Loss: 17.992179
+  Iter 2 Epoch [4/15], Avg Train Loss: 17.267439
+  Iter 2 Epoch [5/15], Avg Train Loss: 15.804749
+  Iter 2 Epoch [5/15], Test Loss: 16.063478
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_2\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_2\checkpoint_epoch_5_grads.pkl (包含 374 条记录)
+  Iter 2 Epoch [6/15], Avg Train Loss: 13.484360
+  Iter 2 Epoch [7/15], Avg Train Loss: 10.464828
+  Iter 2 Epoch [8/15], Avg Train Loss: 7.174252
+  Iter 2 Epoch [9/15], Avg Train Loss: 4.351297
+  Iter 2 Epoch [10/15], Avg Train Loss: 2.449714
+  Iter 2 Epoch [10/15], Test Loss: 3.103762
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_2\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_2\checkpoint_epoch_10_grads.pkl (包含 374 条记录)
+  Iter 2 Epoch [11/15], Avg Train Loss: 1.396139
+  Iter 2 Epoch [12/15], Avg Train Loss: 0.939770
+  Iter 2 Epoch [13/15], Avg Train Loss: 0.696457
+  Iter 2 Epoch [14/15], Avg Train Loss: 0.562488
+  Iter 2 Epoch [15/15], Avg Train Loss: 0.486458
+  Iter 2 Epoch [15/15], Test Loss: 1.364250
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_2\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_2\checkpoint_epoch_15_grads.pkl (包含 374 条记录)
+--- 训练迭代轮次 2 完成 ---
+--- Iter 2: 计算 TracInCP 解耦影响值 ---
+  TracInCP: 使用整个测试集 (包含 27 个样本) 作为影响目标。
+  TracInCP: 正在为每个checkpoint和每个测试样本计算梯度并累加影响...
+  TracInCP: 考虑 50 个有影响的用户和 50 个有影响的物品进行组合...
+  Iter 2 (TracInCP): 从 2126 个候选对中选择了采集点。
+  Iter 2: 已识别出 50 个新的待采集位置 (目标: 50):
+    用户 27, 物品 1
+    用户 27, 物品 24
+    用户 27, 物品 43
+    用户 27, 物品 44
+    用户 27, 物品 40
+    ...
+--- Iter 2: 模拟数据采集 ---
+  Iter 2: 已为 46 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 2: 迭代结束时最终测试损失: 1.364250
+--- Iter 2: 生成可视化图像 ---
+Iter 2 (TracInCP): 评分矩阵可视化已保存至: visualizations_iter\strategy_TracInCP\rating_matrix_iter_2_collection.png
+======= 主动学习迭代轮次: 3/10 (策略: TracInCP) =======
+--- Iter 3: 准备数据 ---
+  将上一轮收集的 46 个评分添加到训练数据...
+已添加 46 个新评分到训练数据。总评分数: 420
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50
+--- Iter 3: 初始化/重置模型 ---
+--- Iter 3: 训练模型 ---
+--- 开始训练迭代轮次 3 (共 15 epochs) ---
+  Iter 3 Epoch [1/15], Avg Train Loss: 18.485501
+  Iter 3 Epoch [2/15], Avg Train Loss: 18.314753
+  Iter 3 Epoch [3/15], Avg Train Loss: 17.763748
+  Iter 3 Epoch [4/15], Avg Train Loss: 16.364531
+  Iter 3 Epoch [5/15], Avg Train Loss: 13.809715
+  Iter 3 Epoch [5/15], Test Loss: 13.328768
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_3\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_3\checkpoint_epoch_5_grads.pkl (包含 420 条记录)
+  Iter 3 Epoch [6/15], Avg Train Loss: 10.256269
+  Iter 3 Epoch [7/15], Avg Train Loss: 6.518311
+  Iter 3 Epoch [8/15], Avg Train Loss: 3.505820
+  Iter 3 Epoch [9/15], Avg Train Loss: 1.792233
+  Iter 3 Epoch [10/15], Avg Train Loss: 1.023551
+  Iter 3 Epoch [10/15], Test Loss: 1.201946
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_3\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_3\checkpoint_epoch_10_grads.pkl (包含 420 条记录)
+  Iter 3 Epoch [11/15], Avg Train Loss: 0.705184
+  Iter 3 Epoch [12/15], Avg Train Loss: 0.562148
+  Iter 3 Epoch [13/15], Avg Train Loss: 0.485474
+  Iter 3 Epoch [14/15], Avg Train Loss: 0.447336
+  Iter 3 Epoch [15/15], Avg Train Loss: 0.413312
+  Iter 3 Epoch [15/15], Test Loss: 0.599544
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_3\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_3\checkpoint_epoch_15_grads.pkl (包含 420 条记录)
+--- 训练迭代轮次 3 完成 ---
+--- Iter 3: 计算 TracInCP 解耦影响值 ---
+  TracInCP: 使用整个测试集 (包含 27 个样本) 作为影响目标。
+  TracInCP: 正在为每个checkpoint和每个测试样本计算梯度并累加影响...
+  TracInCP: 考虑 50 个有影响的用户和 50 个有影响的物品进行组合...
+  Iter 3 (TracInCP): 从 2080 个候选对中选择了采集点。
+  Iter 3: 已识别出 50 个新的待采集位置 (目标: 50):
+    用户 17, 物品 43
+    用户 30, 物品 43
+    用户 17, 物品 12
+    用户 30, 物品 12
+    用户 17, 物品 22
+    ...
+--- Iter 3: 模拟数据采集 ---
+  Iter 3: 已为 41 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 3: 迭代结束时最终测试损失: 0.599544
+--- Iter 3: 生成可视化图像 ---
+Iter 3 (TracInCP): 评分矩阵可视化已保存至: visualizations_iter\strategy_TracInCP\rating_matrix_iter_3_collection.png
+======= 主动学习迭代轮次: 4/10 (策略: TracInCP) =======
+--- Iter 4: 准备数据 ---
+  将上一轮收集的 41 个评分添加到训练数据...
+已添加 41 个新评分到训练数据。总评分数: 461
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50
+--- Iter 4: 初始化/重置模型 ---
+--- Iter 4: 训练模型 ---
+--- 开始训练迭代轮次 4 (共 15 epochs) ---
+  Iter 4 Epoch [1/15], Avg Train Loss: 18.706717
+  Iter 4 Epoch [2/15], Avg Train Loss: 18.540287
+  Iter 4 Epoch [3/15], Avg Train Loss: 17.857335
+  Iter 4 Epoch [4/15], Avg Train Loss: 15.930845
+  Iter 4 Epoch [5/15], Avg Train Loss: 12.492915
+  Iter 4 Epoch [5/15], Test Loss: 10.575495
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_4\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_4\checkpoint_epoch_5_grads.pkl (包含 461 条记录)
+  Iter 4 Epoch [6/15], Avg Train Loss: 8.059066
+  Iter 4 Epoch [7/15], Avg Train Loss: 4.155725
+  Iter 4 Epoch [8/15], Avg Train Loss: 1.873958
+  Iter 4 Epoch [9/15], Avg Train Loss: 0.992427
+  Iter 4 Epoch [10/15], Avg Train Loss: 0.712144
+  Iter 4 Epoch [10/15], Test Loss: 0.498849
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_4\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_4\checkpoint_epoch_10_grads.pkl (包含 461 条记录)
+  Iter 4 Epoch [11/15], Avg Train Loss: 0.580631
+  Iter 4 Epoch [12/15], Avg Train Loss: 0.524768
+  Iter 4 Epoch [13/15], Avg Train Loss: 0.487636
+  Iter 4 Epoch [14/15], Avg Train Loss: 0.468921
+  Iter 4 Epoch [15/15], Avg Train Loss: 0.454215
+  Iter 4 Epoch [15/15], Test Loss: 0.368430
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_4\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_4\checkpoint_epoch_15_grads.pkl (包含 461 条记录)
+--- 训练迭代轮次 4 完成 ---
+--- Iter 4: 计算 TracInCP 解耦影响值 ---
+  TracInCP: 使用整个测试集 (包含 27 个样本) 作为影响目标。
+  TracInCP: 正在为每个checkpoint和每个测试样本计算梯度并累加影响...
+  TracInCP: 考虑 50 个有影响的用户和 50 个有影响的物品进行组合...
+  Iter 4 (TracInCP): 从 2039 个候选对中选择了采集点。
+  Iter 4: 已识别出 50 个新的待采集位置 (目标: 50):
+    用户 19, 物品 0
+    用户 19, 物品 26
+    用户 42, 物品 0
+    用户 35, 物品 0
+    用户 19, 物品 29
+    ...
+--- Iter 4: 模拟数据采集 ---
+  Iter 4: 已为 48 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 4: 迭代结束时最终测试损失: 0.368430
+--- Iter 4: 生成可视化图像 ---
+Iter 4 (TracInCP): 评分矩阵可视化已保存至: visualizations_iter\strategy_TracInCP\rating_matrix_iter_4_collection.png
+======= 主动学习迭代轮次: 5/10 (策略: TracInCP) =======
+--- Iter 5: 准备数据 ---
+  将上一轮收集的 48 个评分添加到训练数据...
+已添加 48 个新评分到训练数据。总评分数: 509
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50
+--- Iter 5: 初始化/重置模型 ---
+--- Iter 5: 训练模型 ---
+--- 开始训练迭代轮次 5 (共 15 epochs) ---
+  Iter 5 Epoch [1/15], Avg Train Loss: 18.973169
+  Iter 5 Epoch [2/15], Avg Train Loss: 18.750496
+  Iter 5 Epoch [3/15], Avg Train Loss: 17.816949
+  Iter 5 Epoch [4/15], Avg Train Loss: 15.361286
+  Iter 5 Epoch [5/15], Avg Train Loss: 11.174744
+  Iter 5 Epoch [5/15], Test Loss: 9.664318
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_5\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_5\checkpoint_epoch_5_grads.pkl (包含 509 条记录)
+  Iter 5 Epoch [6/15], Avg Train Loss: 6.387030
+  Iter 5 Epoch [7/15], Avg Train Loss: 2.873700
+  Iter 5 Epoch [8/15], Avg Train Loss: 1.248020
+  Iter 5 Epoch [9/15], Avg Train Loss: 0.759013
+  Iter 5 Epoch [10/15], Avg Train Loss: 0.574273
+  Iter 5 Epoch [10/15], Test Loss: 0.652441
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_5\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_5\checkpoint_epoch_10_grads.pkl (包含 509 条记录)
+  Iter 5 Epoch [11/15], Avg Train Loss: 0.496175
+  Iter 5 Epoch [12/15], Avg Train Loss: 0.457861
+  Iter 5 Epoch [13/15], Avg Train Loss: 0.431986
+  Iter 5 Epoch [14/15], Avg Train Loss: 0.420891
+  Iter 5 Epoch [15/15], Avg Train Loss: 0.403748
+  Iter 5 Epoch [15/15], Test Loss: 0.529661
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_5\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_5\checkpoint_epoch_15_grads.pkl (包含 509 条记录)
+--- 训练迭代轮次 5 完成 ---
+--- Iter 5: 计算 TracInCP 解耦影响值 ---
+  TracInCP: 使用整个测试集 (包含 27 个样本) 作为影响目标。
+  TracInCP: 正在为每个checkpoint和每个测试样本计算梯度并累加影响...
+  TracInCP: 考虑 50 个有影响的用户和 50 个有影响的物品进行组合...
+  Iter 5 (TracInCP): 从 1991 个候选对中选择了采集点。
+  Iter 5: 已识别出 50 个新的待采集位置 (目标: 50):
+    用户 9, 物品 3
+    用户 9, 物品 16
+    用户 9, 物品 36
+    用户 9, 物品 0
+    用户 9, 物品 23
+    ...
+--- Iter 5: 模拟数据采集 ---
+  Iter 5: 已为 47 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 5: 迭代结束时最终测试损失: 0.529661
+--- Iter 5: 生成可视化图像 ---
+Iter 5 (TracInCP): 评分矩阵可视化已保存至: visualizations_iter\strategy_TracInCP\rating_matrix_iter_5_collection.png
+======= 主动学习迭代轮次: 6/10 (策略: TracInCP) =======
+--- Iter 6: 准备数据 ---
+  将上一轮收集的 47 个评分添加到训练数据...
+已添加 47 个新评分到训练数据。总评分数: 556
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50
+--- Iter 6: 初始化/重置模型 ---
+--- Iter 6: 训练模型 ---
+--- 开始训练迭代轮次 6 (共 15 epochs) ---
+  Iter 6 Epoch [1/15], Avg Train Loss: 19.020629
+  Iter 6 Epoch [2/15], Avg Train Loss: 18.712833
+  Iter 6 Epoch [3/15], Avg Train Loss: 17.139715
+  Iter 6 Epoch [4/15], Avg Train Loss: 13.172664
+  Iter 6 Epoch [5/15], Avg Train Loss: 7.650320
+  Iter 6 Epoch [5/15], Test Loss: 6.883925
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_6\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_6\checkpoint_epoch_5_grads.pkl (包含 556 条记录)
+  Iter 6 Epoch [6/15], Avg Train Loss: 3.231944
+  Iter 6 Epoch [7/15], Avg Train Loss: 1.318252
+  Iter 6 Epoch [8/15], Avg Train Loss: 0.776620
+  Iter 6 Epoch [9/15], Avg Train Loss: 0.591088
+  Iter 6 Epoch [10/15], Avg Train Loss: 0.521504
+  Iter 6 Epoch [10/15], Test Loss: 0.546520
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_6\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_6\checkpoint_epoch_10_grads.pkl (包含 556 条记录)
+  Iter 6 Epoch [11/15], Avg Train Loss: 0.493386
+  Iter 6 Epoch [12/15], Avg Train Loss: 0.475002
+  Iter 6 Epoch [13/15], Avg Train Loss: 0.460505
+  Iter 6 Epoch [14/15], Avg Train Loss: 0.450942
+  Iter 6 Epoch [15/15], Avg Train Loss: 0.440999
+  Iter 6 Epoch [15/15], Test Loss: 0.433386
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_6\model_epoch_15.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_6\checkpoint_epoch_15_grads.pkl (包含 556 条记录)
+--- 训练迭代轮次 6 完成 ---
+--- Iter 6: 计算 TracInCP 解耦影响值 ---
+  TracInCP: 使用整个测试集 (包含 27 个样本) 作为影响目标。
+  TracInCP: 正在为每个checkpoint和每个测试样本计算梯度并累加影响...
+  TracInCP: 考虑 50 个有影响的用户和 50 个有影响的物品进行组合...
+  Iter 6 (TracInCP): 从 1944 个候选对中选择了采集点。
+  Iter 6: 已识别出 50 个新的待采集位置 (目标: 50):
+    用户 21, 物品 24
+    用户 21, 物品 7
+    用户 21, 物品 34
+    用户 13, 物品 24
+    用户 21, 物品 38
+    ...
+--- Iter 6: 模拟数据采集 ---
+  Iter 6: 已为 46 个采集点获取了“真实”评分并准备添加到下一轮。
+  Iter 6: 迭代结束时最终测试损失: 0.433386
+--- Iter 6: 生成可视化图像 ---
+Iter 6 (TracInCP): 评分矩阵可视化已保存至: visualizations_iter\strategy_TracInCP\rating_matrix_iter_6_collection.png
+======= 主动学习迭代轮次: 7/10 (策略: TracInCP) =======
+--- Iter 7: 准备数据 ---
+  将上一轮收集的 46 个评分添加到训练数据...
+已添加 46 个新评分到训练数据。总评分数: 602
+  更新后训练数据用户数 (基于0的最大ID+1): 50, 物品数 (基于0的最大ID+1): 50
+--- Iter 7: 初始化/重置模型 ---
+--- Iter 7: 训练模型 ---
+--- 开始训练迭代轮次 7 (共 15 epochs) ---
+  Iter 7 Epoch [1/15], Avg Train Loss: 19.103544
+  Iter 7 Epoch [2/15], Avg Train Loss: 18.719914
+  Iter 7 Epoch [3/15], Avg Train Loss: 16.862070
+  Iter 7 Epoch [4/15], Avg Train Loss: 12.474683
+  Iter 7 Epoch [5/15], Avg Train Loss: 6.744603
+  Iter 7 Epoch [5/15], Test Loss: 5.430494
+[34m[1mwandb[39m[22m: [33mWARNING[39m A graphql request initiated by the public wandb API timed out (timeout=19 sec). Create a new API with an integer timeout larger than 19, e.g., `api = wandb.Api(timeout=29)` to increase the graphql timeout.
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_7\model_epoch_5.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_7\checkpoint_epoch_5_grads.pkl (包含 602 条记录)
+  Iter 7 Epoch [6/15], Avg Train Loss: 2.715997
+  Iter 7 Epoch [7/15], Avg Train Loss: 1.211372
+  Iter 7 Epoch [8/15], Avg Train Loss: 0.769801
+  Iter 7 Epoch [9/15], Avg Train Loss: 0.594967
+  Iter 7 Epoch [10/15], Avg Train Loss: 0.515312
+  Iter 7 Epoch [10/15], Test Loss: 0.486578
+    已保存checkpoint: checkpoints_iter\strategy_TracInCP\iter_7\model_epoch_10.pt
+    已保存梯度日志: gradient_logs_iter\strategy_TracInCP\iter_7\checkpoint_epoch_10_grads.pkl (包含 602 条记录)
+  Iter 7 Epoch [11/15], Avg Train Loss: 0.483835
+  Iter 7 Epoch [12/15], Avg Train Loss: 0.455662
+  Iter 7 Epoch [13/15], Avg Train Loss: 0.437477
+  Iter 7 Epoch [14/15], Avg Train Loss: 0.429535
+  Iter 7 Epoch [15/15], Avg Train Loss: 0.419190

@@ -1,0 +1,31 @@
+2025-05-29 17:03:14,637 INFO    MainThread:25084 [wandb_setup.py:_flush():76] Current SDK version is 0.15.10
+2025-05-29 17:03:14,637 INFO    MainThread:25084 [wandb_setup.py:_flush():76] Configure stats pid to 25084
+2025-05-29 17:03:14,637 INFO    MainThread:25084 [wandb_setup.py:_flush():76] Loading settings from C:\Users\HanlinWang\.config\wandb\settings
+2025-05-29 17:03:14,637 INFO    MainThread:25084 [wandb_setup.py:_flush():76] Loading settings from D:\github\Opt\main\wandb\settings
+2025-05-29 17:03:14,637 INFO    MainThread:25084 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2025-05-29 17:03:14,638 INFO    MainThread:25084 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2025-05-29 17:03:14,638 INFO    MainThread:25084 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'main.py', 'program': 'D:\\github\\Opt\\main\\main.py'}
+2025-05-29 17:03:14,638 INFO    MainThread:25084 [wandb_init.py:_log_setup():524] Logging user logs to D:\github\Opt\main\wandb\run-20250529_170314-9ibpyex3\logs\debug.log
+2025-05-29 17:03:14,638 INFO    MainThread:25084 [wandb_init.py:_log_setup():525] Logging internal logs to D:\github\Opt\main\wandb\run-20250529_170314-9ibpyex3\logs\debug-internal.log
+2025-05-29 17:03:14,638 INFO    MainThread:25084 [wandb_init.py:init():564] calling init triggers
+2025-05-29 17:03:14,638 INFO    MainThread:25084 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {'original_data_path': 'sub_ratings.csv', 'test_data_path': 'test_row.csv', 'num_users': 50, 'num_items': 50, 'user_retention_config': [0.05, 0.4, 0.8, 0.15, 0.2, 0.4, 0.3, 0.1, 0.2, 0.5, 0.0, 0.1], 'model_name': 'MF', 'embedding_dim': 20, 'epochs_per_iteration': 15, 'batch_size': 50, 'test_batch_size': 10, 'learning_rate': 0.005, 'checkpoint_interval': 5, 'checkpoint_dir_base': 'checkpoints_iter', 'gradient_log_dir_base': 'gradient_logs_iter', 'active_learning_strategy': 'Random', 'task_type': 'regression', 'num_collection_points': 50, 'output_visualization_dir': 'visualizations_iter', 'num_iterations': 8, 'wandb_project': 'tracin_active_learning_v5', 'wandb_entity': None, 'disable_wandb': False, 'seed': 42}
+2025-05-29 17:03:14,638 INFO    MainThread:25084 [wandb_init.py:init():614] starting backend
+2025-05-29 17:03:14,638 INFO    MainThread:25084 [wandb_init.py:init():618] setting up manager
+2025-05-29 17:03:14,638 INFO    MainThread:25084 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2025-05-29 17:03:14,641 INFO    MainThread:25084 [wandb_init.py:init():624] backend started and connected
+2025-05-29 17:03:14,641 INFO    MainThread:25084 [wandb_init.py:init():715] updated telemetry
+2025-05-29 17:03:14,641 INFO    MainThread:25084 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2025-05-29 17:03:17,281 INFO    MainThread:25084 [wandb_run.py:_on_init():2220] communicating current version
+2025-05-29 17:03:17,971 INFO    MainThread:25084 [wandb_run.py:_on_init():2229] got version response upgrade_message: "wandb version 0.19.11 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2025-05-29 17:03:17,971 INFO    MainThread:25084 [wandb_init.py:init():799] starting run threads in backend
+2025-05-29 17:03:23,097 INFO    MainThread:25084 [wandb_run.py:_console_start():2199] atexit reg
+2025-05-29 17:03:23,098 INFO    MainThread:25084 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2025-05-29 17:03:23,098 INFO    MainThread:25084 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2025-05-29 17:03:23,098 INFO    MainThread:25084 [wandb_run.py:_redirect():2144] Redirects installed.
+2025-05-29 17:03:23,098 INFO    MainThread:25084 [wandb_init.py:init():840] run started, returning control to user process
+2025-05-29 17:04:20,224 INFO    MainThread:25084 [wandb_run.py:_finish():1934] finishing run 939531372-south-china-university-of-technology/tracin_active_learning_v5/9ibpyex3
+2025-05-29 17:04:20,224 INFO    MainThread:25084 [wandb_run.py:_atexit_cleanup():2168] got exitcode: 0
+2025-05-29 17:04:20,224 INFO    MainThread:25084 [wandb_run.py:_restore():2151] restore
+2025-05-29 17:04:20,224 INFO    MainThread:25084 [wandb_run.py:_restore():2157] restore done
