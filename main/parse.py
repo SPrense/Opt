@@ -32,7 +32,7 @@ def parse_args():
                         help='Dimension of user and item embeddings')
 
     # --- 训练参数 ---
-    parser.add_argument('--epochs_per_iteration', type=int, default=15, 
+    parser.add_argument('--epochs_per_iteration', type=int, default=20, 
                         help='Number of training epochs per active learning iteration')
     parser.add_argument('--batch_size', type=int, default=50,
                         help='Batch size for training')
